@@ -287,8 +287,10 @@ export const initWASocket = async (whatsapp: Whatsapp): Promise<Session> => {
                   console.log(`✅ Convertido objeto Object() para Buffer (${buffer.length} bytes)`);
                   return buffer;
                 } else {
-                  console.log(`⚠️ Objeto Object() não tem chaves numéricas, retornando Buffer vazio`);
-                  return Buffer.from([]);
+                  // Se um objeto não tem chaves numéricas, não é um Buffer que foi serializado para objeto.
+                  // Em vez de retornar um Buffer vazio (que causa erros de criptografia),
+                  // passamos para a função original que vai lançar um erro mais claro se o tipo for inválido.
+                  return originalBufferFrom.call(this, value, ...args);
                 }
               } catch (conversionError) {
                 console.error(`❌ Erro ao converter objeto Object() para Buffer:`, conversionError);

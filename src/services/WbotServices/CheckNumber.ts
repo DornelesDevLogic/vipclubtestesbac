@@ -8,6 +8,22 @@ interface IOnWhatsapp {
 }
 
 const checker = async (number: string, wbot: any) => {
+  if (number.includes("@lid")) {
+    const lidMappingStore = wbot.lidMappingStore;
+    if (lidMappingStore) {
+      const jid = await lidMappingStore.getPNForLID(number);
+      if (jid) {
+        const [validNumber] = await wbot.onWhatsApp(jid);
+        return validNumber;
+      }
+    }
+  }
+
+  if (number.includes("@")) {
+    const [validNumber] = await wbot.onWhatsApp(number);
+    return validNumber;
+  }
+
   const [validNumber] = await wbot.onWhatsApp(`${number}@s.whatsapp.net`);
 
   logger.info(validNumber);
@@ -24,7 +40,7 @@ const CheckContactNumber = async (
   const wbot = getWbot(defaultWhatsapp.id);
   const isNumberExit = await checker(number, wbot);
 
-  if (!isNumberExit.exists) {
+  if (!isNumberExit || !isNumberExit.exists) {
     throw new Error("ERR_CHECK_NUMBER");
   }
   return isNumberExit;

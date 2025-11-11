@@ -1,0 +1,54 @@
+# DEPLOY PRODUÇÃO - MÚLTIPLAS CONEXÕES
+
+## PROBLEMA RESOLVIDO:
+- Cliente pode ter tickets abertos simultaneamente em múltiplas conexões
+- Comercial + Suporte funcionando ao mesmo tempo
+
+## ARQUIVOS PARA SUBSTITUIR:
+
+1. src/services/TicketServices/FindOrCreateTicketService.ts
+2. src/helpers/CheckContactOpenTickets.ts
+
+## PROCEDIMENTO:
+
+1. BACKUP do banco de dados
+2. PARAR aplicação backend
+3. SUBSTITUIR os 2 arquivos acima
+4. REINICIAR aplicação backend
+5. TESTAR com 2 números diferentes
+
+⚠️  NÃO PRECISA RODAR MIGRATE!
+✅ Solução funciona sem alterar banco
+
+## TESTE RÁPIDO:
+
+1. Cliente envia msg para Comercial → Ticket criado
+2. Cliente envia msg para Suporte → NOVO ticket criado  
+3. Verificar se AMBOS ficam abertos
+4. Testar conversas simultâneas
+
+## VALIDAÇÃO SQL:
+
+SELECT t.id, t.status, t.whatsappId, c.number, w.name 
+FROM "Tickets" t 
+JOIN "Contacts" c ON t."contactId" = c.id 
+JOIN "Whatsapps" w ON t."whatsappId" = w.id 
+WHERE c.number = 'NUMERO_TESTE' 
+AND t.status IN ('open', 'pending');
+
+## ROLLBACK (se necessário):
+
+1. Restaurar arquivos originais
+2. Reiniciar aplicação
+3. Verificar funcionamento normal
+
+## LOGS ESPERADOS:
+
+✅ "Novo ticket criado: #1478 para conexão 13"
+🔄 "Contato X tem ticket aberto na conexão Y, criando novo ticket na conexão Z"
+
+## STATUS: ✅ PRONTO PARA PRODUÇÃO
+
+Data: 08/11/2025
+Testado: ✅ Funcionando
+Impacto: Permite atendimento simultâneo em múltiplos setores

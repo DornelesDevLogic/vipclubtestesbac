@@ -15,7 +15,9 @@
     "pretest": "NODE_ENV=test sequelize db:migrate && NODE_ENV=test sequelize db:seed:all",
     "test": "NODE_ENV=test jest",
     "posttest": "NODE_ENV=test sequelize db:migrate:undo:all",
-    "lint": "eslint src/**/*.ts"
+    "lint": "eslint src/**/*.ts",
+    "logs:view": "node view-logs.js",
+    "logs:test": "npm run build && node test-daily-logs.js"
   },
   "author": "",
   "license": "MIT",

@@ -1,0 +1,871 @@
+[2025-11-11T20:44:33.994Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363169022331392@newsletter",
+      "fromMe": false,
+      "id": "3EB0AD010275791DE5829E",
+      "participant": "",
+      "addressingMode": "pn",
+      "server_id": "7826"
+    },
+    "messageTimestamp": 1762886854,
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "Kim Kardashian, Sarah Paulson, Naomi Watts e Niecy Nash marcaram presença no Copacabana Palace para a première do quarto episódio da *série 'Tudo É Justo'*, e parece que essa aparição rendeu memes nas redes sociais\n\nA série está disponível no Disney+ 📺\n\n👉 https://link.uol/19a6fwtV",
+        "matchedText": "https://link.uol/19a6fwtV",
+        "description": "Veja as últimas notícias do UOL em um novo formato de consumir conteúdo em Flash. Confira vídeos e stories do que está acontecendo no mundo.",
+        "title": "'Olá Brazil': A premiere de 'Tudo é Justo' no Brasil trouxe Kim Kardashian e muitos memes",
+        "previewType": "NONE",
+        "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCABkADgDASIAAhEBAxEB/8QAGwAAAgMBAQEAAAAAAAAAAAAAAAUEBgcDAQL/xAAwEAABAwMEAQIFAwQDAAAAAAABAgMEAAURBhIhMUETURQiYXGBB5GhFRYyQjOxwf/EABkBAAMBAQEAAAAAAAAAAAAAAAECAwQABf/EACERAAICAgMAAgMAAAAAAAAAAAABAhEDEgQhMUGBEyNR/9oADAMBAAIRAxEAPwBxfNK/DW7UcTeJAYjm52ycOFn0yUusqI4yOiPqD4pveLVaLFpliW7YZL7jkdK1hy5oDjSlYAA5+Y5I/wAQaqzOprk1btQQB6Kot0dedb3ZKo3qklQT7gg/vzT66Xq36kkRYkCwxU3ad6cVybIAWphA4y35yBnB4x9aZUenKGddvwJWl4Fpfju3ZqRJS2UW2HFaWUO3GSTlx1RHSQSQPASkn2pBa7VbXptybk6mjwhEnvMMtvNlaloQr5V5BH2/FWP9QddyY18l2e0ssodjgM/HK+Z1BUkFYR4B5AzWfxIaI4GCVHPOaEmvCnHx5ZRtv00DXlkssjVMmZM1GxCmLZaWYymSonCMA5B/2xVIgyHXkgvMqaUQCR/5UrU8pd91E9cykMpWltAaB3bQhOO65pVzStq+jVx8coRqTO2cCivBzRQNVCZiSl0ZQQQKa2a4OW26RJzKUqWw4FhKule4/bNLbtcYUZ8Q4sZIRnHq+QR4qMJYHVJjybqzPF7xqRLnlcq+TLg6RmQ+t8p727jkD644Feqfx2RUIyt3mo77xHR5+tOOqiuibKusaIgqkvttD3UrFRouprZIkJZZnMKdVwlJJGftmmF70Za7hawww6FXLYHEuKBO4kf7HoA/xWTNWYNyVtujG1RBBHKSDSYcscqtGbNyZ4n50bK0+FDB7oqtWGeXIiQ4oqUglBJ7OOqKozXjyKcVJDzV02GxD9BhDRkPuB1wjG4YzgnzzVSEgnzTfWdpdbecuTCC56nDvnAHRAqqNP5FQ46Sj0Zt++xy0/z3XZvY8+026spQpQBUk4I+xpQy7XcvBKkk9A5NWatB2s0VMOM8Wn5Dr6Q2AAgO/KoDrIHdZ/rNhLV/clNJDaJQ3FA8KHGfyKdi+xh8kBtxTqx2rAx+KQakWy5EkPzHnA82AUYScbgcgfnkc15uHbHOmT5Ossb/AKQ7U+WlvJz2QqilkKQlagsH/IYor0xONP8AWka6+6X0qbGSjHOT3Wb6kipgTh6YwhfP0zV7gyIrs5Dch4tMj/kWlO4pGD0Pximmq/09auLbQiynlPJklghwBI3JDgPICsAqSjBPQJzziseG9rQjyKPpj7UgDzXxcJbqY5EYFT6ztQPr71Zv7HDumLXdYdxAcfjtuyG3UFQSpxSEoQkIBVklwcKHIBNWK1fp2iCZAu09lTqEuZ9HcFJCNh3AKTyn50jjBzn2xWqUtQPMmvTPrO2zYYrk+4ubpK+1Hk/RI9zVZvl/lXWSTuKGs5S3ngfU/Wnh0/L1fcpL1nltrtrby2mFyAUK9MYwspAOMgg/xULVOj5GmmmHZMlt31VBKdiCAQQTkE9jilgoqVyfbME+Zjb/ABxfzX2K7TcCh9LbqhhRxnrBopW6jaQpPeaKtVlYZHFUi3NTLvdFynIq3V+igOOhCtuElQSP5I4+/tVlEz9Qyn01TLoCMNhRlDcNvSc7s8Z/mqZo6MLlcHguAJyG0pw18WGFAlQG5JPav+hknir9P0ZEC1uMafQgNo9Qhy6AhauikqzkYJzkd+TSqKRF5GI0w9altiCy7cQlhsmOyJICWwhaThI3YGFBB+4HtUu7XXWeoIEI22bNfQtClO+nKHyHopUc8ZIPHnFRpFuRAQS5pZjALr+U3TCi2BnBwecYyPJok2QrUtwaYilGBtAuoHGCDgg4Jzyfb811W0wubaFdmv8AddFwRFdt7WySVq2vKyFgK2kEA9BSP4pXqLVk2/ISialkJQoKT6aSNuBjHfWKeNWQuLKmdLRsMqcadDt2SecgZ5PGDnnkHNIdXWl6C81I/pTVtjuDYG25YkAqHOc5JGQR+1coxu6ILBj22ru7+xLkqBwaKZ2ayyZwSUp2oPRI5P2FFdukXFSVpCwfT3Ac5pkuaHcYYQDjBzk0tALKlpUk56BPivUOBIKcDJOd2eqNiMmu+kFBTIwMcggVCcKfhU8Dk8cfWpKpazD+GATt3bs45/eoT7ifTQlBz5ND5ORzBA8D9qkwti5bKVAbSoZ4qIDX22vYtKh2Dmiwo1e3qQxHSEAAkcmiq/Fnkx04PBFFIpUqA1bK3c1ZXykZ9/NRkuK8HH4FFFFHP0kReRuIBJ7NLZiA3IWlPQNFFcgy8OIr68UUUwiHltdV8MkZ8UUUUgx//9k=",
+        "contextInfo": {
+          "forwardingScore": 1,
+          "isForwarded": true,
+          "forwardedNewsletterMessageInfo": {
+            "newsletterJid": "120363175515954858@newsletter",
+            "serverMessageId": 6942,
+            "newsletterName": "UOL | Dicas de Filmes e Séries"
+          }
+        },
+        "thumbnailDirectPath": "/m1/v/t24/An-28_0061LgPp91j52MV_sAre4Vk773ybfagCLkuDD_1NNNsT-a-SQkFlfLBvWMr4LBlFLVgjqatuKsbtUhJ3Xzv5xDCIJ15r06l6tpHGonoKGoNdzwQ4AH-qLcWW6vfJs1xyhEk6P7xqnQEWR9sBuT8g?ccb=10-5&oh=01_Q5Aa3AE6EPLfhHH_tcRmO70xGJcaP036djyYr5XsBeLkZu0voA&oe=693AE4ED&_nc_sid=5e03e0",
+        "thumbnailSha256": "GfV3mwa0Z7T1TrW5kJl4grGRyfYg+7SWXO4/JbvwF6Q=",
+        "thumbnailHeight": 640,
+        "thumbnailWidth": 360,
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "OpbFpk8IqS5mJy5jUi5OymZHJoioRnREybEitinQX40="
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "120363169022331392@newsletter",
+      "fromMe": false,
+      "id": "3EB0079CCA81627BDF06A5",
+      "participant": "",
+      "addressingMode": "pn",
+      "server_id": "7825"
+    },
+    "messageTimestamp": 1762889666,
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "A Galisteu tá sendo bem sincerona no seu doc 'Meu Ayrton' \nA apresentadora comentou que o filho já falou em ser piloto de F1, o que a deixou abalada. Ela conta que entendeu a apreensão da mãe de Senna toda vez que via o filho correr 🏎️\n\n👉https://link.uol/19a6zlJx/\n\nE pra quem não viu ainda, vem que no UOL PLAY tem 😉 http://uol.com.br/hbo-max",
+        "matchedText": "https://link.uol/19a6zlJx/",
+        "description": "Veja as últimas notícias do UOL em um novo formato de consumir conteúdo em Flash. Confira vídeos e stories do que está acontecendo no mundo.",
+        "title": "Galisteu diz que filho já falou em ser piloto da F1: \"Fingi que não ouvi\"",
+        "previewType": "NONE",
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "2C8ECqSolcXr5DVQbEUD09tywIgM2UfyqFGXpTZBexc="
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "120363403195119068@g.us",
+      "fromMe": false,
+      "id": "ACE60B18AD31050B1F472E96F4BAE860",
+      "participant": "172945481662601@lid",
+      "participantAlt": "555184062475@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1762893795,
+    "pushName": "Ponto Verde Paisagismo",
+    "broadcast": false,
+    "message": {
+      "imageMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.7118-24/579928212_1196095949078277_3190262328997115080_n.enc?ccb=11-4&oh=01_Q5Aa3AHLFM_URZ9gDDbdJJYtAinraHFeRcSBqCcuY9cuDn7sPw&oe=693B0AC7&_nc_sid=5e03e0&mms3=true",
+        "mimetype": "image/jpeg",
+        "fileSha256": "LQCb6BjaSzGJWHTyyodw/yhzwGKC6C3ruwnfaG6uvNE=",
+        "fileLength": "251208",
+        "height": 1200,
+        "width": 1600,
+        "mediaKey": "m7+I2xCREriTHj2+HloM2BbXLB3nAM5H8K0On5uxPvw=",
+        "fileEncSha256": "JzopBPJP0BaBc+7S48EpjHJP4UUTdL1AcojTRuHxtrY=",
+        "directPath": "/v/t62.7118-24/579928212_1196095949078277_3190262328997115080_n.enc?ccb=11-4&oh=01_Q5Aa3AHLFM_URZ9gDDbdJJYtAinraHFeRcSBqCcuY9cuDn7sPw&oe=693B0AC7&_nc_sid=5e03e0",
+        "mediaKeyTimestamp": "1762893792",
+        "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAC8APwMBIgACEQEDEQH/xAAuAAADAQEAAAAAAAAAAAAAAAABAgMEAAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/2gAMAwEAAhADEAAAAMnVpOkGrQgd3JhGrh2JuZ14GpIENc7xnQQtqkRezok9+WlcV5n/xAAjEAACAgEEAQUBAAAAAAAAAAAAAQIDEQQQFFEhEhMiQVJx/9oACAEBAAE/AFpYPs4iOIhaRHERxEcVD0yE7jF5i8hC5ipsZKqaHC0Vdgovs9LZ7b7FhEbIpE5J7QW3nZKX20Y2yKeBSkO6SJXS8Md9nY77v14Hqbv0O+3s09k3N5YpE3iTHIc20N5g/wCjkZNM/mz/xAAcEQACAQUBAAAAAAAAAAAAAAAAARICEBExYSD/2gAIAQIBAT8AnV0k+kmSd8eFoemf/8QAHxEAAgAGAwEAAAAAAAAAAAAAAAECAxETIVEQEmFi/9oACAEDAQE/ALS3CW/pHT1FtbXFWV4lrLqdVomYjYnlH//Z",
+        "contextInfo": {
+          "pairedMediaType": "NOT_PAIRED_MEDIA",
+          "statusSourceType": "IMAGE"
+        },
+        "scansSidecar": "e6qHjKa+YvruFEcWF5CuSVviv4Tp3N12G0k7JgOQCtDRMfNxOMPnRA==",
+        "scanLengths": [
+          13873,
+          86229,
+          54102,
+          97004
+        ],
+        "midQualityFileSha256": "d5cBz8105IJIJw9ZWWN9AvIx6e1JcEp6J2uac4G0ZTQ="
+      },
+      "messageContextInfo": {
+        "messageSecret": "wm2S1JbtH835XqlqrFqjra2FILSwaY1iK44mvEoYT7k="
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "120363403195119068@g.us",
+      "fromMe": false,
+      "id": "AC28140FD7A46576685A566DE26A24D5",
+      "participant": "172945481662601@lid",
+      "participantAlt": "555184062475@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1762893812,
+    "pushName": "Ponto Verde Paisagismo",
+    "broadcast": false,
+    "message": {
+      "conversation": "Este aqui do servidor",
+      "messageContextInfo": {
+        "messageSecret": "nGJLE/2lkeOz7lNF0aiB6f2o4VPTqK2fn8hAgLRlPIg="
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "120363169022331392@newsletter",
+      "fromMe": false,
+      "id": "3EB0ECEAF830AA0885956B",
+      "participant": "",
+      "addressingMode": "pn",
+      "server_id": "7803"
+    },
+    "messageTimestamp": 1762889700,
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "> Está tudo uma merda! Uma merda, uma merda\n\nEssas foram algumas das últimas palavras do piloto para a então namorada.\n\n👉 https://link.uol/19a4YIGl/\n\nE pra quem não viu ainda, vem que no UOL PLAY tem 😉 http://uol.com.br/hbo-max",
+        "matchedText": "https://link.uol/19a4YIGl/",
+        "description": "Adriane Galisteu, 52, deu detalhes de sua última conversa com Ayrton Senna antes da morte do piloto, em maio de 1994. No documentário \"Meu Ayrton por Adriane Galisteu\", ela detalha que o piloto demonstrou irritação antes do Grande Prêmio de S",
+        "title": "Galisteu dá detalhes de última conversa com Ayrton Senna: 'Ficou bravo'",
+        "previewType": "NONE",
+        "jpegThumbnail": "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",
+        "thumbnailDirectPath": "/m1/v/t24/An9IvKya9s7TWOKsQkt13to42LbWJR1HO7efkLN30vXK7SkLuZdhI3QyLhbNpCA7_TP63_TRxwrTnnDoW68EdX-9vbgLloB_X4S2SHhl98Yi3_xAhHONj29gmtGx59NYEYFCwBqk0XuY7ag657nSVNnPAw?ccb=10-5&oh=01_Q5Aa3AFL4qwC5KEooXZpVJy3GR4Hu_vN9cXu8lsuctR1uykmPg&oe=69370C04&_nc_sid=5e03e0",
+        "thumbnailSha256": "0nXatBtxxIpY7bQDS3W9bN/MRFWX93vKR/t2gpa4UUY=",
+        "thumbnailHeight": 300,
+        "thumbnailWidth": 615,
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "78xQwDAtrNjvjDGdL2MdtT1icWKxjqp+Z6ixwHEeXeQ="
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "120363403195119068@g.us",
+      "fromMe": false,
+      "id": "ACBAE822E56389704299A578D985B1C1",
+      "participant": "172945481662601@lid",
+      "participantAlt": "555184062475@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1762893871,
+    "pushName": "Ponto Verde Paisagismo",
+    "broadcast": false,
+    "message": {
+      "imageMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.7118-24/30668428_1927171504494134_4361374827961448212_n.enc?ccb=11-4&oh=01_Q5Aa3AGDb2BK-I6IbRsu82zK4Evh_4ODSAW7-VEMhMAv5i1JyA&oe=693B0598&_nc_sid=5e03e0&mms3=true",
+        "mimetype": "image/jpeg",
+        "fileSha256": "9prl+SjFqqgCdk5445QEX0Quya7dQfx/qUUKYDHe8zg=",
+        "fileLength": "255098",
+        "height": 1200,
+        "width": 1600,
+        "mediaKey": "UmEvKcDvXgX9FIp9umGpPTcOr7TchkOflZiXD6LUO2M=",
+        "fileEncSha256": "d66AdSsKGoRgaz8EM2Ne6mSKABlNEOgmqly0ov5oamo=",
+        "directPath": "/v/t62.7118-24/30668428_1927171504494134_4361374827961448212_n.enc?ccb=11-4&oh=01_Q5Aa3AGDb2BK-I6IbRsu82zK4Evh_4ODSAW7-VEMhMAv5i1JyA&oe=693B0598&_nc_sid=5e03e0",
+        "mediaKeyTimestamp": "1762893870",
+        "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAC8APwMBIgACEQEDEQH/xAAuAAADAQEBAAAAAAAAAAAAAAABAgMEBQABAQEBAQAAAAAAAAAAAAAAAAACAQP/2gAMAwEAAhADEAAAAJPVp6QOksnU+zcq7UFedbhmDA8QBKJjjVxG56T816jrNzDy6bY5Ux//xAAiEAEBAAIBAwUBAQAAAAAAAAABAAIDERRRUhASEzFhIUL/2gAIAQEAAT8ANOPiXwnYunx8S6fDxLDVjj9FkCfVloxf8XT6/Ai54YRiUvcEzxBGJ2jELguC4O0khY5EJCd7k9OR9FsdiNjsjL9h/bXl/JyJ2ftlte8N7mM2+RsNrxO1nNnK/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEREjD/2gAIAQIBAT8AyallT//EABoRAQEAAgMAAAAAAAAAAAAAAAARATECEGH/2gAIAQMBAT8A2iedVVVyRjSv/9k=",
+        "contextInfo": {
+          "pairedMediaType": "NOT_PAIRED_MEDIA",
+          "statusSourceType": "IMAGE"
+        },
+        "scansSidecar": "XlcSY7w/fWeFqGkhp0HVkYJgpEbtsdHMH6g98BSHvbINdNCSP6/MPA==",
+        "scanLengths": [
+          13743,
+          80099,
+          61573,
+          99683
+        ],
+        "midQualityFileSha256": "wOECkTMbR1jEAd6/cNfsBUrOcwMTkcyhf/0rILI1jiQ="
+      },
+      "messageContextInfo": {
+        "messageSecret": "awOyOd3XJI+uGnBqSV/f2O9bI0NauyHCm1c6qCvuwDg="
+      }
+    }
+  }
+]
+[2025-11-11T20:44:34.135Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363403195119068@g.us
+[2025-11-11T20:44:34.136Z] [LOG] JID final para envio: 555184062475@s.whatsapp.net
+[2025-11-11T20:44:34.137Z] [LOG] RemoteJid nao contem @lid: 120363403195119068@g.us
+[2025-11-11T20:44:34.138Z] [LOG] DEBUG - jid: 555184062475@s.whatsapp.net
+[2025-11-11T20:44:34.138Z] [LOG] DEBUG - lid: 
+[2025-11-11T20:44:34.139Z] [LOG] DEBUG - isGroup: true
+[2025-11-11T20:44:34.140Z] [LOG] senderId::::: 172945481662601@lid
+[2025-11-11T20:44:34.141Z] [LOG] msgContact::: {
+  "id": "172945481662601@lid",
+  "name": "Ponto Verde Paisagismo",
+  "lid": null
+}
+[2025-11-11T20:44:34.224Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363403195119068@g.us
+[2025-11-11T20:44:34.225Z] [LOG] JID final para envio: 555184062475@s.whatsapp.net
+[2025-11-11T20:44:34.226Z] [LOG] RemoteJid nao contem @lid: 120363403195119068@g.us
+[2025-11-11T20:44:34.228Z] [LOG] DEBUG - jid: 555184062475@s.whatsapp.net
+[2025-11-11T20:44:34.229Z] [LOG] DEBUG - lid: 
+[2025-11-11T20:44:34.230Z] [LOG] DEBUG - isGroup: true
+[2025-11-11T20:44:34.247Z] [LOG] senderId::::: 172945481662601@lid
+[2025-11-11T20:44:34.249Z] [LOG] msgContact::: {
+  "id": "172945481662601@lid",
+  "name": "Ponto Verde Paisagismo",
+  "lid": null
+}
+[2025-11-11T20:44:34.251Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363403195119068@g.us
+[2025-11-11T20:44:34.252Z] [LOG] JID final para envio: 555184062475@s.whatsapp.net
+[2025-11-11T20:44:34.253Z] [LOG] RemoteJid nao contem @lid: 120363403195119068@g.us
+[2025-11-11T20:44:34.254Z] [LOG] DEBUG - jid: 555184062475@s.whatsapp.net
+[2025-11-11T20:44:34.255Z] [LOG] DEBUG - lid: 
+[2025-11-11T20:44:34.256Z] [LOG] DEBUG - isGroup: true
+[2025-11-11T20:44:34.257Z] [LOG] senderId::::: 172945481662601@lid
+[2025-11-11T20:44:34.259Z] [LOG] msgContact::: {
+  "id": "172945481662601@lid",
+  "name": "Ponto Verde Paisagismo",
+  "lid": null
+}
+[2025-11-11T20:44:34.260Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363169022331392@newsletter
+[2025-11-11T20:44:34.261Z] [LOG] JID final para envio: @undefined
+[2025-11-11T20:44:34.262Z] [LOG] RemoteJid nao contem @lid: 120363169022331392@newsletter
+[2025-11-11T20:44:34.262Z] [LOG] DEBUG - jid: @undefined
+[2025-11-11T20:44:34.263Z] [LOG] DEBUG - lid: 
+[2025-11-11T20:44:34.263Z] [LOG] DEBUG - isGroup: false
+[2025-11-11T20:44:34.264Z] [LOG] msgContact::: {
+  "id": "@undefined",
+  "name": "",
+  "lid": null
+}
+[2025-11-11T20:44:34.331Z] [LOG] msgContact2::: {
+  "id": "@undefined",
+  "name": "",
+  "lid": null
+}
+[2025-11-11T20:44:34.334Z] [LOG] groupContact::: undefined
+[2025-11-11T20:44:34.979Z] [LOG] contactData::::: {
+  "name": "I - Ponto Verde Paisagismo Ltda 46667",
+  "number": "120363403195119068",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 10,
+  "pushName": "I - Ponto Verde Paisagismo Ltda 46667"
+}
+[2025-11-11T20:44:34.980Z] [LOG] Procurando ou criando contato: 120363403195119068 (LID: N/A) na empresa 1
+[2025-11-11T20:44:34.982Z] [LOG] Contato encontrado pelo number: 120363403195119068
+[2025-11-11T20:44:34.983Z] [LOG] 10
+[2025-11-11T20:44:35.029Z] [LOG] msgContact2::: {
+  "id": "172945481662601@lid",
+  "name": "Ponto Verde Paisagismo",
+  "lid": null
+}
+[2025-11-11T20:44:35.033Z] [LOG] groupContact::: {
+  "id": 2728,
+  "name": "I - Ponto Verde Paisagismo Ltda 46667",
+  "number": "120363403195119068",
+  "email": "",
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": 10,
+  "lid": null,
+  "createdAt": "2025-10-29T20:19:44.398Z",
+  "updatedAt": "2025-10-29T20:19:44.398Z"
+}
+[2025-11-11T20:44:35.044Z] [LOG] msgContact2::: {
+  "id": "172945481662601@lid",
+  "name": "Ponto Verde Paisagismo",
+  "lid": null
+}
+[2025-11-11T20:44:35.046Z] [LOG] groupContact::: {
+  "id": 2728,
+  "name": "I - Ponto Verde Paisagismo Ltda 46667",
+  "number": "120363403195119068",
+  "email": "",
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": 10,
+  "lid": null,
+  "createdAt": "2025-10-29T20:19:44.398Z",
+  "updatedAt": "2025-10-29T20:19:44.398Z"
+}
+[2025-11-11T20:44:35.051Z] [LOG] msgContact2::: {
+  "id": "172945481662601@lid",
+  "name": "Ponto Verde Paisagismo",
+  "lid": null
+}
+[2025-11-11T20:44:35.058Z] [LOG] groupContact::: {
+  "id": 2728,
+  "name": "I - Ponto Verde Paisagismo Ltda 46667",
+  "number": "120363403195119068",
+  "email": "",
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": 10,
+  "lid": null,
+  "createdAt": "2025-10-29T20:19:44.398Z",
+  "updatedAt": "2025-10-29T20:19:44.398Z"
+}
+[2025-11-11T20:44:35.435Z] [LOG] contactData::::: {
+  "name": "Ponto Verde Paisagismo",
+  "number": "172945481662601",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/546157473_1532954884541245_7660217562060609024_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGrkVdcR0VEpJtsY6tUFGiMDJlj2re0ITi0clrUlBkXJA&oe=6920B251&_nc_sid=5e03e0&_nc_cat=106",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 10,
+  "pushName": "Ponto Verde Paisagismo"
+}
+[2025-11-11T20:44:35.436Z] [LOG] Procurando ou criando contato: 172945481662601 (LID: N/A) na empresa 1
+[2025-11-11T20:44:35.439Z] [LOG] Contato encontrado pelo number: 172945481662601
+[2025-11-11T20:44:35.440Z] [LOG] 10
+[2025-11-11T20:44:35.491Z] [LOG] contactData::::: {
+  "name": "Ponto Verde Paisagismo",
+  "number": "172945481662601",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/546157473_1532954884541245_7660217562060609024_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGrkVdcR0VEpJtsY6tUFGiMDJlj2re0ITi0clrUlBkXJA&oe=6920B251&_nc_sid=5e03e0&_nc_cat=106",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 10,
+  "pushName": "Ponto Verde Paisagismo"
+}
+[2025-11-11T20:44:35.491Z] [LOG] Procurando ou criando contato: 172945481662601 (LID: N/A) na empresa 1
+[2025-11-11T20:44:35.494Z] [LOG] Contato encontrado pelo number: 172945481662601
+[2025-11-11T20:44:35.495Z] [LOG] 10
+[2025-11-11T20:44:35.669Z] [LOG] contactData::::: {
+  "name": "Ponto Verde Paisagismo",
+  "number": "172945481662601",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/546157473_1532954884541245_7660217562060609024_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGrkVdcR0VEpJtsY6tUFGiMDJlj2re0ITi0clrUlBkXJA&oe=6920B251&_nc_sid=5e03e0&_nc_cat=106",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 10,
+  "pushName": "Ponto Verde Paisagismo"
+}
+[2025-11-11T20:44:35.670Z] [LOG] Procurando ou criando contato: 172945481662601 (LID: N/A) na empresa 1
+[2025-11-11T20:44:35.672Z] [LOG] Contato encontrado pelo number: 172945481662601
+[2025-11-11T20:44:35.673Z] [LOG] 10
+[2025-11-11T20:45:07.290Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363403195119068@g.us",
+      "fromMe": false,
+      "id": "AC33AD1984AD1D75B71C233804CB7916",
+      "participant": "172945481662601@lid",
+      "participantAlt": "555184062475@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1762893904,
+    "pushName": "Ponto Verde Paisagismo",
+    "broadcast": false,
+    "message": {
+      "conversation": "Este é do meu pc",
+      "messageContextInfo": {
+        "messageSecret": "hEv+QJLfX2uDaHjYnAvQ8reX8zOGtTGOFF6TUX423SA="
+      }
+    }
+  }
+]
+[2025-11-11T20:46:42.824Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "555192718953-1551144060@g.us",
+      "fromMe": false,
+      "id": "3EB0E2BBB6F36A8FDC46C7",
+      "participant": "228217449382141@lid",
+      "participantAlt": "555130763329@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1762894000,
+    "pushName": "Logicbox",
+    "broadcast": false,
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "555192718953-1551144060@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjVrto+EAAaIKHAETPP+rPZXkMUF4fEPZFINR3a42HS7rjggjqWrZ4uIiEFXRShHFFRvmaj74uWFebBNaHMhiFKsKfIGehINoEH2Bc="
+      },
+      "imageMessage": {
+        "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m232/AQMGH-SxtW1prKPAQ8gPCMxFnozJ7vBrnhuOMhqjblx6pE1fAe0ygMHH7CHZltpSLUsvy8cUG5-XC3wTCZAiORxOinsIUf8AMPK3XhLGfA?ccb=9-4&oh=01_Q5Aa3AF4hHPmBK9_SPnyvsrJw2sfH2F8AxkscsgJtGv6UWVyZQ&oe=693B1C6C&_nc_sid=e6ed6c&mms3=true",
+        "mimetype": "image/jpeg",
+        "fileSha256": "KgjBquIe/WRE07ZZN50GDIT8SoHQsWlhq8UrB8XrB8g=",
+        "fileLength": "167980",
+        "height": 767,
+        "width": 1238,
+        "mediaKey": "w/EVsRIBpsrEBW4lS0dL+wWA/cc/nQa93ftxZHjgGVw=",
+        "fileEncSha256": "0PXEPVd/DM1i9//jvce4OyQiG+qctG/LeDi0PiVCgUM=",
+        "directPath": "/o1/v/t24/f2/m232/AQMGH-SxtW1prKPAQ8gPCMxFnozJ7vBrnhuOMhqjblx6pE1fAe0ygMHH7CHZltpSLUsvy8cUG5-XC3wTCZAiORxOinsIUf8AMPK3XhLGfA?ccb=9-4&oh=01_Q5Aa3AF4hHPmBK9_SPnyvsrJw2sfH2F8AxkscsgJtGv6UWVyZQ&oe=693B1C6C&_nc_sid=e6ed6c",
+        "mediaKeyTimestamp": "1762893998",
+        "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDRENDg8QEBEQCgwSExIQEw8QEBD/2wBDAQMDAwQDBAgEBAgQCwkLEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBD/wAARCAA9AGQDASIAAhEBAxEB/8QAHQAAAQQDAQEAAAAAAAAAAAAAAAUGBwkDBAgCAf/EAD4QAAICAQIEAQYNBAAHAQAAAAECAwQFBhEABxITIQgJFBUi0RYYIzhUVVdxk5ajtdMxMkFyJCUzQlGBpLH/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX/xAAyEQABAwEEBwcEAwEAAAAAAAABAAIRAxIhMfBBUWFxkaHRBBQyUpLB0hPT4fEiQ4Gx/9oADAMBAAIRAxEAPwDsLzdXzOOX/wB+W/dbfHRtiN5oJIY7EkDuhVZYwpaMkeDDqBXcf1G4I/8AIPHOXm6vmccv/vy37rb4mzmMOY50bfHKR9NpqveH0A6jWdscB3k73dFciT/o9zp6T/f0b+G/BghYNV5JMNPG9nUGrIFM3rHt4nBNfUwRiOFqxMdSUhWeVZOncTHaQowjjcLhzBsarqqcLrXWWmzPWpWEenhIldFnEyJut2lJ0v1OrSow6ouzEXWNWcSJMtHVN/VmRTmJJUXB4ybC3MBLpyTLVbstkTSpKbphYRyV+sxbw9UkaoZGsewVPDnpYPT0OWfPVMplZ5r0srbHN3J63VKkat0wmUwxrtWXpAUKrGQrs0shckBxEzuOfxGlEEtBiN+c7Fr4Tv4pYrt7VmqMzFkeykEV7ExoYSIHkJZYKsbx9Y26jJ4B1VB0sSjYq/NHTVmrBcjxmrhHZExQSaPy0bjt1lst1I1YMm8bBVDAdcu8K9UqmMKJw+BfT0Wnxksg9KlJXrdxcxaaz1xSIUSSyJO87FgofrclwSr9QZgU3OQ6WxuhPRr0uqpMXWow0SMfNlbGV7UhjRWJrlrrTf2lpTvKvtszD224CCAbN+rRxxzrTaQSA7O7PBLuVz1HDdv0uDIydx4419Exti1sXkSMb9lG6R1SKSTsFUO7EKjMunm9aYfAdPp1PPS9VxaI9CwF658oYhKGPYhfaPpOxlPyYfdC3WCvCDlcNy/oVctWzuoc/j62UarhbE9zUuTrRmQsohSvM8yiOSRrCJ1wMryOe2WZk6VUMljdLNmJKN/IaihntVLrvImUyUNVI5OyJR3UkEMUgAjMahlkQd1ogo7p4YIGI5/hSZjHHOu+9blDXGFyVJL9elqBInqTXQtjT2Qgk7cQjLAxyQq4kIlTpiI63IcIrGNwuZ9W4pLFOs1TNF71eO1ERhLpRUkljiUSMIumJw0qlo3Kuqh3YBI3ZcM2i8LLVzWOe7nwmoZGmtMmfvq8Z2VSK0gmDVBsBssBjG+5A3JPHzP6a0/mLUV7KZPMQSUWjshaeeu00+QbrHXHBKiyL7Q61YFXBAcMNhxMmRH+52c9iq6L8/vltS7BOlhDJGsgAd09uNkO6sVPgwB23B2P9CNiCQQeMnCLPpnEZPS66aN3LHHvXiiWevmrcdto0C9LC4konLEKN37nU25LE9R33MZhqmJlvzVZr0jZK2bkwtX57KrIURCIhK7CGPZF2ijCoCWYL1MxLS0KlzziHzyeYn+2J/aafBwecQ+eTzE/2xP7TT4OBCsg83V8zjl/9+W/dbfE7at1EmmsdWt+lYWGW3kaWPhGWyfoEMrz2Ei6Ek6H6piHPaiC/KydEe6dXWsE+bq+Zxy/+/LfutvjpHhHYhMPP53F6gvYePSuZwmVtW5/RJIV1hPQ/wCCkjhmnmhSssgsTpDJDKisE9mRSJY1k6i19LZzEa80fhcLldQabSjlo5INOz6b5p37k+Wmrd4SRpdSOCecpEnXIweRgwfqHyQczJwcItJxKoEC8DOczeoe0Hn9I5KhJzG+F+AlZKckeYlx/NC9lsTRxsAYekp3OiHuA10EkhiiI3mJlY9XcdcOkMjVr0stBTtPl9PQWamJqy60yj07US7x1muFgRNI8QRpHmineOQsVaUjuM7pchQgkMU12vG6/wBVaRQR/wCiePPrXF/WVX8Zffxo4g4XKGiMVHMvL3P38jYyN6hkFks0q110h5kZmKGLJ140SOrFHEiqKjDraSYgNI/i8D7ghxUtPZhfUWYs49o8pV77XKy6syEtSFp4S0oUMgW2FnCpH3Yk6IyzoIz8kXJ61xf1lV/GX38HrXF/WVX8ZffxBGq72z7J7/2mZJiNc25Is7a03j48vXiN2OrDrnJrSa8KsaLCyrWVGrmSSypLREbRQzdoyOVhT8foHPwUcXTfH3a7y46xXyMq8xszaanIBOIRC0yb2S3pk5MsgjZDHX2D9iHtSH61xf1lV/GX38HrXF/WVX8ZffxYdpKRF0BR9b5XSPjcnh4YM49ailc4VzzKz0c914xO+1qZWMkI7th1JDT9xBF1giGKNHppsZ9a9n4Q4ylSlacPEtXKzX1ZWjRnJaWKMptK0qKigr0IjeyXMabvrXF/WVX8ZffwetcX9ZVfxl9/EpqljziHzyeYn+2J/aafBx484ZLFP5YvMOWGRJEZsTsykEH/AJTT/wAjg4EJk6H53889H6Xpad0drjV+Pw9Qy+jVqGpZ6kCdcjO/TErgLu7MTsPEkn/PDnsc/wDyralGpk7WueZMNO/3PRLEmq7ixWOg9L9ti+z9J8DsTsfA8KXKPyddS675e4rVeP1FRq17xsdEUmDzthl6J5IzvJVx8sLeKE+zI22+x2YFR0JjOX+tKOiM5y9tUNIZDD5OpUFKO1pnVLNj8hBGsYvKRigGkZA242UFiP8AsaaOb17FcfRFJpLT4jAuEXR/G8kxsgHSQvNNSnL7ZAIwvOvTfkrl/wCMp5TP2l6//ONr+Tg+Mp5TP2l6/wDzja/k46Wj5U8zdS6xzeBwfKjlTabmHW9GexHozNUKOlxXqMnerPZrRGu8gYvuol6pUUlQSobUg825zqWZWm1ZokoDuQJsj4//AB8dVmmwhtV9mdYb8Vlac4E02zGqeq53Tyg/KdWc9HMHXqzSqGYjWFkFgPAbnuf/ALxm+MF5U32ia/8AznY/k4t95Q8p8JoDl7htHJE80OKriBGfuRmRty0s3QXYoZJWkkKdRVevZfDh5/BnB/Qf1X9/HI7ttBriA1xE3GWi7dYK3HZqxaCSAdNzjf6wqT/jBeVN9omv/wA52P5OD4wXlTfaJr/852P5OLsPgzg/oP6r+/g+DOD+g/qv7+F3+j5Hepv20d1reYcHfNUn/GC8qb7RNf8A5zsfycHxgvKm+0TX/wCc7H8nF2HwZwf0H9V/fwfBnB/Qf1X9/B3+j5Hepv20d1reYcHfNUn/ABgvKm+0TX/5zsfycSJyP8sznxyu1RfzmtKGqte0bmLlx6Y7Ia2kVIJXkjYWEMiygOqxso2UH5Q+P+DbZ8GcH9B/Vf38HwZwf0H9V/fxLu2UHiyWO9Tftpjs1dpkOb6XfNUQ+UlzVtc7edupuZ97S/wdnzTU+vGemi36P2acEA+WCIH6hEH/ALRt1beO25OH55werBT8sLmFWrJ0Ro2K6V3J23xVM/5+/g4850Emzhnd/wAXc2YFrFWS+bq+Zxy/+/LfutviddYahbTGJTJLPhIuu3XrFsxlPV8HysioAJe3JvISwCJ0+2xC7jffiCvN1fM45f8A35b91t8dE3sfQycHo2Ro17UO4btzxLIu4/odj4cDYkWsEnTBs4qEuYtbmNzIxFebSOlHtQ5GrFEM1p3mnaxkddWiBaer2YGjsPHK8oXuxhZBGhcbHtqvzW+a+S06uAyXKPsRdPaJqa/nScInX2z6UkaTlj0w9R6t/bk3LdI7j2ixGp6OfiGIymn6elo6DR+q1wsnpQul2PeWytlY1i2I3i9HLFtz3fHYaNbGc201PYt3NbaRl0607tBQi0tZjuxwmOQIj2jkGjdxIYmLiBQVR1CqXDpoKgiCAd89YWX03E+IjdHSU1K+Z521sbYdOS9E3cpLJPdhfmBLJFCxrhVEErVy0amREXpRI1UF5QC5Kth1DHzQ1BVxM1nlPZS3FYWzbip8yLdCKF+gEhWrqpsJ1oi9EiohUs2wJKs/rdLX76qqXKOptPw6bSv028fLgp5L0s+8ntx2xbWONNjF7BrufYf2vbHQ2oMF5RKzdVnmny5ki6mPTHoG8jdPj0jc5gjcezudvHY+A38JFRvhsDff19lRpuxtnl0TYw2Q58xRppccnGxGHp2K0/rM8xTkb1h+uOzPGps1pGaAu0tfd5EftghFiHbK4qcfOp9N1cNd5LCHsQXVIj5s35JeuYONjaMImkBEjFXY9UOyGMAqvTJ+qKPMS3FKNF6p05ipSu0TZTAT5BVbceLCO5B1DbfwBH9R4+Hjry43mocLj4IdZaUTLxNEchabTNlq1hQ5MgigF8NCWXpClpZOkgkhwekDarSPABx64c0OpPH9h5fFR3ZwvMzLZqzayvKvKQwW5oLsklPmvkYSs8Z6AiV4xHHHF22diqELIyr1oTs67tmvzQ1XHDc1byruYu72XhkiwfMm3HCqsSp27SwBj2zuHKB1b+0ggPxMXBwxUaDNgc+qRpOIi2eXRQjlsbzUS9j8phuUly1YxsNcQpZ5r5GtCzqAjiWNEdJwEVSGkVi7FiwBJYv7lbV1LjtNyYvUmmZMKaduSOlHNqeznp565CuJZbNhRIG63kUIWcKqLs2xCq8ODiXva7BoHH3JVMY5uLieHsAqTvOIfPJ5if7Yn9pp8HB5xD55PMT/AGxP7TT4OIWi/9k=",
+        "viewOnce": false
+      },
+      "messageContextInfo": {
+        "messageSecret": "JTqmqnHTxShqZEc8ijo7TfatCCMkROfRDnXBQW0R93k="
+      }
+    },
+    "verifiedBizName": "Logicbox"
+  }
+]
+[2025-11-11T20:47:02.969Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363403195119068@g.us",
+      "fromMe": false,
+      "id": "ACB07EF019EE194CEE4F5FA6DC33F329",
+      "participant": "172945481662601@lid",
+      "participantAlt": "555184062475@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1762894020,
+    "pushName": "Ponto Verde Paisagismo",
+    "broadcast": false,
+    "message": {
+      "audioMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.7117-24/542188813_1238828768052320_6853772420213988085_n.enc?ccb=11-4&oh=01_Q5Aa3AGNXyvk1OABI3V4KrkukAoBuQNrYj4yT0BurcmosZzCJw&oe=693B0F94&_nc_sid=5e03e0&mms3=true",
+        "mimetype": "audio/ogg; codecs=opus",
+        "fileSha256": "FI1sXhizpS7hqdYF85g7oWFAcwD8LC4aKzZGfBpSMMc=",
+        "fileLength": "23838",
+        "seconds": 11,
+        "ptt": true,
+        "mediaKey": "kQfPY2twVYK2lvrockJUQnTjCRDt1DsUeDu2fOFmmBY=",
+        "fileEncSha256": "vsoZ1uoTWX+Ud0w7HiDNj5uH6hqh1A8K+zGO46uk1U4=",
+        "directPath": "/v/t62.7117-24/542188813_1238828768052320_6853772420213988085_n.enc?ccb=11-4&oh=01_Q5Aa3AGNXyvk1OABI3V4KrkukAoBuQNrYj4yT0BurcmosZzCJw&oe=693B0F94&_nc_sid=5e03e0",
+        "mediaKeyTimestamp": "1762894009",
+        "waveform": "AAAmHmNVSVNTSS1HJlVRTWNSWlBVN0tOUEs3XlMZAAIAAAAHUmFVX1RRVFheYk89VlZUT1E/SQEAAAAAABQNEQ=="
+      },
+      "messageContextInfo": {
+        "messageSecret": "ffMetLGhZflsCygEK4S4LOOi3GPf23v14DR9YsgX51I="
+      }
+    }
+  }
+]
+[2025-11-11T20:47:23.013Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "555192718953-1551144060@g.us",
+      "fromMe": false,
+      "id": "3EB0A3CBF04799356502B1",
+      "participant": "228217449382141@lid",
+      "participantAlt": "555130763329@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1762894040,
+    "pushName": "Logicbox",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "sobre o CRT = 2 (Simples Excesso Sublimite) vai ter que ser feito algo agora em 2026 ?",
+        "contextInfo": {
+          "stanzaId": "3F36726D5A803E3E2505",
+          "participant": "89571559788604@lid",
+          "quotedMessage": {
+            "extendedTextMessage": {
+              "text": "@555130763347 pode utilizar o CRT = 3 do srqcli para verifica cliente da regime normal",
+              "contextInfo": {
+                "mentionedJid": [
+                  "555130763347@s.whatsapp.net"
+                ]
+              },
+              "inviteLinkGroupTypeV2": "DEFAULT"
+            },
+            "messageContextInfo": {}
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "mZ6s7Yi6x54GnP8Zgi7Zwyigopyp4Lil4Wv+bxglUGc="
+      }
+    }
+  }
+]
+[2025-11-11T20:50:20.373Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363295668092190@g.us",
+      "fromMe": false,
+      "id": "3A735E399C74A8DAA8F5",
+      "participant": "175144521728238@lid",
+      "participantAlt": "555198031667@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1762894217,
+    "pushName": "Vágner Berzagui",
+    "broadcast": false,
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363295668092190@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwipsZkBEAAaIBRmnC50lkkaiz4G9WHAqTAYd15Vprg7oqSyrYwlLPyyIiEFjf6PhM8Zj3KladSRANVtjJXnGfDJDfNHYk4gagOhfzg="
+      },
+      "imageMessage": {
+        "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m233/AQPwHO3F1xDBa4q1M8EupYRFSRkekVdMbmTUZOzOUsxL53tk003kVA57e3uLOqi9ewA1bSXNwj8K8ibAlSOInXQqaOKOMhGu7UqmqLxomA?ccb=9-4&oh=01_Q5Aa3AFPdplvuelpDdC__lO0twMWnNVFA5d8bD7zW_3pb1xw0g&oe=693B0A9D&_nc_sid=e6ed6c&mms3=true",
+        "mimetype": "image/jpeg",
+        "fileSha256": "hD4r/7HpI6QZwN+sKnNWtigsDRrDc7SxvIfHfh/bdW4=",
+        "fileLength": "399017",
+        "height": 1600,
+        "width": 900,
+        "mediaKey": "5Ir6jS646Jr07gmoHgJi6P8XazkNJIjysnnu7K6/+Ds=",
+        "fileEncSha256": "2KViUyo9rSeODiOBGVONQB8PybfRvB4PEEBjFT9HgI4=",
+        "directPath": "/o1/v/t24/f2/m233/AQPwHO3F1xDBa4q1M8EupYRFSRkekVdMbmTUZOzOUsxL53tk003kVA57e3uLOqi9ewA1bSXNwj8K8ibAlSOInXQqaOKOMhGu7UqmqLxomA?ccb=9-4&oh=01_Q5Aa3AFPdplvuelpDdC__lO0twMWnNVFA5d8bD7zW_3pb1xw0g&oe=693B0A9D&_nc_sid=e6ed6c",
+        "mediaKeyTimestamp": "1762894215",
+        "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wgARCABIAEgDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQT/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAAKjtLaETKFT1wmOA3KM9DcD3HbnIuddm8vTTDF2kyE51bnaZrvOxSkK3VxTXSC9iTHO1BlRxTN1QC7ooC4CbgJmgoAf//EABkRAAMBAQEAAAAAAAAAAAAAAAABEBEgMP/aAAgBAgEBPwDpoYo6phhnh//EAB0RAAEEAwEBAAAAAAAAAAAAAAEAAhAREiAxIUH/2gAIAQMBAT8A1caNBZFD36mmHdlvYdZNrErFBtb/AP/EACcQAAICAgEDBAEFAAAAAAAAAAABAhEDEiEQMVEEEzJhQSJCUnGx/9oACAEBAAE/ANTU1NTUoooo1KKKKKKNSj3G71S48jtK7ictfKKYnFd8is2x1zk5Hkw38me7ivjYg1KNoo0lDiV2c+ROTYtvoqRHZ6pp/wBmr8M9Ov0U10zRi3cn2EsdOy8S8Wb4kuULNjb4jyPOov4j9Vw1oennsm2WepnGXxabQtvo1fHYfYjafYbPZyzprhPsYIyxylCXddJYJxikkm/9Pay/xRHDP9zQsL/MkL08fzNHs4l3mL20kt3S7Fxc7jb830km+zpjjK+ZGn2zRGsfBrHwil4E+ljH1voun//+AAMA/9k=",
+        "contextInfo": {
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "CHAT_SETTING",
+            "initiatedByMe": false
+          },
+          "statusSourceType": "IMAGE"
+        },
+        "firstScanSidecar": "SkWWBLWsaQLryw==",
+        "firstScanLength": 10619,
+        "scansSidecar": "SkWWBLWsaQLry9vmVcTtMxOQgtNLqggQ4HRwEVbGnXIH1Qe8OG91Jg==",
+        "scanLengths": [
+          10619,
+          106441,
+          115033,
+          166922
+        ],
+        "midQualityFileSha256": "VTOZrJCtrUNl1Uxk6T+0twzGjYm9A7mPNsv0kPoEygE=",
+        "imageSourceType": "USER_IMAGE"
+      },
+      "messageContextInfo": {
+        "messageSecret": "D4qNj7OR5EWt04jvz4YNQpbygZNKIo8zbbftW7Qdc5c="
+      }
+    }
+  }
+]
+[2025-11-11T20:50:20.435Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363295668092190@g.us",
+      "fromMe": false,
+      "id": "3A735E399C74A8DAA8F5",
+      "participant": "175144521728238@lid",
+      "participantAlt": "555198031667@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1762894217,
+    "pushName": "Vágner Berzagui",
+    "broadcast": false,
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363295668092190@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwipsZkBEAAaIBRmnC50lkkaiz4G9WHAqTAYd15Vprg7oqSyrYwlLPyyIiEFjf6PhM8Zj3KladSRANVtjJXnGfDJDfNHYk4gagOhfzg="
+      },
+      "imageMessage": {
+        "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m233/AQPwHO3F1xDBa4q1M8EupYRFSRkekVdMbmTUZOzOUsxL53tk003kVA57e3uLOqi9ewA1bSXNwj8K8ibAlSOInXQqaOKOMhGu7UqmqLxomA?ccb=9-4&oh=01_Q5Aa3AFPdplvuelpDdC__lO0twMWnNVFA5d8bD7zW_3pb1xw0g&oe=693B0A9D&_nc_sid=e6ed6c&mms3=true",
+        "mimetype": "image/jpeg",
+        "fileSha256": "hD4r/7HpI6QZwN+sKnNWtigsDRrDc7SxvIfHfh/bdW4=",
+        "fileLength": "399017",
+        "height": 1600,
+        "width": 900,
+        "mediaKey": "5Ir6jS646Jr07gmoHgJi6P8XazkNJIjysnnu7K6/+Ds=",
+        "fileEncSha256": "2KViUyo9rSeODiOBGVONQB8PybfRvB4PEEBjFT9HgI4=",
+        "directPath": "/o1/v/t24/f2/m233/AQPwHO3F1xDBa4q1M8EupYRFSRkekVdMbmTUZOzOUsxL53tk003kVA57e3uLOqi9ewA1bSXNwj8K8ibAlSOInXQqaOKOMhGu7UqmqLxomA?ccb=9-4&oh=01_Q5Aa3AFPdplvuelpDdC__lO0twMWnNVFA5d8bD7zW_3pb1xw0g&oe=693B0A9D&_nc_sid=e6ed6c",
+        "mediaKeyTimestamp": "1762894215",
+        "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wgARCABIAEgDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQT/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAAKjtLaETKFT1wmOA3KM9DcD3HbnIuddm8vTTDF2kyE51bnaZrvOxSkK3VxTXSC9iTHO1BlRxTN1QC7ooC4CbgJmgoAf//EABkRAAMBAQEAAAAAAAAAAAAAAAABEBEgMP/aAAgBAgEBPwDpoYo6phhnh//EAB0RAAEEAwEBAAAAAAAAAAAAAAEAAhAREiAxIUH/2gAIAQMBAT8A1caNBZFD36mmHdlvYdZNrErFBtb/AP/EACcQAAICAgEDBAEFAAAAAAAAAAABAhEDEiEQMVEEEzJhQSJCUnGx/9oACAEBAAE/ANTU1NTUoooo1KKKKKKNSj3G71S48jtK7ictfKKYnFd8is2x1zk5Hkw38me7ivjYg1KNoo0lDiV2c+ROTYtvoqRHZ6pp/wBmr8M9Ov0U10zRi3cn2EsdOy8S8Wb4kuULNjb4jyPOov4j9Vw1oennsm2WepnGXxabQtvo1fHYfYjafYbPZyzprhPsYIyxylCXddJYJxikkm/9Pay/xRHDP9zQsL/MkL08fzNHs4l3mL20kt3S7Fxc7jb830km+zpjjK+ZGn2zRGsfBrHwil4E+ljH1voun//+AAMA/9k=",
+        "contextInfo": {
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "CHAT_SETTING",
+            "initiatedByMe": false
+          },
+          "statusSourceType": "IMAGE"
+        },
+        "firstScanSidecar": "SkWWBLWsaQLryw==",
+        "firstScanLength": 10619,
+        "scansSidecar": "SkWWBLWsaQLry9vmVcTtMxOQgtNLqggQ4HRwEVbGnXIH1Qe8OG91Jg==",
+        "scanLengths": [
+          10619,
+          106441,
+          115033,
+          166922
+        ],
+        "midQualityFileSha256": "VTOZrJCtrUNl1Uxk6T+0twzGjYm9A7mPNsv0kPoEygE=",
+        "imageSourceType": "USER_IMAGE"
+      },
+      "messageContextInfo": {
+        "messageSecret": "D4qNj7OR5EWt04jvz4YNQpbygZNKIo8zbbftW7Qdc5c="
+      }
+    }
+  }
+]
+[2025-11-11T20:50:20.585Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363295668092190@g.us
+[2025-11-11T20:50:20.585Z] [LOG] JID final para envio: 555198031667@s.whatsapp.net
+[2025-11-11T20:50:20.586Z] [LOG] RemoteJid nao contem @lid: 120363295668092190@g.us
+[2025-11-11T20:50:20.586Z] [LOG] DEBUG - jid: 555198031667@s.whatsapp.net
+[2025-11-11T20:50:20.587Z] [LOG] DEBUG - lid: 
+[2025-11-11T20:50:20.587Z] [LOG] DEBUG - isGroup: true
+[2025-11-11T20:50:20.587Z] [LOG] senderId::::: 175144521728238@lid
+[2025-11-11T20:50:20.588Z] [LOG] msgContact::: {
+  "id": "175144521728238@lid",
+  "name": "Vágner Berzagui",
+  "lid": null
+}
+[2025-11-11T20:50:21.014Z] [LOG] contactData::::: {
+  "name": "Suporte Logicbox Supermercado Borba 45700🟡",
+  "number": "120363295668092190",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/363283701_437996492413249_165592205320950051_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AFI6ACQeRLWCv_yhOnYZq_bey0_-mr1uOrjXTG-Z_jU9g&oe=6920BBDD&_nc_sid=5e03e0&_nc_cat=110",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 13,
+  "pushName": "Suporte Logicbox Supermercado Borba 45700🟡"
+}
+[2025-11-11T20:50:21.015Z] [LOG] Procurando ou criando contato: 120363295668092190 (LID: N/A) na empresa 1
+[2025-11-11T20:50:21.018Z] [LOG] Contato encontrado pelo number: 120363295668092190
+[2025-11-11T20:50:21.019Z] [LOG] null
+[2025-11-11T20:50:21.055Z] [LOG] msgContact2::: {
+  "id": "175144521728238@lid",
+  "name": "Vágner Berzagui",
+  "lid": null
+}
+[2025-11-11T20:50:21.056Z] [LOG] groupContact::: {
+  "id": 874,
+  "name": "I - Supermercado Borba 45700🟡",
+  "number": "120363295668092190",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/363283701_437996492413249_165592205320950051_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AFI6ACQeRLWCv_yhOnYZq_bey0_-mr1uOrjXTG-Z_jU9g&oe=6920BBDD&_nc_sid=5e03e0&_nc_cat=110",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2024-10-11T10:52:58.605Z",
+  "updatedAt": "2025-11-11T20:50:21.019Z"
+}
+[2025-11-11T20:50:21.208Z] [LOG] contactData::::: {
+  "name": "Vágner Berzagui",
+  "number": "175144521728238",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 13,
+  "pushName": "Vágner Berzagui"
+}
+[2025-11-11T20:50:21.209Z] [LOG] Procurando ou criando contato: 175144521728238 (LID: N/A) na empresa 1
+[2025-11-11T20:50:21.211Z] [LOG] Contato encontrado pelo number: 175144521728238
+[2025-11-11T20:50:21.212Z] [LOG] 10
+[2025-11-11T20:50:21.247Z] [LOG] 🔄 Contato 175144521728238 tem ticket aberto na conexão 10, criando novo ticket na conexão 13
+[2025-11-11T20:50:21.361Z] [LOG] 🔄 Ticket existente encontrado: #1688 para conexão 13
+[2025-11-11T20:51:08.969Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363403195119068@g.us",
+      "fromMe": false,
+      "id": "A5A2AE6C737480596A3D485B47F7F1FA",
+      "participant": "56740930437358@lid",
+      "participantAlt": "555130763328@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1762894266,
+    "pushName": "Vitor - Logicbox",
+    "broadcast": false,
+    "message": {
+      "conversation": "Bom sempre passar o acesso pelo teamviewer",
+      "senderKeyDistributionMessage": {
+        "groupId": "120363403195119068@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwia74azBRAZGiB/RoNF3LbNNK+tg/TUbzAB9k9Zy8wIGwjY2LMHTGegnyIhBQ2wK+7OdBsYlVEr0jJ1ozNdKw8sQ7+9ftGrKEZMA45m"
+      },
+      "messageContextInfo": {
+        "messageSecret": "cC2LvFSvftJSNNgO0arZW1QcHQsmBzMN2+KI3kNF7a4="
+      }
+    },
+    "verifiedBizName": "Vitor - Logicbox"
+  }
+]
+[2025-11-11T20:51:34.534Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363295621608778@g.us",
+      "fromMe": false,
+      "id": "3AC8606DA45043B5261D",
+      "participant": "53566966370408@lid",
+      "participantAlt": "555194285711@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1762894292,
+    "pushName": "..",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "Demora muito ainda ? Estamos pra fechar a empresa aqui",
+        "contextInfo": {
+          "stanzaId": "3EB07AA813FEFC46FA638A",
+          "participant": "56534939775231@lid",
+          "quotedMessage": {
+            "conversation": "*Anderson Paiva:*\nestamos analisando um erro que deu em uma nota"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "messageSecret": "k3Hi6WqE7ksrHCbjrA70t9uAymTASik0h6GhC8UqwLI="
+      }
+    }
+  }
+]
+[2025-11-11T20:51:34.604Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363295621608778@g.us",
+      "fromMe": false,
+      "id": "3AC8606DA45043B5261D",
+      "participant": "53566966370408@lid",
+      "participantAlt": "555194285711@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1762894292,
+    "pushName": "..",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "Demora muito ainda ? Estamos pra fechar a empresa aqui",
+        "contextInfo": {
+          "stanzaId": "3EB07AA813FEFC46FA638A",
+          "participant": "56534939775231@lid",
+          "quotedMessage": {
+            "conversation": "*Anderson Paiva:*\nestamos analisando um erro que deu em uma nota"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "messageSecret": "k3Hi6WqE7ksrHCbjrA70t9uAymTASik0h6GhC8UqwLI="
+      }
+    }
+  }
+]
+[2025-11-11T20:51:34.616Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363295621608778@g.us
+[2025-11-11T20:51:34.616Z] [LOG] JID final para envio: 555194285711@s.whatsapp.net
+[2025-11-11T20:51:34.617Z] [LOG] RemoteJid nao contem @lid: 120363295621608778@g.us
+[2025-11-11T20:51:34.618Z] [LOG] DEBUG - jid: 555194285711@s.whatsapp.net
+[2025-11-11T20:51:34.619Z] [LOG] DEBUG - lid: 
+[2025-11-11T20:51:34.619Z] [LOG] DEBUG - isGroup: true
+[2025-11-11T20:51:34.621Z] [LOG] senderId::::: 53566966370408@lid
+[2025-11-11T20:51:34.626Z] [LOG] msgContact::: {
+  "id": "53566966370408@lid",
+  "name": "..",
+  "lid": null
+}
+[2025-11-11T20:51:34.701Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363403195119068@g.us",
+      "fromMe": false,
+      "id": "A503D3E1C8765E9BF384C2AB9ACBBE9F",
+      "participant": "56740930437358@lid",
+      "participantAlt": "555130763328@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1762894292,
+    "pushName": "Vitor - Logicbox",
+    "broadcast": false,
+    "message": {
+      "conversation": "Daí vem a senha junto",
+      "messageContextInfo": {
+        "messageSecret": "JeA4R1DdL0raHmstdxAf5ggyEd760bUh3bfsSWVLpi8="
+      }
+    }
+  }
+]
+[2025-11-11T20:51:34.922Z] [LOG] contactData::::: {
+  "name": "I- Distribuidora Tomazoni - 45858",
+  "number": "120363295621608778",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/534421999_1465598461384089_8287599625846985668_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AG5IcT5qMXunbtTVQDUt5GTpxhSaRS5hSmqsnx7mgyU5g&oe=6920B4ED&_nc_sid=5e03e0&_nc_cat=108",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 13,
+  "pushName": "I- Distribuidora Tomazoni - 45858"
+}
+[2025-11-11T20:51:34.922Z] [LOG] Procurando ou criando contato: 120363295621608778 (LID: N/A) na empresa 1
+[2025-11-11T20:51:34.925Z] [LOG] Contato encontrado pelo number: 120363295621608778
+[2025-11-11T20:51:34.926Z] [LOG] 10
+[2025-11-11T20:51:34.977Z] [LOG] msgContact2::: {
+  "id": "53566966370408@lid",
+  "name": "..",
+  "lid": null
+}
+[2025-11-11T20:51:34.979Z] [LOG] groupContact::: {
+  "id": 1902,
+  "name": "I - Distrib Tomazoni 45858",
+  "number": "120363295621608778",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/534421999_1465598461384089_8287599625846985668_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AG5IcT5qMXunbtTVQDUt5GTpxhSaRS5hSmqsnx7mgyU5g&oe=6920B4ED&_nc_sid=5e03e0&_nc_cat=108",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": 10,
+  "lid": null,
+  "createdAt": "2025-08-11T19:58:50.630Z",
+  "updatedAt": "2025-11-11T20:51:34.926Z"
+}
+[2025-11-11T20:51:35.125Z] [LOG] contactData::::: {
+  "name": "..",
+  "number": "53566966370408",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 13,
+  "pushName": ".."
+}
+[2025-11-11T20:51:35.126Z] [LOG] Procurando ou criando contato: 53566966370408 (LID: N/A) na empresa 1
+[2025-11-11T20:51:35.129Z] [LOG] Contato encontrado pelo number: 53566966370408
+[2025-11-11T20:51:35.130Z] [LOG] 13
+[2025-11-11T20:51:35.171Z] [LOG] 🔄 Contato 53566966370408 tem ticket aberto na conexão 10, criando novo ticket na conexão 13
+[2025-11-11T20:51:35.186Z] [LOG] 🔄 Ticket existente encontrado: #1720 para conexão 13
+[2025-11-11T20:52:22.412Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363403195119068@g.us",
+      "fromMe": false,
+      "id": "ACC59EFB411569AA2365520E8C64E5E3",
+      "participant": "172945481662601@lid",
+      "participantAlt": "555184062475@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1762894339,
+    "pushName": "Ponto Verde Paisagismo",
+    "broadcast": false,
+    "message": {
+      "audioMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.7117-24/580055518_1136346675150213_1943024679417635830_n.enc?ccb=11-4&oh=01_Q5Aa3AGJM9x7By-jKNobMuWRpe0VzY1YsOeHFs-qfx3DlKjfLg&oe=693B2E9E&_nc_sid=5e03e0&mms3=true",
+        "mimetype": "audio/ogg; codecs=opus",
+        "fileSha256": "fsgb9pCXbm/NPpje8qxmrT8mUdVAeM+ew2RSi0xkW5c=",
+        "fileLength": "19182",
+        "seconds": 8,
+        "ptt": true,
+        "mediaKey": "IFE5jcnmLn3Sb7DMnU+F7cV7sm+Ulx1soKXnsKOVPgs=",
+        "fileEncSha256": "fFeFoFcP+FsrKQJQ3W4Ofp25E32MkDkcKaUQCq9WDLY=",
+        "directPath": "/v/t62.7117-24/580055518_1136346675150213_1943024679417635830_n.enc?ccb=11-4&oh=01_Q5Aa3AGJM9x7By-jKNobMuWRpe0VzY1YsOeHFs-qfx3DlKjfLg&oe=693B2E9E&_nc_sid=5e03e0",
+        "mediaKeyTimestamp": "1762894331",
+        "waveform": "AAADICckJFdjYFw1X1hWQjhaYl5XUEhVN0FaVVhKT15ZYjpYWENRWlFLSVVRUFBTVBJcYjcQAABONAAAARkRAg=="
+      },
+      "messageContextInfo": {
+        "messageSecret": "adm7iG44fNTdCDQvvyE1Ax9gdrjHnlJxDNAs3NXg8y8="
+      }
+    }
+  }
+]

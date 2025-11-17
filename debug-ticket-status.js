@@ -1,0 +1,26 @@
+// Debug para rastrear problema de status de ticket
+console.log('🔍 LOGS DE DEBUG ADICIONADOS:');
+console.log('');
+console.log('📋 FindOrCreateTicketService.ts:');
+console.log('- 🔍 Ticket encontrado: Status e UserId');
+console.log('- ✅ Mantendo ticket aberto com atendente');
+console.log('- 🔄 Reabrindo ticket fechado');
+console.log('- 📝 Atualizando ticket status');
+console.log('');
+console.log('📋 wbotMessageListener.ts:');
+console.log('- 🔍 Verificando condições para verifyQueue');
+console.log('- ⚠️ CHAMANDO verifyQueue - Ticket sem atendente');
+console.log('');
+console.log('🧪 Como testar:');
+console.log('1. Aceite um chamado (userId deve aparecer)');
+console.log('2. Cliente envia mensagem');
+console.log('3. Verifique logs no console');
+console.log('4. Confirme se verifyQueue NÃO é chamado');
+console.log('');
+console.log('📊 Logs esperados:');
+console.log('- "🔍 Ticket encontrado: #1476 - Status: open, UserId: 7"');
+console.log('- "✅ Mantendo ticket aberto com atendente 7"');
+console.log('- "ticket.userId: 7" (deve ser diferente de null)');
+console.log('- verifyQueue NÃO deve ser chamado');
+console.log('');
+console.log('✅ Debug ativo!');

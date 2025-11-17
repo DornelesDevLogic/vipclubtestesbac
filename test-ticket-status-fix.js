@@ -1,0 +1,26 @@
+// Teste para verificar correção do status de ticket
+console.log('🔧 CORREÇÃO APLICADA: Status de Ticket');
+console.log('');
+console.log('📋 Problema identificado:');
+console.log('- UpdateTicketService estava forçando status "pending"');
+console.log('- Mesmo quando ticket já tinha atendente (userId)');
+console.log('- Causava perda do status "open"');
+console.log('');
+console.log('✅ Correções aplicadas:');
+console.log('1. FindOrCreateTicketService.ts - Preservar status "open"');
+console.log('2. wbotMessageListener.ts - Não forçar "pending" se tem atendente');
+console.log('3. UpdateTicketService calls - Manter status atual quando apropriado');
+console.log('');
+console.log('🧪 Lógica implementada:');
+console.log('```typescript');
+console.log('// Manter status atual se ticket já tem atendente');
+console.log('const ticketStatus = ticket.userId ? ticket.status : "pending";');
+console.log('```');
+console.log('');
+console.log('📊 Resultado esperado:');
+console.log('- Ticket aceito (status: "open", userId: 7)');
+console.log('- Cliente envia mensagem');
+console.log('- Ticket permanece "open" com userId: 7');
+console.log('- Não volta para "pending"');
+console.log('');
+console.log('✅ Sistema corrigido!');

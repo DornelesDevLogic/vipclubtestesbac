@@ -247,15 +247,26 @@ const UpdateTicketService = async ({
             }      
     }
 
-    await ticket.update({
-      status,
+    // CORREÇÃO: Preservar status e userId se ticket já tem atendente e não está sendo explicitamente alterado
+    const updateData = {
       queueId,
-      userId,
       whatsappId,
       chatbot,
       queueOptionId,
       lastMessage: lastMessage !== null ? lastMessage : ticket.lastMessage
-    });
+    };
+    
+    // Só atualizar status se foi explicitamente fornecido ou se ticket não tem atendente
+    if (status !== undefined) {
+      updateData.status = status;
+    }
+    
+    // Só atualizar userId se foi explicitamente fornecido
+    if (userId !== undefined) {
+      updateData.userId = userId;
+    }
+    
+    await ticket.update(updateData);
 
     await ticket.reload();
 

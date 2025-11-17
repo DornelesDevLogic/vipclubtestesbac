@@ -21,53 +21,44 @@ const FindOrCreateTicketService = async (
   groupContact?: Contact,
   openTicketSchedule?: boolean
 ): Promise<Ticket> => {
-  // Verificar se existe ticket aberto/pendente para este contato em OUTRA conexão
-  const existingTicketOtherConnection = await Ticket.findOne({
+  let ticket;
+  // Buscar ticket existente APENAS na conexão atual
+  ticket = await Ticket.findOne({
     where: {
       status: {
-        [Op.or]: ["open", "pending"]
+        [Op.or]: ["open", "pending", "closed"]
       },
       contactId: groupContact ? groupContact.id : contact.id,
       companyId,
-      whatsappId: {
-        [Op.ne]: whatsappId
-      }
+      whatsappId
     },
     order: [["id", "DESC"]]
   });
-
-  let ticket;
   
-  // Se existe ticket aberto em outra conexão, forçar criação de novo ticket
-  if (existingTicketOtherConnection) {
-    console.log(`🔄 Contato ${contact.number} tem ticket aberto na conexão ${existingTicketOtherConnection.whatsappId}, criando novo ticket na conexão ${whatsappId}`);
-    ticket = null; // Forçar criação de novo ticket
-  } else {
-    // Buscar ticket existente na mesma conexão
-    ticket = await Ticket.findOne({
-      where: {
-        status: {
-          [Op.or]: ["open", "pending", "closed"]
-        },
-        contactId: groupContact ? groupContact.id : contact.id,
-        companyId,
-        whatsappId
-      },
-      order: [["id", "DESC"]]
-    });
+  console.log(`🔍 Buscando ticket para contato ${contact.number} na conexão ${whatsappId}: ${ticket ? `#${ticket.id} (${ticket.status})` : 'Não encontrado'}`);
 
     if (ticket) {
+      console.log(`🔍 Ticket encontrado: #${ticket.id} - Status: ${ticket.status}, UserId: ${ticket.userId}`);
+      
       if (openTicketSchedule) {
         await ticket.update({ status: "open", unreadMessages });
+      } else {
+        // Manter status atual se ticket estiver aberto/aceito
+        if (ticket.status === "open" && ticket.userId) {
+          // Ticket aceito por atendente - manter status e atendente
+          console.log(`✅ Mantendo ticket aberto com atendente ${ticket.userId}`);
+          await ticket.update({ unreadMessages, whatsappId });
+        } else if (ticket.status === "closed") {
+          // Ticket fechado - limpar fila e atendente
+          console.log(`🔄 Reabrindo ticket fechado`);
+          await ticket.update({ queueId: null, userId: null, unreadMessages, whatsappId });
+        } else {
+          // Outros status (pending) - atualizar normalmente
+          console.log(`📝 Atualizando ticket status: ${ticket.status}`);
+          await ticket.update({ unreadMessages, whatsappId });
+        }
       }
-      await ticket.update({ unreadMessages, whatsappId });
     }
-
-    
-    if (ticket?.status === "closed") {
-      await ticket.update({ queueId: null, userId: null });
-    }
-  }
 
   // Só buscar tickets antigos se não foi forçada a criação de novo ticket
   if (!ticket && !existingTicketOtherConnection && groupContact) {
@@ -145,7 +136,7 @@ const FindOrCreateTicketService = async (
         whatsappId,
         companyId
       });
-      console.log(`✅ Novo ticket criado: #${ticket.id} para conexão ${whatsappId}`);
+      console.log(`✅ Novo ticket criado: #${ticket.id} para contato ${contact.number} na conexão ${whatsappId}`);
     } catch (error) {
       // Se der erro de constraint, buscar ticket existente
       if (error.name === 'SequelizeUniqueConstraintError') {

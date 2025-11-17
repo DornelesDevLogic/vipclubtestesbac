@@ -1048,7 +1048,9 @@ const verifyMediaMessage = async (
 
 
   if (!msg.key.fromMe && ticket.status === "closed") {
-    await ticket.update({ status: "pending" });
+    // Se ticket tinha atendente, reabrir como 'open', senão como 'pending'
+    const newStatus = ticket.userId ? "open" : "pending";
+    await ticket.update({ status: newStatus });
     await ticket.reload({
       include: [
         { model: Queue, as: "queue" },
@@ -1128,7 +1130,9 @@ export const verifyMessage = async (
   await CreateMessageService({ messageData, companyId: ticket.companyId });
 
   if (!msg.key.fromMe && ticket.status === "closed") {
-    await ticket.update({ status: "pending" });
+    // Se ticket tinha atendente, reabrir como 'open', senão como 'pending'
+    const newStatus = ticket.userId ? "open" : "pending";
+    await ticket.update({ status: newStatus });
     await ticket.reload({
       include: [
         { model: Queue, as: "queue" },
@@ -1263,8 +1267,17 @@ const verifyQueue = async (
       });
     }
 
+    // CORREÇÃO: Manter status atual se ticket já tem atendente
+    const ticketStatus = ticket.userId ? ticket.status : "pending";
+    const updateData = { queueId: firstQueue.id, chatbot };
+    
+    // Só alterar status se ticket não tem atendente
+    if (!ticket.userId) {
+      updateData.status = ticketStatus;
+    }
+    
     await UpdateTicketService({
-      ticketData: { queueId: firstQueue.id, chatbot, status: "pending" },
+      ticketData: updateData,
       ticketId: ticket.id,
       companyId: ticket.companyId,
     });
@@ -1342,8 +1355,17 @@ const verifyQueue = async (
         chatbot = firstQueue.options.length > 0;
       }
 
+      // CORREÇÃO: Manter status atual se ticket já tem atendente
+      const ticketStatus = ticket.userId ? ticket.status : "pending";
+      const updateData = { queueId: firstQueue.id, chatbot };
+      
+      // Só alterar status se ticket não tem atendente
+      if (!ticket.userId) {
+        updateData.status = ticketStatus;
+      }
+      
       await UpdateTicketService({
-        ticketData: { queueId: firstQueue.id, chatbot, status: "pending" },
+        ticketData: updateData,
         ticketId: ticket.id,
         companyId: ticket.companyId,
       });
@@ -1365,8 +1387,16 @@ const verifyQueue = async (
       chatbot = choosenQueue.options.length > 0;
     }
 
+    // CORREÇÃO: Não alterar status se ticket já tem atendente
+    const updateData = { queueId: choosenQueue.id, chatbot };
+    
+    // Só alterar status se ticket não tem atendente
+    if (!ticket.userId) {
+      updateData.status = "pending";
+    }
+    
     await UpdateTicketService({
-      ticketData: { queueId: choosenQueue.id, chatbot },
+      ticketData: updateData,
       ticketId: ticket.id,
       companyId: ticket.companyId,
     });
@@ -2342,6 +2372,16 @@ const handleMessage = async (
 
     }
 
+    console.log(`🔍 Verificando condições para verifyQueue:`);
+    console.log(`- ticket.queue: ${ticket.queue}`);
+    console.log(`- ticket.isGroup: ${ticket.isGroup}`);
+    console.log(`- msg.key.fromMe: ${msg.key.fromMe}`);
+    console.log(`- ticket.userId: ${ticket.userId}`);
+    console.log(`- whatsapp.queues.length: ${whatsapp.queues.length}`);
+    console.log(`- ticket.useIntegration: ${ticket.useIntegration}`);
+    
+    // CORREÇÃO: Não processar verifyQueue se mensagem é enviada por mim (fromMe: true)
+    // Isso evita que tickets aceitos voltem para pending quando o atendente envia mensagem
     if (
       !ticket.queue &&
       !ticket.isGroup &&
@@ -2350,7 +2390,7 @@ const handleMessage = async (
       whatsapp.queues.length >= 1 &&
       !ticket.useIntegration
     ) {
-
+      console.log(`⚠️ CHAMANDO verifyQueue - Ticket sem atendente`);
       await verifyQueue(wbot, msg, ticket, contact);
 
       if (ticketTraking.chatbotAt === null) {
@@ -2358,6 +2398,8 @@ const handleMessage = async (
           chatbotAt: moment().toDate(),
         })
       }
+    } else if (msg.key.fromMe && ticket.userId) {
+      console.log(`✅ IGNORANDO verifyQueue - Mensagem enviada pelo atendente ${ticket.userId}`);
     }
 
     const dontReadTheFirstQuestion = ticket.queue === null;

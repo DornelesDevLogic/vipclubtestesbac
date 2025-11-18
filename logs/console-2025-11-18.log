@@ -4323,3 +4323,3052 @@
 [2025-11-18T13:04:33.367Z] [LOG] null
 [2025-11-18T13:04:33.386Z] [LOG] 🔍 Buscando ticket para contato 56534939775231 na conexão 1: Não encontrado
 [2025-11-18T13:04:33.430Z] [LOG] ✅ Novo ticket criado: #3654 para contato 56534939775231 na conexão 1
+[2025-11-18T13:04:49.119Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "555181049215@s.whatsapp.net",
+      "remoteJidAlt": "229024869707825@lid",
+      "fromMe": false,
+      "id": "3EB0CBC7CF5FA28C619FCF",
+      "participant": "",
+      "addressingMode": "pn"
+    },
+    "messageTimestamp": 1763471088,
+    "pushName": "Rafael Dorneles",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "1",
+        "contextInfo": {
+          "ephemeralSettingTimestamp": "1761747090",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "CHAT_SETTING",
+            "initiatedByMe": true
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "pH8hTn+VrO+Hrg==",
+          "senderTimestamp": "1763386803",
+          "senderAccountType": "E2EE",
+          "receiverAccountType": "E2EE",
+          "recipientKeyHash": "MLO+48zL2KPNLw==",
+          "recipientTimestamp": "1763407574"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "6+j2xc3ISjCjkwAAqLMhgMs+7go1YghDyl/2biAqiRk=",
+        "limitSharingV2": {
+          "sharingLimited": false,
+          "trigger": "UNKNOWN",
+          "limitSharingSettingTimestamp": "0",
+          "initiatedByMe": false
+        }
+      }
+    }
+  }
+]
+[2025-11-18T13:04:49.181Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 555181049215@s.whatsapp.net
+[2025-11-18T13:04:49.181Z] [LOG] JID final para envio: 555181049215@s.whatsapp.net
+[2025-11-18T13:04:49.181Z] [LOG] RemoteJid nao contem @lid: 555181049215@s.whatsapp.net
+[2025-11-18T13:04:49.182Z] [LOG] DEBUG - jid: 555181049215@s.whatsapp.net
+[2025-11-18T13:04:49.182Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:04:49.182Z] [LOG] DEBUG - isGroup: false
+[2025-11-18T13:04:49.183Z] [LOG] msgContact::: {
+  "id": "555181049215@s.whatsapp.net",
+  "name": "Rafael Dorneles",
+  "lid": null
+}
+[2025-11-18T13:04:49.192Z] [LOG] msgContact2::: {
+  "id": "555181049215@s.whatsapp.net",
+  "name": "Rafael Dorneles",
+  "lid": null
+}
+[2025-11-18T13:04:49.193Z] [LOG] groupContact::: undefined
+[2025-11-18T13:04:49.408Z] [LOG] contactData::::: {
+  "name": "Rafael Dorneles",
+  "number": "555181049215",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491865890_804856451865782_7057984051779416191_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AG6alkV6YT6B3fqvxqi05QEmdBFsQayO_zniiCYI3FYxQ&oe=69297F88&_nc_sid=5e03e0&_nc_cat=103",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Rafael Dorneles"
+}
+[2025-11-18T13:04:49.408Z] [LOG] Procurando ou criando contato: 555181049215 (LID: N/A) na empresa 1
+[2025-11-18T13:04:49.410Z] [LOG] Contato encontrado pelo number: 555181049215
+[2025-11-18T13:04:49.411Z] [LOG] null
+[2025-11-18T13:04:49.427Z] [LOG] 🔍 Buscando ticket para contato 555181049215 na conexão 1: #624 (closed)
+[2025-11-18T13:04:49.428Z] [LOG] 🔍 Ticket encontrado: #624 - Status: closed, UserId: 7
+[2025-11-18T13:04:49.428Z] [LOG] 🔄 Reabrindo ticket fechado
+[2025-11-18T13:04:49.505Z] [LOG] MSG: 1
+[2025-11-18T13:04:49.505Z] [LOG] 🔍 Verificando condições para verifyQueue:
+[2025-11-18T13:04:49.505Z] [LOG] - ticket.queue: null
+[2025-11-18T13:04:49.506Z] [LOG] - ticket.isGroup: false
+[2025-11-18T13:04:49.506Z] [LOG] - msg.key.fromMe: false
+[2025-11-18T13:04:49.506Z] [LOG] - ticket.userId: null
+[2025-11-18T13:04:49.507Z] [LOG] - whatsapp.queues.length: 1
+[2025-11-18T13:04:49.507Z] [LOG] - ticket.useIntegration: false
+[2025-11-18T13:04:49.508Z] [LOG] ⚠️ CHAMANDO verifyQueue - Ticket sem atendente
+[2025-11-18T13:04:49.530Z] [LOG] ticketData {
+  "queueId": 1,
+  "chatbot": false,
+  "status": "pending"
+}
+[2025-11-18T13:04:50.764Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:04:53.904Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "555181049215@s.whatsapp.net",
+      "remoteJidAlt": "229024869707825@lid",
+      "fromMe": false,
+      "id": "3EB05603CF1628AC1034D1",
+      "participant": "",
+      "addressingMode": "pn"
+    },
+    "messageTimestamp": 1763471093,
+    "pushName": "Rafael Dorneles",
+    "broadcast": false,
+    "message": {
+      "conversation": "2",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "pH8hTn+VrO+Hrg==",
+          "senderTimestamp": "1763386803",
+          "senderAccountType": "E2EE",
+          "receiverAccountType": "E2EE",
+          "recipientKeyHash": "oTD/2hjAaaPguQ==",
+          "recipientTimestamp": "1763406669"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "/ivNTH8aBzCfRW2IJT/+QJIIeZdu1zDqbdX5KSFFT5g=",
+        "limitSharingV2": {
+          "sharingLimited": false,
+          "trigger": "UNKNOWN",
+          "limitSharingSettingTimestamp": "0",
+          "initiatedByMe": false
+        }
+      }
+    }
+  }
+]
+[2025-11-18T13:04:53.999Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 555181049215@s.whatsapp.net
+[2025-11-18T13:04:53.999Z] [LOG] JID final para envio: 555181049215@s.whatsapp.net
+[2025-11-18T13:04:54.000Z] [LOG] RemoteJid nao contem @lid: 555181049215@s.whatsapp.net
+[2025-11-18T13:04:54.000Z] [LOG] DEBUG - jid: 555181049215@s.whatsapp.net
+[2025-11-18T13:04:54.000Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:04:54.000Z] [LOG] DEBUG - isGroup: false
+[2025-11-18T13:04:54.001Z] [LOG] msgContact::: {
+  "id": "555181049215@s.whatsapp.net",
+  "name": "Rafael Dorneles",
+  "lid": null
+}
+[2025-11-18T13:04:54.009Z] [LOG] msgContact2::: {
+  "id": "555181049215@s.whatsapp.net",
+  "name": "Rafael Dorneles",
+  "lid": null
+}
+[2025-11-18T13:04:54.009Z] [LOG] groupContact::: undefined
+[2025-11-18T13:04:54.463Z] [LOG] contactData::::: {
+  "name": "Rafael Dorneles",
+  "number": "555181049215",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491865890_804856451865782_7057984051779416191_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AG6alkV6YT6B3fqvxqi05QEmdBFsQayO_zniiCYI3FYxQ&oe=69297F88&_nc_sid=5e03e0&_nc_cat=103",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 13,
+  "pushName": "Rafael Dorneles"
+}
+[2025-11-18T13:04:54.464Z] [LOG] Procurando ou criando contato: 555181049215 (LID: N/A) na empresa 1
+[2025-11-18T13:04:54.467Z] [LOG] Contato encontrado pelo number: 555181049215
+[2025-11-18T13:04:54.468Z] [LOG] null
+[2025-11-18T13:04:54.483Z] [LOG] 🔍 Buscando ticket para contato 555181049215 na conexão 13: #1476 (pending)
+[2025-11-18T13:04:54.483Z] [LOG] 🔍 Ticket encontrado: #1476 - Status: pending, UserId: null
+[2025-11-18T13:04:54.484Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:04:54.552Z] [LOG] MSG: 2
+[2025-11-18T13:04:54.554Z] [LOG] 🔍 Verificando condições para verifyQueue:
+[2025-11-18T13:04:54.555Z] [LOG] - ticket.queue: [object SequelizeInstance:Queue]
+[2025-11-18T13:04:54.555Z] [LOG] - ticket.isGroup: false
+[2025-11-18T13:04:54.555Z] [LOG] - msg.key.fromMe: false
+[2025-11-18T13:04:54.556Z] [LOG] - ticket.userId: null
+[2025-11-18T13:04:54.556Z] [LOG] - whatsapp.queues.length: 1
+[2025-11-18T13:04:54.557Z] [LOG] - ticket.useIntegration: false
+[2025-11-18T13:04:58.355Z] [LOG] ticketData {
+  "status": "closed",
+  "userId": 7,
+  "queueId": 4
+}
+[2025-11-18T13:04:58.553Z] [LOG] messageData; {
+  "number": "555181049215@s.whatsapp.net",
+  "body": "Por gentileza, avalie seu atendimento pelo link abaixo:\n\nhttp://nota.logidoc.pro/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aWNrZXRUcmFraW5nSWQiOjE0ODksImlhdCI6MTc2MzQ3MTA5OCwiZXhwIjoxNzYzNDc0Njk4fQ.CSRLtUQq6UUHLfkV58EuAiY00NUJFuvhw7xNpffuSAQ"
+}
+[2025-11-18T13:04:58.989Z] [LOG] Procurando ou criando contato: 555181049215 (LID: N/A) na empresa 1
+[2025-11-18T13:04:58.991Z] [LOG] Contato encontrado pelo number: 555181049215
+[2025-11-18T13:04:58.991Z] [LOG] null
+[2025-11-18T13:04:58.994Z] [LOG] 🔍 Buscando ticket para contato 555181049215 na conexão 1: #624 (pending)
+[2025-11-18T13:04:58.995Z] [LOG] 🔍 Ticket encontrado: #624 - Status: pending, UserId: null
+[2025-11-18T13:04:58.995Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:04:59.008Z] [LOG] ticket.contact {
+  "id": 691,
+  "name": "RAFAEL DORNELES 42915",
+  "lid": null,
+  "number": "555181049215",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491865890_804856451865782_7057984051779416191_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AG6alkV6YT6B3fqvxqi05QEmdBFsQayO_zniiCYI3FYxQ&oe=69297F88&_nc_sid=5e03e0&_nc_cat=103",
+  "extraInfo": []
+}
+[2025-11-18T13:04:59.009Z] [LOG] Usando NUMBER para envio: 555181049215
+[2025-11-18T13:04:59.010Z] [LOG] number 555181049215@s.whatsapp.net
+[2025-11-18T13:04:59.013Z] [LOG] body::::::::::::::::::::::::::: Por gentileza, avalie seu atendimento pelo link abaixo:
+
+http://nota.logidoc.pro/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aWNrZXRUcmFraW5nSWQiOjE0ODksImlhdCI6MTc2MzQ3MTA5OCwiZXhwIjoxNzYzNDc0Njk4fQ.CSRLtUQq6UUHLfkV58EuAiY00NUJFuvhw7xNpffuSAQ
+[2025-11-18T13:04:59.014Z] [LOG] lastSystemMsg::::::::::::::::::::::::::: 555181049215
+[2025-11-18T13:04:59.272Z] [LOG] ticketData {
+  "status": "closed",
+  "userId": 7,
+  "queueId": 1
+}
+[2025-11-18T13:04:59.381Z] [LOG] messageData; {
+  "number": "555181049215@s.whatsapp.net",
+  "body": "Por gentileza, avalie seu atendimento pelo link abaixo:\n\nhttp://nota.logidoc.pro/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aWNrZXRUcmFraW5nSWQiOjE0OTEsImlhdCI6MTc2MzQ3MTA5OSwiZXhwIjoxNzYzNDc0Njk5fQ.f2D6ux33xMB424x0r6mXE_4euoD0LFtu-dWhlbl5DVg"
+}
+[2025-11-18T13:04:59.590Z] [LOG] Message sent {
+  "key": {
+    "remoteJid": "555181049215@s.whatsapp.net",
+    "fromMe": true,
+    "id": "3EB07FC4A22FEB7FAD3617"
+  },
+  "message": {
+    "extendedTextMessage": {
+      "text": "Por gentileza, avalie seu atendimento pelo link abaixo:\n\nhttp://nota.logidoc.pro/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aWNrZXRUcmFraW5nSWQiOjE0ODksImlhdCI6MTc2MzQ3MTA5OCwiZXhwIjoxNzYzNDc0Njk4fQ.CSRLtUQq6UUHLfkV58EuAiY00NUJFuvhw7xNpffuSAQ",
+      "contextInfo": {
+        "forwardingScore": 0,
+        "isForwarded": false
+      }
+    }
+  },
+  "messageTimestamp": "1763471099",
+  "status": "PENDING"
+}
+[2025-11-18T13:04:59.684Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "555181049215@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB07FC4A22FEB7FAD3617"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Por gentileza, avalie seu atendimento pelo link abaixo:\n\nhttp://nota.logidoc.pro/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aWNrZXRUcmFraW5nSWQiOjE0ODksImlhdCI6MTc2MzQ3MTA5OCwiZXhwIjoxNzYzNDc0Njk4fQ.CSRLtUQq6UUHLfkV58EuAiY00NUJFuvhw7xNpffuSAQ",
+        "contextInfo": {
+          "forwardingScore": 0,
+          "isForwarded": false
+        }
+      }
+    },
+    "messageTimestamp": "1763471099",
+    "status": "PENDING"
+  }
+]
+[2025-11-18T13:04:59.698Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 555181049215@s.whatsapp.net
+[2025-11-18T13:04:59.698Z] [LOG] JID final para envio: 555181049215@s.whatsapp.net
+[2025-11-18T13:04:59.699Z] [LOG] RemoteJid nao contem @lid: 555181049215@s.whatsapp.net
+[2025-11-18T13:04:59.700Z] [LOG] DEBUG - jid: 555181049215@s.whatsapp.net
+[2025-11-18T13:04:59.701Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:04:59.702Z] [LOG] DEBUG - isGroup: false
+[2025-11-18T13:04:59.702Z] [LOG] msgContact::: {
+  "id": "555181049215@s.whatsapp.net",
+  "name": "555181049215",
+  "lid": null
+}
+[2025-11-18T13:04:59.709Z] [LOG] msgContact2::: {
+  "id": "555181049215@s.whatsapp.net",
+  "name": "555181049215",
+  "lid": null
+}
+[2025-11-18T13:04:59.710Z] [LOG] groupContact::: undefined
+[2025-11-18T13:04:59.826Z] [LOG] Procurando ou criando contato: 555181049215 (LID: N/A) na empresa 1
+[2025-11-18T13:04:59.829Z] [LOG] Contato encontrado pelo number: 555181049215
+[2025-11-18T13:04:59.833Z] [LOG] null
+[2025-11-18T13:04:59.838Z] [LOG] 🔍 Buscando ticket para contato 555181049215 na conexão 1: #624 (closed)
+[2025-11-18T13:04:59.840Z] [LOG] 🔍 Ticket encontrado: #624 - Status: closed, UserId: 7
+[2025-11-18T13:04:59.841Z] [LOG] 🔄 Reabrindo ticket fechado
+[2025-11-18T13:04:59.878Z] [LOG] ticket.contact {
+  "id": 691,
+  "name": "RAFAEL DORNELES 42915",
+  "lid": null,
+  "number": "555181049215",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491865890_804856451865782_7057984051779416191_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AG6alkV6YT6B3fqvxqi05QEmdBFsQayO_zniiCYI3FYxQ&oe=69297F88&_nc_sid=5e03e0&_nc_cat=103",
+  "extraInfo": []
+}
+[2025-11-18T13:04:59.881Z] [LOG] Usando NUMBER para envio: 555181049215
+[2025-11-18T13:04:59.882Z] [LOG] number 555181049215@s.whatsapp.net
+[2025-11-18T13:04:59.885Z] [LOG] body::::::::::::::::::::::::::: Por gentileza, avalie seu atendimento pelo link abaixo:
+
+http://nota.logidoc.pro/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aWNrZXRUcmFraW5nSWQiOjE0OTEsImlhdCI6MTc2MzQ3MTA5OSwiZXhwIjoxNzYzNDc0Njk5fQ.f2D6ux33xMB424x0r6mXE_4euoD0LFtu-dWhlbl5DVg
+[2025-11-18T13:04:59.886Z] [LOG] lastSystemMsg::::::::::::::::::::::::::: 555181049215
+[2025-11-18T13:04:59.905Z] [LOG] contactData::::: {
+  "name": "555181049215",
+  "number": "555181049215",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491865890_804856451865782_7057984051779416191_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AG6alkV6YT6B3fqvxqi05QEmdBFsQayO_zniiCYI3FYxQ&oe=69297F88&_nc_sid=5e03e0&_nc_cat=103",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "555181049215"
+}
+[2025-11-18T13:04:59.906Z] [LOG] Procurando ou criando contato: 555181049215 (LID: N/A) na empresa 1
+[2025-11-18T13:04:59.909Z] [LOG] Contato encontrado pelo number: 555181049215
+[2025-11-18T13:04:59.910Z] [LOG] null
+[2025-11-18T13:04:59.931Z] [LOG] 🔍 Buscando ticket para contato 555181049215 na conexão 1: #624 (closed)
+[2025-11-18T13:04:59.932Z] [LOG] 🔍 Ticket encontrado: #624 - Status: closed, UserId: null
+[2025-11-18T13:04:59.933Z] [LOG] 🔄 Reabrindo ticket fechado
+[2025-11-18T13:04:59.978Z] [LOG] 🔍 Verificando condições para verifyQueue:
+[2025-11-18T13:04:59.979Z] [LOG] - ticket.queue: null
+[2025-11-18T13:04:59.979Z] [LOG] - ticket.isGroup: false
+[2025-11-18T13:04:59.981Z] [LOG] - msg.key.fromMe: true
+[2025-11-18T13:04:59.982Z] [LOG] - ticket.userId: null
+[2025-11-18T13:04:59.983Z] [LOG] - whatsapp.queues.length: 1
+[2025-11-18T13:04:59.984Z] [LOG] - ticket.useIntegration: false
+[2025-11-18T13:05:00.219Z] [WARN] Closing stale open session for new outgoing prekey bundle
+[2025-11-18T13:05:00.234Z] [WARN] Closing stale open session for new outgoing prekey bundle
+[2025-11-18T13:05:00.252Z] [WARN] Closing stale open session for new outgoing prekey bundle
+[2025-11-18T13:05:00.273Z] [WARN] Closing stale open session for new outgoing prekey bundle
+[2025-11-18T13:05:00.292Z] [WARN] Closing stale open session for new outgoing prekey bundle
+[2025-11-18T13:05:00.426Z] [LOG] Message sent {
+  "key": {
+    "remoteJid": "555181049215@s.whatsapp.net",
+    "fromMe": true,
+    "id": "3EB0655493468FF2FF301A"
+  },
+  "message": {
+    "extendedTextMessage": {
+      "text": "Por gentileza, avalie seu atendimento pelo link abaixo:\n\nhttp://nota.logidoc.pro/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aWNrZXRUcmFraW5nSWQiOjE0OTEsImlhdCI6MTc2MzQ3MTA5OSwiZXhwIjoxNzYzNDc0Njk5fQ.f2D6ux33xMB424x0r6mXE_4euoD0LFtu-dWhlbl5DVg",
+      "contextInfo": {
+        "forwardingScore": 0,
+        "isForwarded": false
+      }
+    }
+  },
+  "messageTimestamp": "1763471099",
+  "status": "PENDING"
+}
+[2025-11-18T13:05:00.470Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "555181049215@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB0655493468FF2FF301A"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Por gentileza, avalie seu atendimento pelo link abaixo:\n\nhttp://nota.logidoc.pro/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aWNrZXRUcmFraW5nSWQiOjE0OTEsImlhdCI6MTc2MzQ3MTA5OSwiZXhwIjoxNzYzNDc0Njk5fQ.f2D6ux33xMB424x0r6mXE_4euoD0LFtu-dWhlbl5DVg",
+        "contextInfo": {
+          "forwardingScore": 0,
+          "isForwarded": false
+        }
+      }
+    },
+    "messageTimestamp": "1763471099",
+    "status": "PENDING"
+  }
+]
+[2025-11-18T13:05:00.563Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 555181049215@s.whatsapp.net
+[2025-11-18T13:05:00.564Z] [LOG] JID final para envio: 555181049215@s.whatsapp.net
+[2025-11-18T13:05:00.565Z] [LOG] RemoteJid nao contem @lid: 555181049215@s.whatsapp.net
+[2025-11-18T13:05:00.566Z] [LOG] DEBUG - jid: 555181049215@s.whatsapp.net
+[2025-11-18T13:05:00.566Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:05:00.567Z] [LOG] DEBUG - isGroup: false
+[2025-11-18T13:05:00.568Z] [LOG] msgContact::: {
+  "id": "555181049215@s.whatsapp.net",
+  "name": "555181049215",
+  "lid": null
+}
+[2025-11-18T13:05:00.576Z] [LOG] msgContact2::: {
+  "id": "555181049215@s.whatsapp.net",
+  "name": "555181049215",
+  "lid": null
+}
+[2025-11-18T13:05:00.577Z] [LOG] groupContact::: undefined
+[2025-11-18T13:05:00.778Z] [LOG] contactData::::: {
+  "name": "555181049215",
+  "number": "555181049215",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491865890_804856451865782_7057984051779416191_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AG6alkV6YT6B3fqvxqi05QEmdBFsQayO_zniiCYI3FYxQ&oe=69297F88&_nc_sid=5e03e0&_nc_cat=103",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "555181049215"
+}
+[2025-11-18T13:05:00.778Z] [LOG] Procurando ou criando contato: 555181049215 (LID: N/A) na empresa 1
+[2025-11-18T13:05:00.779Z] [LOG] Contato encontrado pelo number: 555181049215
+[2025-11-18T13:05:00.780Z] [LOG] null
+[2025-11-18T13:05:00.797Z] [LOG] 🔍 Buscando ticket para contato 555181049215 na conexão 1: #624 (closed)
+[2025-11-18T13:05:00.800Z] [LOG] 🔍 Ticket encontrado: #624 - Status: closed, UserId: null
+[2025-11-18T13:05:00.801Z] [LOG] 🔄 Reabrindo ticket fechado
+[2025-11-18T13:05:00.833Z] [LOG] 🔍 Verificando condições para verifyQueue:
+[2025-11-18T13:05:00.834Z] [LOG] - ticket.queue: null
+[2025-11-18T13:05:00.835Z] [LOG] - ticket.isGroup: false
+[2025-11-18T13:05:00.835Z] [LOG] - msg.key.fromMe: true
+[2025-11-18T13:05:00.836Z] [LOG] - ticket.userId: null
+[2025-11-18T13:05:00.837Z] [LOG] - whatsapp.queues.length: 1
+[2025-11-18T13:05:00.837Z] [LOG] - ticket.useIntegration: false
+[2025-11-18T13:05:01.850Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "555181049215@s.whatsapp.net",
+      "remoteJidAlt": "229024869707825@lid",
+      "fromMe": false,
+      "id": "3EB05C94F9F7BD53A25C6D",
+      "participant": "",
+      "addressingMode": "pn"
+    },
+    "messageTimestamp": 1763471101,
+    "pushName": "Rafael Dorneles",
+    "broadcast": false,
+    "message": {
+      "conversation": "2",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "pH8hTn+VrO+Hrg==",
+          "senderTimestamp": "1763386803",
+          "senderAccountType": "E2EE",
+          "receiverAccountType": "E2EE",
+          "recipientKeyHash": "oTD/2hjAaaPguQ==",
+          "recipientTimestamp": "1763406669"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "b30T7gDM79kB1t77p/s8Vu0aF6ir1saTdUvn+V12K0A=",
+        "limitSharingV2": {
+          "sharingLimited": false,
+          "trigger": "UNKNOWN",
+          "limitSharingSettingTimestamp": "0",
+          "initiatedByMe": false
+        }
+      }
+    }
+  }
+]
+[2025-11-18T13:05:01.893Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 555181049215@s.whatsapp.net
+[2025-11-18T13:05:01.893Z] [LOG] JID final para envio: 555181049215@s.whatsapp.net
+[2025-11-18T13:05:01.894Z] [LOG] RemoteJid nao contem @lid: 555181049215@s.whatsapp.net
+[2025-11-18T13:05:01.894Z] [LOG] DEBUG - jid: 555181049215@s.whatsapp.net
+[2025-11-18T13:05:01.894Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:05:01.894Z] [LOG] DEBUG - isGroup: false
+[2025-11-18T13:05:01.895Z] [LOG] msgContact::: {
+  "id": "555181049215@s.whatsapp.net",
+  "name": "Rafael Dorneles",
+  "lid": null
+}
+[2025-11-18T13:05:01.900Z] [LOG] msgContact2::: {
+  "id": "555181049215@s.whatsapp.net",
+  "name": "Rafael Dorneles",
+  "lid": null
+}
+[2025-11-18T13:05:01.900Z] [LOG] groupContact::: undefined
+[2025-11-18T13:05:02.338Z] [LOG] contactData::::: {
+  "name": "Rafael Dorneles",
+  "number": "555181049215",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491865890_804856451865782_7057984051779416191_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AG6alkV6YT6B3fqvxqi05QEmdBFsQayO_zniiCYI3FYxQ&oe=69297F88&_nc_sid=5e03e0&_nc_cat=103",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 13,
+  "pushName": "Rafael Dorneles"
+}
+[2025-11-18T13:05:02.339Z] [LOG] Procurando ou criando contato: 555181049215 (LID: N/A) na empresa 1
+[2025-11-18T13:05:02.341Z] [LOG] Contato encontrado pelo number: 555181049215
+[2025-11-18T13:05:02.341Z] [LOG] null
+[2025-11-18T13:05:02.365Z] [LOG] 🔍 Buscando ticket para contato 555181049215 na conexão 13: #1476 (closed)
+[2025-11-18T13:05:02.365Z] [LOG] 🔍 Ticket encontrado: #1476 - Status: closed, UserId: 7
+[2025-11-18T13:05:02.366Z] [LOG] 🔄 Reabrindo ticket fechado
+[2025-11-18T13:05:02.409Z] [LOG] MSG: 2
+[2025-11-18T13:05:02.409Z] [LOG] 🔍 Verificando condições para verifyQueue:
+[2025-11-18T13:05:02.410Z] [LOG] - ticket.queue: null
+[2025-11-18T13:05:02.410Z] [LOG] - ticket.isGroup: false
+[2025-11-18T13:05:02.411Z] [LOG] - msg.key.fromMe: false
+[2025-11-18T13:05:02.411Z] [LOG] - ticket.userId: null
+[2025-11-18T13:05:02.412Z] [LOG] - whatsapp.queues.length: 1
+[2025-11-18T13:05:02.413Z] [LOG] - ticket.useIntegration: false
+[2025-11-18T13:05:02.413Z] [LOG] ⚠️ CHAMANDO verifyQueue - Ticket sem atendente
+[2025-11-18T13:05:02.423Z] [LOG] ticketData {
+  "queueId": 4,
+  "chatbot": false,
+  "status": "pending"
+}
+[2025-11-18T13:05:03.921Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "555181049215@s.whatsapp.net",
+      "remoteJidAlt": "229024869707825@lid",
+      "fromMe": false,
+      "id": "3EB0BEB773D37888CD0797",
+      "participant": "",
+      "addressingMode": "pn"
+    },
+    "messageTimestamp": 1763471103,
+    "pushName": "Rafael Dorneles",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "2",
+        "contextInfo": {
+          "ephemeralSettingTimestamp": "1761747090",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "CHAT_SETTING",
+            "initiatedByMe": true
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "pH8hTn+VrO+Hrg==",
+          "senderTimestamp": "1763386803",
+          "senderAccountType": "E2EE",
+          "receiverAccountType": "E2EE",
+          "recipientKeyHash": "MLO+48zL2KPNLw==",
+          "recipientTimestamp": "1763407574"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "Q8QCzAWCaeQh1XUizRpEEJh5l5PqR40HH3oMljRMrhg=",
+        "limitSharingV2": {
+          "sharingLimited": false,
+          "trigger": "UNKNOWN",
+          "limitSharingSettingTimestamp": "0",
+          "initiatedByMe": false
+        }
+      }
+    }
+  }
+]
+[2025-11-18T13:05:04.011Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 555181049215@s.whatsapp.net
+[2025-11-18T13:05:04.011Z] [LOG] JID final para envio: 555181049215@s.whatsapp.net
+[2025-11-18T13:05:04.012Z] [LOG] RemoteJid nao contem @lid: 555181049215@s.whatsapp.net
+[2025-11-18T13:05:04.012Z] [LOG] DEBUG - jid: 555181049215@s.whatsapp.net
+[2025-11-18T13:05:04.012Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:05:04.012Z] [LOG] DEBUG - isGroup: false
+[2025-11-18T13:05:04.013Z] [LOG] msgContact::: {
+  "id": "555181049215@s.whatsapp.net",
+  "name": "Rafael Dorneles",
+  "lid": null
+}
+[2025-11-18T13:05:04.018Z] [LOG] msgContact2::: {
+  "id": "555181049215@s.whatsapp.net",
+  "name": "Rafael Dorneles",
+  "lid": null
+}
+[2025-11-18T13:05:04.019Z] [LOG] groupContact::: undefined
+[2025-11-18T13:05:04.214Z] [LOG] contactData::::: {
+  "name": "Rafael Dorneles",
+  "number": "555181049215",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491865890_804856451865782_7057984051779416191_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AG6alkV6YT6B3fqvxqi05QEmdBFsQayO_zniiCYI3FYxQ&oe=69297F88&_nc_sid=5e03e0&_nc_cat=103",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Rafael Dorneles"
+}
+[2025-11-18T13:05:04.215Z] [LOG] Procurando ou criando contato: 555181049215 (LID: N/A) na empresa 1
+[2025-11-18T13:05:04.216Z] [LOG] Contato encontrado pelo number: 555181049215
+[2025-11-18T13:05:04.217Z] [LOG] null
+[2025-11-18T13:05:04.232Z] [LOG] 🔍 Buscando ticket para contato 555181049215 na conexão 1: #624 (closed)
+[2025-11-18T13:05:04.232Z] [LOG] 🔍 Ticket encontrado: #624 - Status: closed, UserId: null
+[2025-11-18T13:05:04.232Z] [LOG] 🔄 Reabrindo ticket fechado
+[2025-11-18T13:05:04.317Z] [LOG] MSG: 2
+[2025-11-18T13:05:04.318Z] [LOG] 🔍 Verificando condições para verifyQueue:
+[2025-11-18T13:05:04.319Z] [LOG] - ticket.queue: null
+[2025-11-18T13:05:04.319Z] [LOG] - ticket.isGroup: false
+[2025-11-18T13:05:04.320Z] [LOG] - msg.key.fromMe: false
+[2025-11-18T13:05:04.320Z] [LOG] - ticket.userId: null
+[2025-11-18T13:05:04.321Z] [LOG] - whatsapp.queues.length: 1
+[2025-11-18T13:05:04.321Z] [LOG] - ticket.useIntegration: false
+[2025-11-18T13:05:04.321Z] [LOG] ⚠️ CHAMANDO verifyQueue - Ticket sem atendente
+[2025-11-18T13:05:04.337Z] [LOG] ticketData {
+  "queueId": 1,
+  "chatbot": false,
+  "status": "pending"
+}
+[2025-11-18T13:05:07.278Z] [LOG] ticketData {
+  "status": "open",
+  "userId": 7
+}
+[2025-11-18T13:05:10.540Z] [ERROR] Tue, 18 Nov 2025 13:05:10 GMT uncaughtException: Error: connect ETIMEDOUT 10.1.4.49:4001
+[2025-11-18T13:05:10.543Z] [ERROR] Error: Error: connect ETIMEDOUT 10.1.4.49:4001
+    at Request._callback (D:\Projetos\vipclub\vipclub-6.3.1.5\vipclub-main\backend\src\services\WbotServices\wbotMessageListener.ts:1978:19)
+    at self.callback (D:\Projetos\vipclub\vipclub-6.3.1.5\vipclub-main\backend\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:524:28)
+    at Request.emit (node:domain:489:12)
+    at Request.onRequestError (D:\Projetos\vipclub\vipclub-6.3.1.5\vipclub-main\backend\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (node:events:524:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:101:11)
+    at Socket.socketErrorListener (node:_http_client:504:5)
+    at Socket.emit (node:events:524:28)
+[2025-11-18T13:07:25.778Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "555192718953-1551144060@g.us",
+      "fromMe": false,
+      "id": "3F4C3BAE695D0232DCE1",
+      "participant": "89571559788604@lid",
+      "participantAlt": "555184057524@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471111,
+    "pushName": "Guilherme Zardo @Logicbox",
+    "broadcast": false,
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "555192718953-1551144060@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwi0j7/pBBAAGiB3YyMVTL8ZPnLbN+VRAcCV9xKGIa/P4kVx1GYgckmSZyIhBb7we2OGlTXI9SSOEOZAgaLbopqybRNCbOEKlQbDlply"
+      },
+      "extendedTextMessage": {
+        "text": "vou entrar",
+        "contextInfo": {
+          "expiration": 0
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "SRKUnlJDrr9HZQ==",
+          "senderTimestamp": "1762789368",
+          "recipientKeyHash": "MLO+48zL2KPNLw==",
+          "recipientTimestamp": "1763471000"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  }
+]
+[2025-11-18T13:07:25.938Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363022999948876@g.us",
+      "fromMe": false,
+      "id": "ACBEBE9387BF6AC8BAB816BE6C94D8AF",
+      "participant": "173164541771805@lid",
+      "participantAlt": "555192010618@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471150,
+    "pushName": "Iarley",
+    "broadcast": false,
+    "message": {
+      "conversation": "Bom dia",
+      "senderKeyDistributionMessage": {
+        "groupId": "120363022999948876@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjB8v7lAhAIGiDfVXTI3MTC73GjB9/oKQ5WicKp9QjLRATbaXalUfHwcCIhBfycF8phUqSQNAM57ndkLsKB9cN3OlNXjhWevtKson8B"
+      },
+      "messageContextInfo": {
+        "messageSecret": "A1xbNRogSBLosYP17qMjZNhD2anm8leuZDRKjmG5mYQ="
+      }
+    }
+  }
+]
+[2025-11-18T13:07:25.984Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:07:26.035Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:07:26.037Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 555192718953-1551144060@g.us
+[2025-11-18T13:07:26.037Z] [LOG] JID final para envio: 555184057524@s.whatsapp.net
+[2025-11-18T13:07:26.038Z] [LOG] RemoteJid nao contem @lid: 555192718953-1551144060@g.us
+[2025-11-18T13:07:26.038Z] [LOG] DEBUG - jid: 555184057524@s.whatsapp.net
+[2025-11-18T13:07:26.038Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:07:26.039Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:07:26.040Z] [LOG] senderId::::: 89571559788604@lid
+[2025-11-18T13:07:26.040Z] [LOG] msgContact::: {
+  "id": "89571559788604@lid",
+  "name": "Guilherme Zardo @Logicbox",
+  "lid": null
+}
+[2025-11-18T13:07:26.253Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363022999948876@g.us",
+      "fromMe": false,
+      "id": "AC3241FE331438D160EBB63F0AC9E705",
+      "participant": "173164541771805@lid",
+      "participantAlt": "555192010618@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471198,
+    "pushName": "Iarley",
+    "broadcast": false,
+    "message": {
+      "conversation": "Pessoal pra liberar maior quantidade tem que digitar a quantidade que quer dar o desconto, colocar * liberar com o crachá e depois ir no cntrl f8",
+      "messageContextInfo": {
+        "messageSecret": "TOYd+ESjPvFAJv9wDjwI9pb/xXA6bKikdqF9iIesaBo="
+      }
+    }
+  }
+]
+[2025-11-18T13:07:26.345Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363022999948876@g.us",
+      "fromMe": false,
+      "id": "AC96A6D278DE37DE95E8FAA3EE5C5B52",
+      "participant": "173164541771805@lid",
+      "participantAlt": "555192010618@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471241,
+    "pushName": "Iarley",
+    "broadcast": false,
+    "message": {
+      "conversation": "Daí tu bota o valor unitário ou do kg e Biba o produto ou digita o código da balança pra dar desconto em quantidade",
+      "messageContextInfo": {
+        "messageSecret": "9qikwMtF8/FK3ESxsbN9LF4RyV0bn4iWci82n+NJPVU="
+      }
+    }
+  }
+]
+[2025-11-18T13:07:26.555Z] [LOG] contactData::::: {
+  "name": "Programação Logicbox",
+  "number": "555192718953-1551144060",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/57499596_572383493281937_8317056559267971072_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AFZ7eXIvXdWdrfW9vxsrN2aTRVbfcmGwIFTu8521xmaow&oe=69297521&_nc_sid=5e03e0&_nc_cat=102",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Programação Logicbox"
+}
+[2025-11-18T13:07:26.556Z] [LOG] Procurando ou criando contato: 555192718953-1551144060 (LID: N/A) na empresa 1
+[2025-11-18T13:07:26.558Z] [LOG] Contato encontrado pelo number: 555192718953-1551144060
+[2025-11-18T13:07:26.558Z] [LOG] null
+[2025-11-18T13:07:26.574Z] [LOG] msgContact2::: {
+  "id": "89571559788604@lid",
+  "name": "Guilherme Zardo @Logicbox",
+  "lid": null
+}
+[2025-11-18T13:07:26.576Z] [LOG] groupContact::: {
+  "id": 2380,
+  "name": "Programação Logicbox",
+  "number": "555192718953-1551144060",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/57499596_572383493281937_8317056559267971072_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AFZ7eXIvXdWdrfW9vxsrN2aTRVbfcmGwIFTu8521xmaow&oe=69297521&_nc_sid=5e03e0&_nc_cat=102",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-10-01T18:36:08.331Z",
+  "updatedAt": "2025-11-18T12:22:52.453Z"
+}
+[2025-11-18T13:07:26.731Z] [LOG] contactData::::: {
+  "name": "Guilherme Zardo @Logicbox",
+  "number": "89571559788604",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/473397871_692988819720148_2506436086567058321_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEz2_Se4DzmqItPix5DG0yy3TiOhyI3OBBpkWZPC9k6LA&oe=69298ED0&_nc_sid=5e03e0&_nc_cat=101",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Guilherme Zardo @Logicbox"
+}
+[2025-11-18T13:07:26.731Z] [LOG] Procurando ou criando contato: 89571559788604 (LID: N/A) na empresa 1
+[2025-11-18T13:07:26.733Z] [LOG] Contato encontrado pelo number: 89571559788604
+[2025-11-18T13:07:26.734Z] [LOG] null
+[2025-11-18T13:07:26.753Z] [LOG] 🔍 Buscando ticket para contato 89571559788604 na conexão 1: Não encontrado
+[2025-11-18T13:07:26.770Z] [LOG] ✅ Novo ticket criado: #3655 para contato 89571559788604 na conexão 1
+[2025-11-18T13:07:26.883Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363022999948876@g.us
+[2025-11-18T13:07:26.884Z] [LOG] JID final para envio: 555192010618@s.whatsapp.net
+[2025-11-18T13:07:26.884Z] [LOG] RemoteJid nao contem @lid: 120363022999948876@g.us
+[2025-11-18T13:07:26.885Z] [LOG] DEBUG - jid: 555192010618@s.whatsapp.net
+[2025-11-18T13:07:26.885Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:07:26.885Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:07:26.886Z] [LOG] senderId::::: 173164541771805@lid
+[2025-11-18T13:07:26.886Z] [LOG] msgContact::: {
+  "id": "173164541771805@lid",
+  "name": "Iarley",
+  "lid": null
+}
+[2025-11-18T13:07:26.889Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363022999948876@g.us
+[2025-11-18T13:07:26.889Z] [LOG] JID final para envio: 555192010618@s.whatsapp.net
+[2025-11-18T13:07:26.890Z] [LOG] RemoteJid nao contem @lid: 120363022999948876@g.us
+[2025-11-18T13:07:26.890Z] [LOG] DEBUG - jid: 555192010618@s.whatsapp.net
+[2025-11-18T13:07:26.890Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:07:26.893Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:07:26.894Z] [LOG] senderId::::: 173164541771805@lid
+[2025-11-18T13:07:26.895Z] [LOG] msgContact::: {
+  "id": "173164541771805@lid",
+  "name": "Iarley",
+  "lid": null
+}
+[2025-11-18T13:07:26.896Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363022999948876@g.us
+[2025-11-18T13:07:26.897Z] [LOG] JID final para envio: 555192010618@s.whatsapp.net
+[2025-11-18T13:07:26.898Z] [LOG] RemoteJid nao contem @lid: 120363022999948876@g.us
+[2025-11-18T13:07:26.899Z] [LOG] DEBUG - jid: 555192010618@s.whatsapp.net
+[2025-11-18T13:07:26.899Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:07:26.901Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:07:26.902Z] [LOG] senderId::::: 173164541771805@lid
+[2025-11-18T13:07:26.903Z] [LOG] msgContact::: {
+  "id": "173164541771805@lid",
+  "name": "Iarley",
+  "lid": null
+}
+[2025-11-18T13:07:27.322Z] [LOG] contactData::::: {
+  "name": "I- SuperBom - 781/43801/43802/44349",
+  "number": "120363022999948876",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/253898901_1640259252999080_6328515111182513696_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHA2aFAqBN9YKZ0ORphR3tdgAZIFJjG5SOPofGEhA2k1Q&oe=69298C49&_nc_sid=5e03e0&_nc_cat=110",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "I- SuperBom - 781/43801/43802/44349"
+}
+[2025-11-18T13:07:27.322Z] [LOG] Procurando ou criando contato: 120363022999948876 (LID: N/A) na empresa 1
+[2025-11-18T13:07:27.324Z] [LOG] Contato encontrado pelo number: 120363022999948876
+[2025-11-18T13:07:27.324Z] [LOG] null
+[2025-11-18T13:07:27.343Z] [LOG] msgContact2::: {
+  "id": "173164541771805@lid",
+  "name": "Iarley",
+  "lid": null
+}
+[2025-11-18T13:07:27.344Z] [LOG] groupContact::: {
+  "id": 75,
+  "name": "I- SuperBom - 781/43801/43802/44349",
+  "number": "120363022999948876",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/253898901_1640259252999080_6328515111182513696_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHA2aFAqBN9YKZ0ORphR3tdgAZIFJjG5SOPofGEhA2k1Q&oe=69298C49&_nc_sid=5e03e0&_nc_cat=110",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2024-04-18T19:15:51.841Z",
+  "updatedAt": "2025-11-18T12:06:07.811Z"
+}
+[2025-11-18T13:07:27.357Z] [LOG] msgContact2::: {
+  "id": "173164541771805@lid",
+  "name": "Iarley",
+  "lid": null
+}
+[2025-11-18T13:07:27.359Z] [LOG] groupContact::: {
+  "id": 75,
+  "name": "I- SuperBom - 781/43801/43802/44349",
+  "number": "120363022999948876",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/253898901_1640259252999080_6328515111182513696_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHA2aFAqBN9YKZ0ORphR3tdgAZIFJjG5SOPofGEhA2k1Q&oe=69298C49&_nc_sid=5e03e0&_nc_cat=110",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2024-04-18T19:15:51.841Z",
+  "updatedAt": "2025-11-18T12:06:07.811Z"
+}
+[2025-11-18T13:07:27.364Z] [LOG] msgContact2::: {
+  "id": "173164541771805@lid",
+  "name": "Iarley",
+  "lid": null
+}
+[2025-11-18T13:07:27.366Z] [LOG] groupContact::: {
+  "id": 75,
+  "name": "I- SuperBom - 781/43801/43802/44349",
+  "number": "120363022999948876",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/253898901_1640259252999080_6328515111182513696_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHA2aFAqBN9YKZ0ORphR3tdgAZIFJjG5SOPofGEhA2k1Q&oe=69298C49&_nc_sid=5e03e0&_nc_cat=110",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2024-04-18T19:15:51.841Z",
+  "updatedAt": "2025-11-18T12:06:07.811Z"
+}
+[2025-11-18T13:07:27.506Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:07:27.507Z] [LOG] contactData::::: {
+  "name": "Iarley",
+  "number": "173164541771805",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/528681953_761509559976569_55402219141978769_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHyAIqJRCSWXphUXmo7XN5N2WcVKj_Sa_6nVAe5loPfSw&oe=6929969C&_nc_sid=5e03e0&_nc_cat=104",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Iarley"
+}
+[2025-11-18T13:07:27.508Z] [LOG] Procurando ou criando contato: 173164541771805 (LID: N/A) na empresa 1
+[2025-11-18T13:07:27.509Z] [LOG] contactData::::: {
+  "name": "Iarley",
+  "number": "173164541771805",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/528681953_761509559976569_55402219141978769_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHyAIqJRCSWXphUXmo7XN5N2WcVKj_Sa_6nVAe5loPfSw&oe=6929969C&_nc_sid=5e03e0&_nc_cat=104",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Iarley"
+}
+[2025-11-18T13:07:27.509Z] [LOG] Procurando ou criando contato: 173164541771805 (LID: N/A) na empresa 1
+[2025-11-18T13:07:27.511Z] [LOG] Contato encontrado pelo number: 173164541771805
+[2025-11-18T13:07:27.512Z] [LOG] null
+[2025-11-18T13:07:27.516Z] [LOG] Contato encontrado pelo number: 173164541771805
+[2025-11-18T13:07:27.522Z] [LOG] null
+[2025-11-18T13:07:27.525Z] [LOG] contactData::::: {
+  "name": "Iarley",
+  "number": "173164541771805",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/528681953_761509559976569_55402219141978769_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHyAIqJRCSWXphUXmo7XN5N2WcVKj_Sa_6nVAe5loPfSw&oe=6929969C&_nc_sid=5e03e0&_nc_cat=104",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Iarley"
+}
+[2025-11-18T13:07:27.526Z] [LOG] Procurando ou criando contato: 173164541771805 (LID: N/A) na empresa 1
+[2025-11-18T13:07:27.528Z] [LOG] Contato encontrado pelo number: 173164541771805
+[2025-11-18T13:07:27.529Z] [LOG] null
+[2025-11-18T13:07:27.564Z] [LOG] 🔍 Buscando ticket para contato 173164541771805 na conexão 1: Não encontrado
+[2025-11-18T13:07:27.595Z] [LOG] 🔍 Buscando ticket para contato 173164541771805 na conexão 1: Não encontrado
+[2025-11-18T13:07:27.600Z] [LOG] 🔍 Buscando ticket para contato 173164541771805 na conexão 1: Não encontrado
+[2025-11-18T13:07:27.648Z] [LOG] ✅ Novo ticket criado: #3656 para contato 173164541771805 na conexão 1
+[2025-11-18T13:07:27.654Z] [LOG] 🔄 Ticket existente encontrado: #3656 para conexão 1
+[2025-11-18T13:07:27.659Z] [LOG] 🔄 Ticket existente encontrado: #3656 para conexão 1
+[2025-11-18T13:07:35.432Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:07:35.933Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363197233144780@g.us",
+      "fromMe": false,
+      "id": "3EB09BBBE1B28C6AE71AF2"
+    },
+    "message": {
+      "conversation": "*Fabricio Silva:*\npode testar novamente apos inicializar o frente de caixa"
+    },
+    "messageTimestamp": "1763471230",
+    "participant": "56534939775231@lid",
+    "reportingTokenInfo": {
+      "reportingTag": "AQ0vDMz5xfffGSlIPLieuw=="
+    },
+    "isMentionedInStatus": false
+  }
+]
+[2025-11-18T13:07:35.962Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363197233144780@g.us
+[2025-11-18T13:07:35.962Z] [LOG] JID final para envio: @undefined
+[2025-11-18T13:07:35.963Z] [LOG] RemoteJid nao contem @lid: 120363197233144780@g.us
+[2025-11-18T13:07:35.963Z] [LOG] DEBUG - jid: @undefined
+[2025-11-18T13:07:35.963Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:07:35.964Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:07:35.964Z] [LOG] senderId::::: 56534939775231@lid
+[2025-11-18T13:07:35.964Z] [LOG] msgContact::: {
+  "id": "56534939775231@lid",
+  "name": null,
+  "lid": null
+}
+[2025-11-18T13:07:36.342Z] [LOG] contactData::::: {
+  "name": "I- Supermercado Bom Gosto - 43931",
+  "number": "120363197233144780",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/404974176_1028032578421726_227885482870833507_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHXm7cgXXCPs9ui2fVfw0UQzeuFuTEsWpZ8WDwhib7fpw&oe=6929827D&_nc_sid=5e03e0&_nc_cat=104",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "I- Supermercado Bom Gosto - 43931"
+}
+[2025-11-18T13:07:36.342Z] [LOG] Procurando ou criando contato: 120363197233144780 (LID: N/A) na empresa 1
+[2025-11-18T13:07:36.344Z] [LOG] Contato encontrado pelo number: 120363197233144780
+[2025-11-18T13:07:36.345Z] [LOG] null
+[2025-11-18T13:07:36.354Z] [LOG] msgContact2::: {
+  "id": "56534939775231@lid",
+  "name": null,
+  "lid": null
+}
+[2025-11-18T13:07:36.356Z] [LOG] groupContact::: {
+  "id": 30,
+  "name": "I- Supermercado Bom Gosto - 43931",
+  "number": "120363197233144780",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/404974176_1028032578421726_227885482870833507_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHXm7cgXXCPs9ui2fVfw0UQzeuFuTEsWpZ8WDwhib7fpw&oe=6929827D&_nc_sid=5e03e0&_nc_cat=104",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2024-04-18T11:20:01.034Z",
+  "updatedAt": "2025-11-18T12:06:17.215Z"
+}
+[2025-11-18T13:07:36.498Z] [LOG] contactData::::: {
+  "name": "56534939775231",
+  "number": "56534939775231",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/473393714_931638749102817_6659221487139314508_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGqDVFaVPEhlwk75OB6bGZ1ag-5ItJA9mXDBTzlQ0AnVg&oe=692983CF&_nc_sid=5e03e0&_nc_cat=111",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": null
+}
+[2025-11-18T13:07:36.499Z] [LOG] Procurando ou criando contato: 56534939775231 (LID: N/A) na empresa 1
+[2025-11-18T13:07:36.501Z] [LOG] Contato encontrado pelo number: 56534939775231
+[2025-11-18T13:07:36.502Z] [LOG] null
+[2025-11-18T13:07:36.535Z] [LOG] 🔍 Buscando ticket para contato 56534939775231 na conexão 1: #3654 (pending)
+[2025-11-18T13:07:36.535Z] [LOG] 🔍 Ticket encontrado: #3654 - Status: pending, UserId: null
+[2025-11-18T13:07:36.537Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:07:44.196Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "555192718953-1551144060@g.us",
+      "fromMe": false,
+      "id": "3F4C3BAE695D0232DCE1",
+      "participant": "89571559788604@lid",
+      "participantAlt": "555184057524@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471111,
+    "pushName": "Guilherme Zardo @Logicbox",
+    "broadcast": false,
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "555192718953-1551144060@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwi0j7/pBBAAGiB3YyMVTL8ZPnLbN+VRAcCV9xKGIa/P4kVx1GYgckmSZyIhBb7we2OGlTXI9SSOEOZAgaLbopqybRNCbOEKlQbDlply"
+      },
+      "extendedTextMessage": {
+        "text": "vou entrar",
+        "contextInfo": {
+          "expiration": 0
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "SRKUnlJDrr9HZQ==",
+          "senderTimestamp": "1762789368",
+          "recipientKeyHash": "oTD/2hjAaaPguQ==",
+          "recipientTimestamp": "1763406669"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  }
+]
+[2025-11-18T13:07:45.304Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363022999948876@g.us",
+      "fromMe": false,
+      "id": "3EB0A934206F8351676C54",
+      "participant": "190013698515036@lid",
+      "participantAlt": "555198226776@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471264,
+    "pushName": "Deyvid Saraiva",
+    "broadcast": false,
+    "message": {
+      "conversation": "primeiro coloca o multiplicado",
+      "senderKeyDistributionMessage": {
+        "groupId": "120363022999948876@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiapvbWAhAAGiD5UIRa1RmVMy4P4cKh22hEEQXsPT6ikySsqlVd2BaT/CIhBbvI70uoNCWcRiwUnSXPaigGKqhvGXtHmwdjLXXiSWx1"
+      },
+      "messageContextInfo": {
+        "messageSecret": "xHIolEAki+4O4W///jfbwxBxo3/Fo1o5fxwjgujgkfY=",
+        "limitSharingV2": {
+          "sharingLimited": false,
+          "trigger": "UNKNOWN",
+          "limitSharingSettingTimestamp": "0",
+          "initiatedByMe": false
+        }
+      }
+    }
+  }
+]
+[2025-11-18T13:07:45.359Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363022999948876@g.us
+[2025-11-18T13:07:45.360Z] [LOG] JID final para envio: 555198226776@s.whatsapp.net
+[2025-11-18T13:07:45.361Z] [LOG] RemoteJid nao contem @lid: 120363022999948876@g.us
+[2025-11-18T13:07:45.362Z] [LOG] DEBUG - jid: 555198226776@s.whatsapp.net
+[2025-11-18T13:07:45.362Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:07:45.363Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:07:45.364Z] [LOG] senderId::::: 190013698515036@lid
+[2025-11-18T13:07:45.364Z] [LOG] msgContact::: {
+  "id": "190013698515036@lid",
+  "name": "Deyvid Saraiva",
+  "lid": null
+}
+[2025-11-18T13:07:45.381Z] [LOG] msgContact2::: {
+  "id": "190013698515036@lid",
+  "name": "Deyvid Saraiva",
+  "lid": null
+}
+[2025-11-18T13:07:45.382Z] [LOG] groupContact::: {
+  "id": 75,
+  "name": "I- SuperBom - 781/43801/43802/44349",
+  "number": "120363022999948876",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/253898901_1640259252999080_6328515111182513696_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHA2aFAqBN9YKZ0ORphR3tdgAZIFJjG5SOPofGEhA2k1Q&oe=69298C49&_nc_sid=5e03e0&_nc_cat=110",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2024-04-18T19:15:51.841Z",
+  "updatedAt": "2025-11-18T12:06:07.811Z"
+}
+[2025-11-18T13:07:45.525Z] [LOG] contactData::::: {
+  "name": "Deyvid Saraiva",
+  "number": "190013698515036",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491840156_1199925235121019_1262230303192914522_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEb5dB0wu6RAFnUvhHeyBUg9Xk03qqrQd3CoczK5KWKhQ&oe=69298BF0&_nc_sid=5e03e0&_nc_cat=109",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Deyvid Saraiva"
+}
+[2025-11-18T13:07:45.526Z] [LOG] Procurando ou criando contato: 190013698515036 (LID: N/A) na empresa 1
+[2025-11-18T13:07:45.528Z] [LOG] Contato encontrado pelo number: 190013698515036
+[2025-11-18T13:07:45.529Z] [LOG] null
+[2025-11-18T13:07:45.550Z] [LOG] 🔍 Buscando ticket para contato 190013698515036 na conexão 1: #3656 (pending)
+[2025-11-18T13:07:45.550Z] [LOG] 🔍 Ticket encontrado: #3656 - Status: pending, UserId: null
+[2025-11-18T13:07:45.551Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:07:47.732Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363022999948876@g.us",
+      "fromMe": false,
+      "id": "3EB0BACAE266F067671B76",
+      "participant": "190013698515036@lid",
+      "participantAlt": "555198226776@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471267,
+    "pushName": "Deyvid Saraiva",
+    "broadcast": false,
+    "message": {
+      "conversation": "quantidade e *",
+      "messageContextInfo": {
+        "messageSecret": "+JSJZF6UUw4PD8WtO8gW4hu94r4p5kH2DG0XGr/mhjY=",
+        "limitSharingV2": {
+          "sharingLimited": false,
+          "trigger": "UNKNOWN",
+          "limitSharingSettingTimestamp": "0",
+          "initiatedByMe": false
+        }
+      }
+    }
+  }
+]
+[2025-11-18T13:07:47.760Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363022999948876@g.us
+[2025-11-18T13:07:47.761Z] [LOG] JID final para envio: 555198226776@s.whatsapp.net
+[2025-11-18T13:07:47.761Z] [LOG] RemoteJid nao contem @lid: 120363022999948876@g.us
+[2025-11-18T13:07:47.762Z] [LOG] DEBUG - jid: 555198226776@s.whatsapp.net
+[2025-11-18T13:07:47.763Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:07:47.763Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:07:47.764Z] [LOG] senderId::::: 190013698515036@lid
+[2025-11-18T13:07:47.764Z] [LOG] msgContact::: {
+  "id": "190013698515036@lid",
+  "name": "Deyvid Saraiva",
+  "lid": null
+}
+[2025-11-18T13:07:47.777Z] [LOG] msgContact2::: {
+  "id": "190013698515036@lid",
+  "name": "Deyvid Saraiva",
+  "lid": null
+}
+[2025-11-18T13:07:47.779Z] [LOG] groupContact::: {
+  "id": 75,
+  "name": "I- SuperBom - 781/43801/43802/44349",
+  "number": "120363022999948876",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/253898901_1640259252999080_6328515111182513696_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHA2aFAqBN9YKZ0ORphR3tdgAZIFJjG5SOPofGEhA2k1Q&oe=69298C49&_nc_sid=5e03e0&_nc_cat=110",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2024-04-18T19:15:51.841Z",
+  "updatedAt": "2025-11-18T12:06:07.811Z"
+}
+[2025-11-18T13:07:47.923Z] [LOG] contactData::::: {
+  "name": "Deyvid Saraiva",
+  "number": "190013698515036",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491840156_1199925235121019_1262230303192914522_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEb5dB0wu6RAFnUvhHeyBUg9Xk03qqrQd3CoczK5KWKhQ&oe=69298BF0&_nc_sid=5e03e0&_nc_cat=109",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Deyvid Saraiva"
+}
+[2025-11-18T13:07:47.923Z] [LOG] Procurando ou criando contato: 190013698515036 (LID: N/A) na empresa 1
+[2025-11-18T13:07:47.926Z] [LOG] Contato encontrado pelo number: 190013698515036
+[2025-11-18T13:07:47.927Z] [LOG] null
+[2025-11-18T13:07:47.944Z] [LOG] 🔍 Buscando ticket para contato 190013698515036 na conexão 1: #3656 (pending)
+[2025-11-18T13:07:47.944Z] [LOG] 🔍 Ticket encontrado: #3656 - Status: pending, UserId: null
+[2025-11-18T13:07:47.945Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:07:49.781Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:07:57.765Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:07:58.852Z] [LOG] bodyyyyyyyyyy: *dorneles:*
+oi
+[2025-11-18T13:07:58.854Z] [LOG] ticket.contact {
+  "id": 691,
+  "name": "RAFAEL DORNELES 42915",
+  "lid": null,
+  "number": "555181049215",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491865890_804856451865782_7057984051779416191_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AG6alkV6YT6B3fqvxqi05QEmdBFsQayO_zniiCYI3FYxQ&oe=69297F88&_nc_sid=5e03e0&_nc_cat=103",
+  "extraInfo": []
+}
+[2025-11-18T13:07:58.854Z] [LOG] Usando NUMBER para envio: 555181049215
+[2025-11-18T13:07:58.855Z] [LOG] number 555181049215@s.whatsapp.net
+[2025-11-18T13:07:58.859Z] [LOG] body::::::::::::::::::::::::::: *dorneles:*
+oi
+[2025-11-18T13:07:58.859Z] [LOG] lastSystemMsg::::::::::::::::::::::::::: 555181049215
+[2025-11-18T13:07:59.103Z] [LOG] Message sent {
+  "key": {
+    "remoteJid": "555181049215@s.whatsapp.net",
+    "fromMe": true,
+    "id": "3EB0042A573271DACE3FC8"
+  },
+  "message": {
+    "extendedTextMessage": {
+      "text": "*dorneles:*\noi",
+      "contextInfo": {
+        "forwardingScore": 0,
+        "isForwarded": false
+      }
+    }
+  },
+  "messageTimestamp": "1763471278",
+  "status": "PENDING"
+}
+[2025-11-18T13:07:59.202Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "555181049215@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB0042A573271DACE3FC8"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "*dorneles:*\noi",
+        "contextInfo": {
+          "forwardingScore": 0,
+          "isForwarded": false
+        }
+      }
+    },
+    "messageTimestamp": "1763471278",
+    "status": "PENDING"
+  }
+]
+[2025-11-18T13:07:59.293Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 555181049215@s.whatsapp.net
+[2025-11-18T13:07:59.293Z] [LOG] JID final para envio: 555181049215@s.whatsapp.net
+[2025-11-18T13:07:59.294Z] [LOG] RemoteJid nao contem @lid: 555181049215@s.whatsapp.net
+[2025-11-18T13:07:59.295Z] [LOG] DEBUG - jid: 555181049215@s.whatsapp.net
+[2025-11-18T13:07:59.296Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:07:59.297Z] [LOG] DEBUG - isGroup: false
+[2025-11-18T13:07:59.297Z] [LOG] msgContact::: {
+  "id": "555181049215@s.whatsapp.net",
+  "name": "555181049215",
+  "lid": null
+}
+[2025-11-18T13:07:59.315Z] [LOG] msgContact2::: {
+  "id": "555181049215@s.whatsapp.net",
+  "name": "555181049215",
+  "lid": null
+}
+[2025-11-18T13:07:59.315Z] [LOG] groupContact::: undefined
+[2025-11-18T13:07:59.462Z] [LOG] contactData::::: {
+  "name": "555181049215",
+  "number": "555181049215",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491865890_804856451865782_7057984051779416191_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AG6alkV6YT6B3fqvxqi05QEmdBFsQayO_zniiCYI3FYxQ&oe=69297F88&_nc_sid=5e03e0&_nc_cat=103",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "555181049215"
+}
+[2025-11-18T13:07:59.462Z] [LOG] Procurando ou criando contato: 555181049215 (LID: N/A) na empresa 1
+[2025-11-18T13:07:59.465Z] [LOG] Contato encontrado pelo number: 555181049215
+[2025-11-18T13:07:59.466Z] [LOG] null
+[2025-11-18T13:07:59.486Z] [LOG] 🔍 Buscando ticket para contato 555181049215 na conexão 1: #624 (open)
+[2025-11-18T13:07:59.487Z] [LOG] 🔍 Ticket encontrado: #624 - Status: open, UserId: 7
+[2025-11-18T13:07:59.490Z] [LOG] ✅ Mantendo ticket aberto com atendente 7
+[2025-11-18T13:07:59.553Z] [LOG] 🔍 Verificando condições para verifyQueue:
+[2025-11-18T13:07:59.554Z] [LOG] - ticket.queue: [object SequelizeInstance:Queue]
+[2025-11-18T13:07:59.554Z] [LOG] - ticket.isGroup: false
+[2025-11-18T13:07:59.555Z] [LOG] - msg.key.fromMe: true
+[2025-11-18T13:07:59.555Z] [LOG] - ticket.userId: 7
+[2025-11-18T13:07:59.555Z] [LOG] - whatsapp.queues.length: 1
+[2025-11-18T13:07:59.556Z] [LOG] - ticket.useIntegration: true
+[2025-11-18T13:07:59.556Z] [LOG] ✅ IGNORANDO verifyQueue - Mensagem enviada pelo atendente 7
+[2025-11-18T13:08:02.039Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363022999948876@g.us",
+      "fromMe": false,
+      "id": "3EB0256CE710FD217455E3",
+      "participant": "190013698515036@lid",
+      "participantAlt": "555198226776@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471281,
+    "pushName": "Deyvid Saraiva",
+    "broadcast": false,
+    "message": {
+      "conversation": "o ctrl+f8",
+      "messageContextInfo": {
+        "messageSecret": "7KVB5HUu+A231t6trDWU0lxsiz1RF8WIMWTeQa5i6hE=",
+        "limitSharingV2": {
+          "sharingLimited": false,
+          "trigger": "UNKNOWN",
+          "limitSharingSettingTimestamp": "0",
+          "initiatedByMe": false
+        }
+      }
+    }
+  }
+]
+[2025-11-18T13:08:02.104Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363022999948876@g.us
+[2025-11-18T13:08:02.104Z] [LOG] JID final para envio: 555198226776@s.whatsapp.net
+[2025-11-18T13:08:02.105Z] [LOG] RemoteJid nao contem @lid: 120363022999948876@g.us
+[2025-11-18T13:08:02.105Z] [LOG] DEBUG - jid: 555198226776@s.whatsapp.net
+[2025-11-18T13:08:02.105Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:08:02.106Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:08:02.106Z] [LOG] senderId::::: 190013698515036@lid
+[2025-11-18T13:08:02.106Z] [LOG] msgContact::: {
+  "id": "190013698515036@lid",
+  "name": "Deyvid Saraiva",
+  "lid": null
+}
+[2025-11-18T13:08:02.531Z] [LOG] contactData::::: {
+  "name": "I- SuperBom - 781/43801/43802/44349",
+  "number": "120363022999948876",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/253898901_1640259252999080_6328515111182513696_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHA2aFAqBN9YKZ0ORphR3tdgAZIFJjG5SOPofGEhA2k1Q&oe=69298C49&_nc_sid=5e03e0&_nc_cat=110",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "I- SuperBom - 781/43801/43802/44349"
+}
+[2025-11-18T13:08:02.531Z] [LOG] Procurando ou criando contato: 120363022999948876 (LID: N/A) na empresa 1
+[2025-11-18T13:08:02.533Z] [LOG] Contato encontrado pelo number: 120363022999948876
+[2025-11-18T13:08:02.534Z] [LOG] null
+[2025-11-18T13:08:02.544Z] [LOG] msgContact2::: {
+  "id": "190013698515036@lid",
+  "name": "Deyvid Saraiva",
+  "lid": null
+}
+[2025-11-18T13:08:02.546Z] [LOG] groupContact::: {
+  "id": 75,
+  "name": "I- SuperBom - 781/43801/43802/44349",
+  "number": "120363022999948876",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/253898901_1640259252999080_6328515111182513696_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHA2aFAqBN9YKZ0ORphR3tdgAZIFJjG5SOPofGEhA2k1Q&oe=69298C49&_nc_sid=5e03e0&_nc_cat=110",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2024-04-18T19:15:51.841Z",
+  "updatedAt": "2025-11-18T12:06:07.811Z"
+}
+[2025-11-18T13:08:02.697Z] [LOG] contactData::::: {
+  "name": "Deyvid Saraiva",
+  "number": "190013698515036",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491840156_1199925235121019_1262230303192914522_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEb5dB0wu6RAFnUvhHeyBUg9Xk03qqrQd3CoczK5KWKhQ&oe=69298BF0&_nc_sid=5e03e0&_nc_cat=109",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Deyvid Saraiva"
+}
+[2025-11-18T13:08:02.697Z] [LOG] Procurando ou criando contato: 190013698515036 (LID: N/A) na empresa 1
+[2025-11-18T13:08:02.699Z] [LOG] Contato encontrado pelo number: 190013698515036
+[2025-11-18T13:08:02.700Z] [LOG] null
+[2025-11-18T13:08:02.730Z] [LOG] 🔍 Buscando ticket para contato 190013698515036 na conexão 1: #3656 (pending)
+[2025-11-18T13:08:02.731Z] [LOG] 🔍 Ticket encontrado: #3656 - Status: pending, UserId: null
+[2025-11-18T13:08:02.731Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:08:04.939Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "555181049215@s.whatsapp.net",
+      "remoteJidAlt": "229024869707825@lid",
+      "fromMe": false,
+      "id": "3EB07852CE765FB54673BC",
+      "participant": "",
+      "addressingMode": "pn"
+    },
+    "messageTimestamp": 1763471284,
+    "pushName": "Rafael Dorneles",
+    "broadcast": false,
+    "message": {
+      "conversation": "2",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "pH8hTn+VrO+Hrg==",
+          "senderTimestamp": "1763386803",
+          "senderAccountType": "E2EE",
+          "receiverAccountType": "E2EE",
+          "recipientKeyHash": "oTD/2hjAaaPguQ==",
+          "recipientTimestamp": "1763406669"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "B1nrGwTcpJa0LxapGf6ihFo+/sdJbPd57up7c4u2JqQ=",
+        "limitSharingV2": {
+          "sharingLimited": false,
+          "trigger": "UNKNOWN",
+          "limitSharingSettingTimestamp": "0",
+          "initiatedByMe": false
+        }
+      }
+    }
+  }
+]
+[2025-11-18T13:08:05.011Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 555181049215@s.whatsapp.net
+[2025-11-18T13:08:05.011Z] [LOG] JID final para envio: 555181049215@s.whatsapp.net
+[2025-11-18T13:08:05.012Z] [LOG] RemoteJid nao contem @lid: 555181049215@s.whatsapp.net
+[2025-11-18T13:08:05.012Z] [LOG] DEBUG - jid: 555181049215@s.whatsapp.net
+[2025-11-18T13:08:05.012Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:08:05.013Z] [LOG] DEBUG - isGroup: false
+[2025-11-18T13:08:05.013Z] [LOG] msgContact::: {
+  "id": "555181049215@s.whatsapp.net",
+  "name": "Rafael Dorneles",
+  "lid": null
+}
+[2025-11-18T13:08:05.021Z] [LOG] msgContact2::: {
+  "id": "555181049215@s.whatsapp.net",
+  "name": "Rafael Dorneles",
+  "lid": null
+}
+[2025-11-18T13:08:05.022Z] [LOG] groupContact::: undefined
+[2025-11-18T13:08:05.175Z] [LOG] contactData::::: {
+  "name": "Rafael Dorneles",
+  "number": "555181049215",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491865890_804856451865782_7057984051779416191_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AG6alkV6YT6B3fqvxqi05QEmdBFsQayO_zniiCYI3FYxQ&oe=69297F88&_nc_sid=5e03e0&_nc_cat=103",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 13,
+  "pushName": "Rafael Dorneles"
+}
+[2025-11-18T13:08:05.176Z] [LOG] Procurando ou criando contato: 555181049215 (LID: N/A) na empresa 1
+[2025-11-18T13:08:05.178Z] [LOG] Contato encontrado pelo number: 555181049215
+[2025-11-18T13:08:05.179Z] [LOG] null
+[2025-11-18T13:08:05.199Z] [LOG] 🔍 Buscando ticket para contato 555181049215 na conexão 13: #1476 (pending)
+[2025-11-18T13:08:05.199Z] [LOG] 🔍 Ticket encontrado: #1476 - Status: pending, UserId: null
+[2025-11-18T13:08:05.200Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:08:05.249Z] [LOG] MSG: 2
+[2025-11-18T13:08:05.252Z] [LOG] 🔍 Verificando condições para verifyQueue:
+[2025-11-18T13:08:05.252Z] [LOG] - ticket.queue: [object SequelizeInstance:Queue]
+[2025-11-18T13:08:05.253Z] [LOG] - ticket.isGroup: false
+[2025-11-18T13:08:05.253Z] [LOG] - msg.key.fromMe: false
+[2025-11-18T13:08:05.253Z] [LOG] - ticket.userId: null
+[2025-11-18T13:08:05.254Z] [LOG] - whatsapp.queues.length: 1
+[2025-11-18T13:08:05.254Z] [LOG] - ticket.useIntegration: false
+[2025-11-18T13:08:07.662Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363022999948876@g.us",
+      "fromMe": false,
+      "id": "3EB0AAFC5C0F3AE98F8639",
+      "participant": "190013698515036@lid",
+      "participantAlt": "555198226776@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471287,
+    "pushName": "Deyvid Saraiva",
+    "broadcast": false,
+    "message": {
+      "conversation": "vlor uitario",
+      "messageContextInfo": {
+        "messageSecret": "kiaAHsNWslUuQiZV5kyP/ZLsazENe4agLovUNb6yt14=",
+        "limitSharingV2": {
+          "sharingLimited": false,
+          "trigger": "UNKNOWN",
+          "limitSharingSettingTimestamp": "0",
+          "initiatedByMe": false
+        }
+      }
+    }
+  }
+]
+[2025-11-18T13:08:07.714Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363022999948876@g.us
+[2025-11-18T13:08:07.715Z] [LOG] JID final para envio: 555198226776@s.whatsapp.net
+[2025-11-18T13:08:07.716Z] [LOG] RemoteJid nao contem @lid: 120363022999948876@g.us
+[2025-11-18T13:08:07.717Z] [LOG] DEBUG - jid: 555198226776@s.whatsapp.net
+[2025-11-18T13:08:07.717Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:08:07.718Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:08:07.719Z] [LOG] senderId::::: 190013698515036@lid
+[2025-11-18T13:08:07.720Z] [LOG] msgContact::: {
+  "id": "190013698515036@lid",
+  "name": "Deyvid Saraiva",
+  "lid": null
+}
+[2025-11-18T13:08:07.733Z] [LOG] msgContact2::: {
+  "id": "190013698515036@lid",
+  "name": "Deyvid Saraiva",
+  "lid": null
+}
+[2025-11-18T13:08:07.735Z] [LOG] groupContact::: {
+  "id": 75,
+  "name": "I- SuperBom - 781/43801/43802/44349",
+  "number": "120363022999948876",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/253898901_1640259252999080_6328515111182513696_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHA2aFAqBN9YKZ0ORphR3tdgAZIFJjG5SOPofGEhA2k1Q&oe=69298C49&_nc_sid=5e03e0&_nc_cat=110",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2024-04-18T19:15:51.841Z",
+  "updatedAt": "2025-11-18T12:06:07.811Z"
+}
+[2025-11-18T13:08:07.893Z] [LOG] contactData::::: {
+  "name": "Deyvid Saraiva",
+  "number": "190013698515036",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491840156_1199925235121019_1262230303192914522_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEb5dB0wu6RAFnUvhHeyBUg9Xk03qqrQd3CoczK5KWKhQ&oe=69298BF0&_nc_sid=5e03e0&_nc_cat=109",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Deyvid Saraiva"
+}
+[2025-11-18T13:08:07.894Z] [LOG] Procurando ou criando contato: 190013698515036 (LID: N/A) na empresa 1
+[2025-11-18T13:08:07.898Z] [LOG] Contato encontrado pelo number: 190013698515036
+[2025-11-18T13:08:07.899Z] [LOG] null
+[2025-11-18T13:08:07.924Z] [LOG] 🔍 Buscando ticket para contato 190013698515036 na conexão 1: #3656 (pending)
+[2025-11-18T13:08:07.925Z] [LOG] 🔍 Ticket encontrado: #3656 - Status: pending, UserId: null
+[2025-11-18T13:08:07.926Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:08:09.344Z] [LOG] ticketData {
+  "status": "open",
+  "userId": 7
+}
+[2025-11-18T13:08:09.489Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363022999948876@g.us",
+      "fromMe": false,
+      "id": "3EB09E6412241207CDE5B0",
+      "participant": "190013698515036@lid",
+      "participantAlt": "555198226776@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471289,
+    "pushName": "Deyvid Saraiva",
+    "broadcast": false,
+    "message": {
+      "conversation": "e le o produto",
+      "messageContextInfo": {
+        "messageSecret": "774u/ORA56JI6pL6sePI11GTe587i7DrVAaJajnkka0=",
+        "limitSharingV2": {
+          "sharingLimited": false,
+          "trigger": "UNKNOWN",
+          "limitSharingSettingTimestamp": "0",
+          "initiatedByMe": false
+        }
+      }
+    }
+  }
+]
+[2025-11-18T13:08:09.518Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363022999948876@g.us
+[2025-11-18T13:08:09.519Z] [LOG] JID final para envio: 555198226776@s.whatsapp.net
+[2025-11-18T13:08:09.519Z] [LOG] RemoteJid nao contem @lid: 120363022999948876@g.us
+[2025-11-18T13:08:09.520Z] [LOG] DEBUG - jid: 555198226776@s.whatsapp.net
+[2025-11-18T13:08:09.520Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:08:09.521Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:08:09.521Z] [LOG] senderId::::: 190013698515036@lid
+[2025-11-18T13:08:09.522Z] [LOG] msgContact::: {
+  "id": "190013698515036@lid",
+  "name": "Deyvid Saraiva",
+  "lid": null
+}
+[2025-11-18T13:08:09.530Z] [LOG] msgContact2::: {
+  "id": "190013698515036@lid",
+  "name": "Deyvid Saraiva",
+  "lid": null
+}
+[2025-11-18T13:08:09.532Z] [LOG] groupContact::: {
+  "id": 75,
+  "name": "I- SuperBom - 781/43801/43802/44349",
+  "number": "120363022999948876",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/253898901_1640259252999080_6328515111182513696_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHA2aFAqBN9YKZ0ORphR3tdgAZIFJjG5SOPofGEhA2k1Q&oe=69298C49&_nc_sid=5e03e0&_nc_cat=110",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2024-04-18T19:15:51.841Z",
+  "updatedAt": "2025-11-18T12:06:07.811Z"
+}
+[2025-11-18T13:08:09.676Z] [LOG] contactData::::: {
+  "name": "Deyvid Saraiva",
+  "number": "190013698515036",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491840156_1199925235121019_1262230303192914522_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEb5dB0wu6RAFnUvhHeyBUg9Xk03qqrQd3CoczK5KWKhQ&oe=69298BF0&_nc_sid=5e03e0&_nc_cat=109",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Deyvid Saraiva"
+}
+[2025-11-18T13:08:09.677Z] [LOG] Procurando ou criando contato: 190013698515036 (LID: N/A) na empresa 1
+[2025-11-18T13:08:09.679Z] [LOG] Contato encontrado pelo number: 190013698515036
+[2025-11-18T13:08:09.680Z] [LOG] null
+[2025-11-18T13:08:09.700Z] [LOG] 🔍 Buscando ticket para contato 190013698515036 na conexão 1: #3656 (pending)
+[2025-11-18T13:08:09.700Z] [LOG] 🔍 Ticket encontrado: #3656 - Status: pending, UserId: null
+[2025-11-18T13:08:09.705Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:08:13.027Z] [LOG] bodyyyyyyyyyy: *dorneles:*
+revendas
+[2025-11-18T13:08:13.028Z] [LOG] ticket.contact {
+  "id": 691,
+  "name": "RAFAEL DORNELES 42915",
+  "lid": null,
+  "number": "555181049215",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491865890_804856451865782_7057984051779416191_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AG6alkV6YT6B3fqvxqi05QEmdBFsQayO_zniiCYI3FYxQ&oe=69297F88&_nc_sid=5e03e0&_nc_cat=103",
+  "extraInfo": []
+}
+[2025-11-18T13:08:13.028Z] [LOG] Usando NUMBER para envio: 555181049215
+[2025-11-18T13:08:13.029Z] [LOG] number 555181049215@s.whatsapp.net
+[2025-11-18T13:08:13.030Z] [LOG] body::::::::::::::::::::::::::: *dorneles:*
+revendas
+[2025-11-18T13:08:13.031Z] [LOG] lastSystemMsg::::::::::::::::::::::::::: 555181049215
+[2025-11-18T13:08:13.356Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363418217113608@g.us",
+      "fromMe": false,
+      "id": "3AA2A799256EC6C125C9",
+      "participant": "276870788546619@lid",
+      "participantAlt": "555499707670@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471292,
+    "pushName": ".",
+    "broadcast": false,
+    "message": {
+      "conversation": "Outro detalhe que observei: \nEstou fazendo uma Nf de entrada, preciso colocar o valor do ICMS e ratear entre os produtos. \nColoquei o valor e apertei f4 \nMas ele entrou o valor só em alguns produtos e não em todos.",
+      "senderKeyDistributionMessage": {
+        "groupId": "120363418217113608@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwj+wP3oBxAAGiDgSmvawMoY2XIYQm2H38ojo2Tqckdal1r/ZoxD2KjECCIhBa76xRqcY0C5WmcxcyoBbUVtb7n5yx9P8CuAVyrFHMsf"
+      },
+      "messageContextInfo": {
+        "messageSecret": "pbcXjOjSZzQuhkSklDkmvG6UvpETnhbmbD+P/hD/zxA="
+      }
+    }
+  }
+]
+[2025-11-18T13:08:13.416Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363418217113608@g.us
+[2025-11-18T13:08:13.416Z] [LOG] JID final para envio: 555499707670@s.whatsapp.net
+[2025-11-18T13:08:13.417Z] [LOG] RemoteJid nao contem @lid: 120363418217113608@g.us
+[2025-11-18T13:08:13.417Z] [LOG] DEBUG - jid: 555499707670@s.whatsapp.net
+[2025-11-18T13:08:13.417Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:08:13.418Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:08:13.418Z] [LOG] senderId::::: 276870788546619@lid
+[2025-11-18T13:08:13.418Z] [LOG] msgContact::: {
+  "id": "276870788546619@lid",
+  "name": ".",
+  "lid": null
+}
+[2025-11-18T13:08:13.516Z] [LOG] Message sent {
+  "key": {
+    "remoteJid": "555181049215@s.whatsapp.net",
+    "fromMe": true,
+    "id": "3EB0DE2E74216806C3597F"
+  },
+  "message": {
+    "extendedTextMessage": {
+      "text": "*dorneles:*\nrevendas",
+      "contextInfo": {
+        "forwardingScore": 0,
+        "isForwarded": false
+      }
+    }
+  },
+  "messageTimestamp": "1763471293",
+  "status": "PENDING"
+}
+[2025-11-18T13:08:13.616Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "555181049215@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB0DE2E74216806C3597F"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "*dorneles:*\nrevendas",
+        "contextInfo": {
+          "forwardingScore": 0,
+          "isForwarded": false
+        }
+      }
+    },
+    "messageTimestamp": "1763471293",
+    "status": "PENDING"
+  }
+]
+[2025-11-18T13:08:13.672Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 555181049215@s.whatsapp.net
+[2025-11-18T13:08:13.673Z] [LOG] JID final para envio: 555181049215@s.whatsapp.net
+[2025-11-18T13:08:13.673Z] [LOG] RemoteJid nao contem @lid: 555181049215@s.whatsapp.net
+[2025-11-18T13:08:13.674Z] [LOG] DEBUG - jid: 555181049215@s.whatsapp.net
+[2025-11-18T13:08:13.674Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:08:13.675Z] [LOG] DEBUG - isGroup: false
+[2025-11-18T13:08:13.675Z] [LOG] msgContact::: {
+  "id": "555181049215@s.whatsapp.net",
+  "name": "555181049215",
+  "lid": null
+}
+[2025-11-18T13:08:13.685Z] [LOG] msgContact2::: {
+  "id": "555181049215@s.whatsapp.net",
+  "name": "555181049215",
+  "lid": null
+}
+[2025-11-18T13:08:13.685Z] [LOG] groupContact::: undefined
+[2025-11-18T13:08:13.788Z] [LOG] contactData::::: {
+  "name": "I - Artplast 46821/46837",
+  "number": "120363418217113608",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/537453960_1287780875585422_3102369944390375522_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEN9T2tKbqhUO51Clh9o2-fdcpPuik25U7C2V8SrjdHGA&oe=69299BED&_nc_sid=5e03e0&_nc_cat=101",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "I - Artplast 46821/46837"
+}
+[2025-11-18T13:08:13.789Z] [LOG] Procurando ou criando contato: 120363418217113608 (LID: N/A) na empresa 1
+[2025-11-18T13:08:13.792Z] [LOG] Contato encontrado pelo number: 120363418217113608
+[2025-11-18T13:08:13.793Z] [LOG] null
+[2025-11-18T13:08:13.807Z] [LOG] msgContact2::: {
+  "id": "276870788546619@lid",
+  "name": ".",
+  "lid": null
+}
+[2025-11-18T13:08:13.809Z] [LOG] groupContact::: {
+  "id": 2603,
+  "name": "I - Artplast 46821/46837",
+  "number": "120363418217113608",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/537453960_1287780875585422_3102369944390375522_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEN9T2tKbqhUO51Clh9o2-fdcpPuik25U7C2V8SrjdHGA&oe=69299BED&_nc_sid=5e03e0&_nc_cat=101",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-10-03T14:27:00.328Z",
+  "updatedAt": "2025-11-18T13:08:13.793Z"
+}
+[2025-11-18T13:08:13.833Z] [LOG] contactData::::: {
+  "name": "555181049215",
+  "number": "555181049215",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491865890_804856451865782_7057984051779416191_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AG6alkV6YT6B3fqvxqi05QEmdBFsQayO_zniiCYI3FYxQ&oe=69297F88&_nc_sid=5e03e0&_nc_cat=103",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 13,
+  "pushName": "555181049215"
+}
+[2025-11-18T13:08:13.836Z] [LOG] Procurando ou criando contato: 555181049215 (LID: N/A) na empresa 1
+[2025-11-18T13:08:13.840Z] [LOG] Contato encontrado pelo number: 555181049215
+[2025-11-18T13:08:13.841Z] [LOG] null
+[2025-11-18T13:08:13.864Z] [LOG] 🔍 Buscando ticket para contato 555181049215 na conexão 13: #1476 (open)
+[2025-11-18T13:08:13.865Z] [LOG] 🔍 Ticket encontrado: #1476 - Status: open, UserId: 7
+[2025-11-18T13:08:13.866Z] [LOG] ✅ Mantendo ticket aberto com atendente 7
+[2025-11-18T13:08:13.921Z] [LOG] 🔍 Verificando condições para verifyQueue:
+[2025-11-18T13:08:13.921Z] [LOG] - ticket.queue: [object SequelizeInstance:Queue]
+[2025-11-18T13:08:13.922Z] [LOG] - ticket.isGroup: false
+[2025-11-18T13:08:13.922Z] [LOG] - msg.key.fromMe: true
+[2025-11-18T13:08:13.923Z] [LOG] - ticket.userId: 7
+[2025-11-18T13:08:13.924Z] [LOG] - whatsapp.queues.length: 1
+[2025-11-18T13:08:13.924Z] [LOG] - ticket.useIntegration: false
+[2025-11-18T13:08:13.925Z] [LOG] ✅ IGNORANDO verifyQueue - Mensagem enviada pelo atendente 7
+[2025-11-18T13:08:13.991Z] [LOG] contactData::::: {
+  "name": ".",
+  "number": "276870788546619",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "."
+}
+[2025-11-18T13:08:13.991Z] [LOG] Procurando ou criando contato: 276870788546619 (LID: N/A) na empresa 1
+[2025-11-18T13:08:13.996Z] [LOG] Contato encontrado pelo number: 276870788546619
+[2025-11-18T13:08:13.996Z] [LOG] null
+[2025-11-18T13:08:14.016Z] [LOG] 🔍 Buscando ticket para contato 276870788546619 na conexão 1: Não encontrado
+[2025-11-18T13:08:14.033Z] [LOG] ✅ Novo ticket criado: #3659 para contato 276870788546619 na conexão 1
+[2025-11-18T13:08:21.366Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:08:37.273Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363418217113608@g.us",
+      "fromMe": false,
+      "id": "3AD85A643C7FE74C29CD",
+      "participant": "276870788546619@lid",
+      "participantAlt": "555499707670@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471316,
+    "pushName": ".",
+    "broadcast": false,
+    "message": {
+      "videoMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.7161-24/584615190_687606734145161_1341904303969321820_n.enc?ccb=11-4&oh=01_Q5Aa3AGN6G9Nz3RKIHsEbxlhSMgrHmyzTQiRB7B2blaKCbPAcA&oe=6943C4F4&_nc_sid=5e03e0&mms3=true",
+        "mimetype": "video/mp4",
+        "fileSha256": "jI8oBOEQt9+/gfJuWxFnRcVTQEEt9zxTOP+3Q/aJtwQ=",
+        "fileLength": "2531735",
+        "seconds": 16,
+        "mediaKey": "6ggFIXsFRHgRPn9QzK15SLJoBFRi6mG+qqrUnc2qbjM=",
+        "height": 832,
+        "width": 464,
+        "fileEncSha256": "H2X0WTPNxR10vori9+bbYEoQp5P9cufBCPLwGpFMGn8=",
+        "directPath": "/v/t62.7161-24/584615190_687606734145161_1341904303969321820_n.enc?ccb=11-4&oh=01_Q5Aa3AGN6G9Nz3RKIHsEbxlhSMgrHmyzTQiRB7B2blaKCbPAcA&oe=6943C4F4&_nc_sid=5e03e0",
+        "mediaKeyTimestamp": "1763471315",
+        "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wgARCABIAEgDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAECBQME/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/2gAMAwEAAhADEAAAAMrSzNL28WxalVyaOKJUdQy9PM04l095mwqapxxLJcr3eL2cJ1qX3vQV2cHJ5ssRl4dPL0fXqyGVXNgU8zidwx/YGtVQDYUIMmBL/8QAIBEAAQMDBQEAAAAAAAAAAAAAAQACERAgMQMSUZHwIf/aAAgBAgEBPwBuLICBj4pmzVGEMUc50590t7ufdWbW8JzQ4ybCaf/EABkRAAIDAQAAAAAAAAAAAAAAAAABEBIgEf/aAAgBAwEBPwB46PLc2LMc8KLX/8QAKhAAAgECBAYBBAMAAAAAAAAAAAERAgMEEjFBBRMhUWFxECIjMjNCQ2L/2gAIAQEAAT8A4fKvvLrBN/wxXmvD9CvtixG3Q5qeqRU7UTVbTKaMLccK0h4TDP8ArMDKuuNYKbihTMlLddX0/jvJU5cUJNbmRJwlLOX/AJHStBUKeiZy/Zw1Tfa8Dts5dS/FsVDWgqWnKcMpzbs5NOaeo6UvBy1Mq4zh0q82lPQVbetJnjYXcb3kzIVSeg+upkpe5w/9r9EvuQvhUpmRFby1uBVuNSdu5gP2VehC+KH5+Lj+ti01N1ocOX3n6MtPYhEIyoXQdqXMjsvLElGHdLlOTAOLja7CrbM77GfwcxCuIVaZmXczIwdym3W3U46CxFp/yQrtt6VITpejEkyEZYI89fj//gADAP/Z",
+        "contextInfo": {
+          "statusSourceType": "VIDEO"
+        },
+        "streamingSidecar": "TggJKLGAN6f5vEfSBT71ELKY9KPH7KlBbmd8COT4l46/3l6+JRZ17ONP18WhkmCPdI9EncDXRJBxKTVrs7qfTxuR45a31ep8jKE4JcuyWlnduhMiZfwypH/99ALNhz0BhJsIPjHz3Vs4JoKI4d1tPlfxPIhbaIMRFjcMLA+vpftQgsuKV71ZtLuc2EUFdwa8U8iHFSeMUAKImvlc8wJPH+EVBkHYOVuNK1EWzyy4nBOJFf0SS2RUI7GuvhbYQIysBoPx7SZ2up581wi63/KXKDtXlVKkjFhhfeedugWs1996ip1A+aT1Dmlj6BDYKd6ZxJeVuG/VtDK4PeF9XUAuasZB2bK3LiSwVf6JRjwZsmMYUjhPBdd+2CML4yf2MrtZUj1kTJFfMcXjyK+9N2zKzHwM4xG+HEGkgv83O19YwhZGYmKkS70s/0ScRJOBUe9RV5Qm8RYr++JlN1N6jtS19UQ2Lq5FsLCJDeZqvokX2Nv3OB49k6xOi7FRSGyFrUESgyqxnxhX"
+      },
+      "messageContextInfo": {
+        "messageSecret": "YvMp4gl9b6KPtEl21LuOlItAy25t/PWGZL7axSWabMA="
+      }
+    }
+  }
+]
+[2025-11-18T13:08:37.344Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363418217113608@g.us
+[2025-11-18T13:08:37.345Z] [LOG] JID final para envio: 555499707670@s.whatsapp.net
+[2025-11-18T13:08:37.346Z] [LOG] RemoteJid nao contem @lid: 120363418217113608@g.us
+[2025-11-18T13:08:37.347Z] [LOG] DEBUG - jid: 555499707670@s.whatsapp.net
+[2025-11-18T13:08:37.348Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:08:37.348Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:08:37.349Z] [LOG] senderId::::: 276870788546619@lid
+[2025-11-18T13:08:37.350Z] [LOG] msgContact::: {
+  "id": "276870788546619@lid",
+  "name": ".",
+  "lid": null
+}
+[2025-11-18T13:08:37.366Z] [LOG] msgContact2::: {
+  "id": "276870788546619@lid",
+  "name": ".",
+  "lid": null
+}
+[2025-11-18T13:08:37.368Z] [LOG] groupContact::: {
+  "id": 2603,
+  "name": "I - Artplast 46821/46837",
+  "number": "120363418217113608",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/537453960_1287780875585422_3102369944390375522_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEN9T2tKbqhUO51Clh9o2-fdcpPuik25U7C2V8SrjdHGA&oe=69299BED&_nc_sid=5e03e0&_nc_cat=101",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-10-03T14:27:00.328Z",
+  "updatedAt": "2025-11-18T13:08:13.793Z"
+}
+[2025-11-18T13:08:37.524Z] [LOG] contactData::::: {
+  "name": ".",
+  "number": "276870788546619",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "."
+}
+[2025-11-18T13:08:37.525Z] [LOG] Procurando ou criando contato: 276870788546619 (LID: N/A) na empresa 1
+[2025-11-18T13:08:37.526Z] [LOG] Contato encontrado pelo number: 276870788546619
+[2025-11-18T13:08:37.527Z] [LOG] null
+[2025-11-18T13:08:37.551Z] [LOG] 🔍 Buscando ticket para contato 276870788546619 na conexão 1: #3659 (pending)
+[2025-11-18T13:08:37.554Z] [LOG] 🔍 Ticket encontrado: #3659 - Status: pending, UserId: null
+[2025-11-18T13:08:37.558Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:08:49.507Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:09:06.662Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:09:29.061Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:09:51.380Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:10:18.687Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "555184057524-1599837179@g.us",
+      "fromMe": false,
+      "id": "3F8E8C4DE2618B1E6D4C",
+      "participant": "149899173748805@lid",
+      "participantAlt": "5511934756992@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471418,
+    "pushName": "Tainá Menezes - Scanntech",
+    "broadcast": false,
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "555184057524-1599837179@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjQ+5WFAxAAGiAxvZ755VhcSEQ983ZOLXQDJlXaoD0LHc//j3AuZHxcKCIhBV+XB0FqmC6fenZV7xtfZXTlu0/QNgQxPCYcFgiVvcUD"
+      },
+      "extendedTextMessage": {
+        "text": "Bom dia Valéria, tudo bem? Estou com instabilidade no sistema e assim que normalizar te envio",
+        "contextInfo": {
+          "expiration": 0
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "p6btHeT6McjrGw==",
+          "senderTimestamp": "1762894380",
+          "recipientKeyHash": "oTD/2hjAaaPguQ==",
+          "recipientTimestamp": "1763406669"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  }
+]
+[2025-11-18T13:10:18.750Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "555184057524-1599837179@g.us",
+      "fromMe": false,
+      "id": "3F8E8C4DE2618B1E6D4C",
+      "participant": "149899173748805@lid",
+      "participantAlt": "5511934756992@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471418,
+    "pushName": "Tainá Menezes - Scanntech",
+    "broadcast": false,
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "555184057524-1599837179@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjQ+5WFAxAAGiAxvZ755VhcSEQ983ZOLXQDJlXaoD0LHc//j3AuZHxcKCIhBV+XB0FqmC6fenZV7xtfZXTlu0/QNgQxPCYcFgiVvcUD"
+      },
+      "extendedTextMessage": {
+        "text": "Bom dia Valéria, tudo bem? Estou com instabilidade no sistema e assim que normalizar te envio",
+        "contextInfo": {
+          "expiration": 0
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "p6btHeT6McjrGw==",
+          "senderTimestamp": "1762894380",
+          "recipientKeyHash": "MLO+48zL2KPNLw==",
+          "recipientTimestamp": "1763471000"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  }
+]
+[2025-11-18T13:10:18.881Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 555184057524-1599837179@g.us
+[2025-11-18T13:10:18.881Z] [LOG] JID final para envio: 5511934756992@s.whatsapp.net
+[2025-11-18T13:10:18.882Z] [LOG] RemoteJid nao contem @lid: 555184057524-1599837179@g.us
+[2025-11-18T13:10:18.882Z] [LOG] DEBUG - jid: 5511934756992@s.whatsapp.net
+[2025-11-18T13:10:18.882Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:10:18.883Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:10:18.883Z] [LOG] senderId::::: 149899173748805@lid
+[2025-11-18T13:10:18.883Z] [LOG] msgContact::: {
+  "id": "149899173748805@lid",
+  "name": "Tainá Menezes - Scanntech",
+  "lid": null
+}
+[2025-11-18T13:10:18.885Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 555184057524-1599837179@g.us
+[2025-11-18T13:10:18.886Z] [LOG] JID final para envio: 5511934756992@s.whatsapp.net
+[2025-11-18T13:10:18.886Z] [LOG] RemoteJid nao contem @lid: 555184057524-1599837179@g.us
+[2025-11-18T13:10:18.887Z] [LOG] DEBUG - jid: 5511934756992@s.whatsapp.net
+[2025-11-18T13:10:18.888Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:10:18.896Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:10:18.897Z] [LOG] senderId::::: 149899173748805@lid
+[2025-11-18T13:10:18.898Z] [LOG] msgContact::: {
+  "id": "149899173748805@lid",
+  "name": "Tainá Menezes - Scanntech",
+  "lid": null
+}
+[2025-11-18T13:10:19.304Z] [LOG] contactData::::: {
+  "name": "Grupo Logicbox / Scanntech",
+  "number": "555184057524-1599837179",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/206177150_341574307807910_8601186117447825798_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGWCyLjllv8NORhxc7ZjmSY_C8kabzLN39u2vvOHulT0Q&oe=69297039&_nc_sid=5e03e0&_nc_cat=106",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Grupo Logicbox / Scanntech"
+}
+[2025-11-18T13:10:19.305Z] [LOG] Procurando ou criando contato: 555184057524-1599837179 (LID: N/A) na empresa 1
+[2025-11-18T13:10:19.308Z] [LOG] Contato encontrado pelo number: 555184057524-1599837179
+[2025-11-18T13:10:19.309Z] [LOG] null
+[2025-11-18T13:10:19.335Z] [LOG] msgContact2::: {
+  "id": "149899173748805@lid",
+  "name": "Tainá Menezes - Scanntech",
+  "lid": null
+}
+[2025-11-18T13:10:19.336Z] [LOG] groupContact::: {
+  "id": 2545,
+  "name": "Grupo Logicbox / Scanntech",
+  "number": "555184057524-1599837179",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/206177150_341574307807910_8601186117447825798_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGWCyLjllv8NORhxc7ZjmSY_C8kabzLN39u2vvOHulT0Q&oe=69297039&_nc_sid=5e03e0&_nc_cat=106",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-10-02T17:18:44.084Z",
+  "updatedAt": "2025-11-18T12:05:33.185Z"
+}
+[2025-11-18T13:10:19.351Z] [LOG] msgContact2::: {
+  "id": "149899173748805@lid",
+  "name": "Tainá Menezes - Scanntech",
+  "lid": null
+}
+[2025-11-18T13:10:19.353Z] [LOG] groupContact::: {
+  "id": 2545,
+  "name": "Grupo Logicbox / Scanntech",
+  "number": "555184057524-1599837179",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/206177150_341574307807910_8601186117447825798_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGWCyLjllv8NORhxc7ZjmSY_C8kabzLN39u2vvOHulT0Q&oe=69297039&_nc_sid=5e03e0&_nc_cat=106",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-10-02T17:18:44.084Z",
+  "updatedAt": "2025-11-18T12:05:33.185Z"
+}
+[2025-11-18T13:10:19.489Z] [LOG] contactData::::: {
+  "name": "Tainá Menezes - Scanntech",
+  "number": "149899173748805",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/473407269_697432096296265_3627143175026779743_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AFKkcVwbSE5mnBGfUOOgF58qo_7yvTCU_8jtrE98U6EvQ&oe=69297F1F&_nc_sid=5e03e0&_nc_cat=107",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Tainá Menezes - Scanntech"
+}
+[2025-11-18T13:10:19.490Z] [LOG] Procurando ou criando contato: 149899173748805 (LID: N/A) na empresa 1
+[2025-11-18T13:10:19.492Z] [LOG] Contato encontrado pelo number: 149899173748805
+[2025-11-18T13:10:19.492Z] [LOG] null
+[2025-11-18T13:10:19.501Z] [LOG] contactData::::: {
+  "name": "Tainá Menezes - Scanntech",
+  "number": "149899173748805",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/473407269_697432096296265_3627143175026779743_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AFKkcVwbSE5mnBGfUOOgF58qo_7yvTCU_8jtrE98U6EvQ&oe=69297F1F&_nc_sid=5e03e0&_nc_cat=107",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 13,
+  "pushName": "Tainá Menezes - Scanntech"
+}
+[2025-11-18T13:10:19.502Z] [LOG] Procurando ou criando contato: 149899173748805 (LID: N/A) na empresa 1
+[2025-11-18T13:10:19.508Z] [LOG] Contato encontrado pelo number: 149899173748805
+[2025-11-18T13:10:19.509Z] [LOG] null
+[2025-11-18T13:10:19.526Z] [LOG] 🔍 Buscando ticket para contato 149899173748805 na conexão 1: Não encontrado
+[2025-11-18T13:10:19.549Z] [LOG] 🔍 Buscando ticket para contato 149899173748805 na conexão 13: #1484 (pending)
+[2025-11-18T13:10:19.550Z] [LOG] 🔍 Ticket encontrado: #1484 - Status: pending, UserId: null
+[2025-11-18T13:10:19.551Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:10:19.553Z] [LOG] ✅ Novo ticket criado: #3660 para contato 149899173748805 na conexão 1
+[2025-11-18T13:10:19.929Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:10:32.423Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:10:54.165Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:11:03.015Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "555184057524-1599837179@g.us",
+      "fromMe": false,
+      "id": "3EB0EF486A8742B969499A",
+      "participant": "43830191648986@lid",
+      "participantAlt": "555192138577@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471462,
+    "pushName": "Valéria Martins",
+    "broadcast": false,
+    "message": {
+      "conversation": "tá bom.",
+      "senderKeyDistributionMessage": {
+        "groupId": "555184057524-1599837179@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwiw0f6mARABGiAyyAoHLHlJwMNEBHoLUr9KUUiQy5gpHjOMcsqEUnDFiCIhBfghdPiR82gzFR/wq+W8qx5ImziqIbY6KCHqii6MP74w"
+      },
+      "messageContextInfo": {
+        "messageSecret": "UgnwY8P7KJZpoO5zUGV7nThaewAlRTp1LA0r0/Lh7Pc=",
+        "limitSharingV2": {
+          "trigger": "UNKNOWN",
+          "initiatedByMe": false
+        }
+      }
+    }
+  }
+]
+[2025-11-18T13:11:03.075Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "555184057524-1599837179@g.us",
+      "fromMe": false,
+      "id": "3EB0EF486A8742B969499A",
+      "participant": "43830191648986@lid",
+      "participantAlt": "555192138577@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471462,
+    "pushName": "Valéria Martins",
+    "broadcast": false,
+    "message": {
+      "conversation": "tá bom.",
+      "senderKeyDistributionMessage": {
+        "groupId": "555184057524-1599837179@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwiw0f6mARABGiAyyAoHLHlJwMNEBHoLUr9KUUiQy5gpHjOMcsqEUnDFiCIhBfghdPiR82gzFR/wq+W8qx5ImziqIbY6KCHqii6MP74w"
+      },
+      "messageContextInfo": {
+        "messageSecret": "UgnwY8P7KJZpoO5zUGV7nThaewAlRTp1LA0r0/Lh7Pc=",
+        "limitSharingV2": {
+          "trigger": "UNKNOWN",
+          "initiatedByMe": false
+        }
+      }
+    }
+  }
+]
+[2025-11-18T13:11:03.127Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 555184057524-1599837179@g.us
+[2025-11-18T13:11:03.127Z] [LOG] JID final para envio: 555192138577@s.whatsapp.net
+[2025-11-18T13:11:03.128Z] [LOG] RemoteJid nao contem @lid: 555184057524-1599837179@g.us
+[2025-11-18T13:11:03.128Z] [LOG] DEBUG - jid: 555192138577@s.whatsapp.net
+[2025-11-18T13:11:03.130Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:11:03.131Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:11:03.132Z] [LOG] senderId::::: 43830191648986@lid
+[2025-11-18T13:11:03.135Z] [LOG] msgContact::: {
+  "id": "43830191648986@lid",
+  "name": "Valéria Martins",
+  "lid": null
+}
+[2025-11-18T13:11:03.148Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 555184057524-1599837179@g.us
+[2025-11-18T13:11:03.149Z] [LOG] JID final para envio: 555192138577@s.whatsapp.net
+[2025-11-18T13:11:03.150Z] [LOG] RemoteJid nao contem @lid: 555184057524-1599837179@g.us
+[2025-11-18T13:11:03.151Z] [LOG] DEBUG - jid: 555192138577@s.whatsapp.net
+[2025-11-18T13:11:03.151Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:11:03.152Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:11:03.152Z] [LOG] senderId::::: 43830191648986@lid
+[2025-11-18T13:11:03.153Z] [LOG] msgContact::: {
+  "id": "43830191648986@lid",
+  "name": "Valéria Martins",
+  "lid": null
+}
+[2025-11-18T13:11:03.559Z] [LOG] contactData::::: {
+  "name": "Grupo Logicbox / Scanntech",
+  "number": "555184057524-1599837179",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/206177150_341574307807910_8601186117447825798_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGWCyLjllv8NORhxc7ZjmSY_C8kabzLN39u2vvOHulT0Q&oe=69297039&_nc_sid=5e03e0&_nc_cat=106",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 13,
+  "pushName": "Grupo Logicbox / Scanntech"
+}
+[2025-11-18T13:11:03.559Z] [LOG] Procurando ou criando contato: 555184057524-1599837179 (LID: N/A) na empresa 1
+[2025-11-18T13:11:03.561Z] [LOG] Contato encontrado pelo number: 555184057524-1599837179
+[2025-11-18T13:11:03.562Z] [LOG] null
+[2025-11-18T13:11:03.576Z] [LOG] msgContact2::: {
+  "id": "43830191648986@lid",
+  "name": "Valéria Martins",
+  "lid": null
+}
+[2025-11-18T13:11:03.577Z] [LOG] groupContact::: {
+  "id": 2545,
+  "name": "Grupo Logicbox / Scanntech",
+  "number": "555184057524-1599837179",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/206177150_341574307807910_8601186117447825798_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGWCyLjllv8NORhxc7ZjmSY_C8kabzLN39u2vvOHulT0Q&oe=69297039&_nc_sid=5e03e0&_nc_cat=106",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-10-02T17:18:44.084Z",
+  "updatedAt": "2025-11-18T12:05:33.185Z"
+}
+[2025-11-18T13:11:03.592Z] [LOG] msgContact2::: {
+  "id": "43830191648986@lid",
+  "name": "Valéria Martins",
+  "lid": null
+}
+[2025-11-18T13:11:03.594Z] [LOG] groupContact::: {
+  "id": 2545,
+  "name": "Grupo Logicbox / Scanntech",
+  "number": "555184057524-1599837179",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/206177150_341574307807910_8601186117447825798_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGWCyLjllv8NORhxc7ZjmSY_C8kabzLN39u2vvOHulT0Q&oe=69297039&_nc_sid=5e03e0&_nc_cat=106",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-10-02T17:18:44.084Z",
+  "updatedAt": "2025-11-18T12:05:33.185Z"
+}
+[2025-11-18T13:11:03.725Z] [LOG] contactData::::: {
+  "name": "Valéria Martins",
+  "number": "43830191648986",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/286408582_705594727214236_8469764938911867579_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEL_C-NEYgAgQaBzexoi11musf2ga6xnXJnG9HMRuHhNw&oe=6929999D&_nc_sid=5e03e0&_nc_cat=106",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Valéria Martins"
+}
+[2025-11-18T13:11:03.726Z] [LOG] Procurando ou criando contato: 43830191648986 (LID: N/A) na empresa 1
+[2025-11-18T13:11:03.728Z] [LOG] Contato encontrado pelo number: 43830191648986
+[2025-11-18T13:11:03.729Z] [LOG] null
+[2025-11-18T13:11:03.741Z] [LOG] contactData::::: {
+  "name": "Valéria Martins",
+  "number": "43830191648986",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/286408582_705594727214236_8469764938911867579_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEL_C-NEYgAgQaBzexoi11musf2ga6xnXJnG9HMRuHhNw&oe=6929999D&_nc_sid=5e03e0&_nc_cat=106",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 13,
+  "pushName": "Valéria Martins"
+}
+[2025-11-18T13:11:03.741Z] [LOG] Procurando ou criando contato: 43830191648986 (LID: N/A) na empresa 1
+[2025-11-18T13:11:03.744Z] [LOG] Contato encontrado pelo number: 43830191648986
+[2025-11-18T13:11:03.745Z] [LOG] null
+[2025-11-18T13:11:03.756Z] [LOG] 🔍 Buscando ticket para contato 43830191648986 na conexão 1: #3660 (pending)
+[2025-11-18T13:11:03.757Z] [LOG] 🔍 Ticket encontrado: #3660 - Status: pending, UserId: null
+[2025-11-18T13:11:03.758Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:11:03.792Z] [LOG] 🔍 Buscando ticket para contato 43830191648986 na conexão 13: #1484 (pending)
+[2025-11-18T13:11:03.793Z] [LOG] 🔍 Ticket encontrado: #1484 - Status: pending, UserId: null
+[2025-11-18T13:11:03.793Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:11:15.925Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:11:37.249Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:11:48.453Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363418217113608@g.us",
+      "fromMe": false,
+      "id": "3A7695F249D145C58C4E",
+      "participant": "276870788546619@lid",
+      "participantAlt": "555499707670@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471508,
+    "pushName": ".",
+    "broadcast": false,
+    "message": {
+      "protocolMessage": {
+        "key": {
+          "remoteJid": "120363418217113608@g.us",
+          "fromMe": true,
+          "id": "3AA2A799256EC6C125C9"
+        },
+        "type": "REVOKE"
+      }
+    }
+  }
+]
+[2025-11-18T13:11:48.482Z] [LOG] ticketData {
+  "lastMessage": "🚫 _Mensagem Apagada_"
+}
+[2025-11-18T13:11:48.582Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363418217113608@g.us
+[2025-11-18T13:11:48.583Z] [LOG] JID final para envio: 555499707670@s.whatsapp.net
+[2025-11-18T13:11:48.583Z] [LOG] RemoteJid nao contem @lid: 120363418217113608@g.us
+[2025-11-18T13:11:48.584Z] [LOG] DEBUG - jid: 555499707670@s.whatsapp.net
+[2025-11-18T13:11:48.585Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:11:48.585Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:11:48.586Z] [LOG] senderId::::: 276870788546619@lid
+[2025-11-18T13:11:48.586Z] [LOG] msgContact::: {
+  "id": "276870788546619@lid",
+  "name": ".",
+  "lid": null
+}
+[2025-11-18T13:11:48.825Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363418217113608@g.us",
+      "fromMe": false,
+      "id": "3AC4681FB9E41E79852E",
+      "participant": "276870788546619@lid",
+      "participantAlt": "555499707670@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471508,
+    "pushName": ".",
+    "broadcast": false,
+    "message": {
+      "protocolMessage": {
+        "key": {
+          "remoteJid": "120363418217113608@g.us",
+          "fromMe": true,
+          "id": "3AD85A643C7FE74C29CD"
+        },
+        "type": "REVOKE"
+      }
+    }
+  }
+]
+[2025-11-18T13:11:48.839Z] [LOG] ticketData {
+  "lastMessage": "🚫 _Mensagem Apagada_"
+}
+[2025-11-18T13:11:48.968Z] [LOG] contactData::::: {
+  "name": "I - Artplast 46821/46837",
+  "number": "120363418217113608",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/537453960_1287780875585422_3102369944390375522_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEN9T2tKbqhUO51Clh9o2-fdcpPuik25U7C2V8SrjdHGA&oe=69299BED&_nc_sid=5e03e0&_nc_cat=101",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "I - Artplast 46821/46837"
+}
+[2025-11-18T13:11:48.969Z] [LOG] Procurando ou criando contato: 120363418217113608 (LID: N/A) na empresa 1
+[2025-11-18T13:11:48.971Z] [LOG] Contato encontrado pelo number: 120363418217113608
+[2025-11-18T13:11:48.971Z] [LOG] null
+[2025-11-18T13:11:48.980Z] [LOG] msgContact2::: {
+  "id": "276870788546619@lid",
+  "name": ".",
+  "lid": null
+}
+[2025-11-18T13:11:48.982Z] [LOG] groupContact::: {
+  "id": 2603,
+  "name": "I - Artplast 46821/46837",
+  "number": "120363418217113608",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/537453960_1287780875585422_3102369944390375522_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEN9T2tKbqhUO51Clh9o2-fdcpPuik25U7C2V8SrjdHGA&oe=69299BED&_nc_sid=5e03e0&_nc_cat=101",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-10-03T14:27:00.328Z",
+  "updatedAt": "2025-11-18T13:08:13.793Z"
+}
+[2025-11-18T13:11:49.135Z] [LOG] contactData::::: {
+  "name": ".",
+  "number": "276870788546619",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "."
+}
+[2025-11-18T13:11:49.135Z] [LOG] Procurando ou criando contato: 276870788546619 (LID: N/A) na empresa 1
+[2025-11-18T13:11:49.138Z] [LOG] Contato encontrado pelo number: 276870788546619
+[2025-11-18T13:11:49.138Z] [LOG] null
+[2025-11-18T13:11:49.158Z] [LOG] 🔍 Buscando ticket para contato 276870788546619 na conexão 1: #3659 (pending)
+[2025-11-18T13:11:49.158Z] [LOG] 🔍 Ticket encontrado: #3659 - Status: pending, UserId: null
+[2025-11-18T13:11:49.159Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:11:49.190Z] [LOG] {
+  "name": "SequelizeDatabaseError",
+  "parent": {
+    "length": 444,
+    "name": "error",
+    "severity": "ERROR",
+    "code": "23502",
+    "detail": "Failing row contains (3A7695F249D145C58C4E, null, 0, f, protocolMessage, null, 3659, 2025-11-18 10:11:49.178-03, 2025-11-18 10:11:49.178-03, f, f, 2604, null, 1, 120363418217113608@g.us, {\"key\":{\"remoteJid\":\"120363418217113608@g.us\",\"fromMe\":false,\"id..., 276870788546619@lid, null, f, [], f, null).",
+    "schema": "public",
+    "table": "Messages",
+    "column": "body",
+    "file": "execMain.c",
+    "line": "1948",
+    "routine": "ExecConstraints",
+    "sql": "INSERT INTO \"Messages\" (\"id\",\"remoteJid\",\"participant\",\"dataJson\",\"ack\",\"read\",\"fromMe\",\"mediaType\",\"isDeleted\",\"ticketId\",\"contactId\",\"companyId\",\"isEdited\",\"isForwarded\",\"createdAt\",\"updatedAt\") VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16) ON CONFLICT (\"id\") DO UPDATE SET \"id\"=EXCLUDED.\"id\",\"ticketId\"=EXCLUDED.\"ticketId\",\"contactId\"=EXCLUDED.\"contactId\",\"fromMe\"=EXCLUDED.\"fromMe\",\"mediaType\"=EXCLUDED.\"mediaType\",\"read\"=EXCLUDED.\"read\",\"ack\"=EXCLUDED.\"ack\",\"remoteJid\"=EXCLUDED.\"remoteJid\",\"participant\"=EXCLUDED.\"participant\",\"dataJson\"=EXCLUDED.\"dataJson\",\"isEdited\"=EXCLUDED.\"isEdited\",\"companyId\"=EXCLUDED.\"companyId\",\"updatedAt\"=EXCLUDED.\"updatedAt\" RETURNING \"id\",\"remoteJid\",\"participant\",\"dataJson\",\"ack\",\"read\",\"fromMe\",\"body\",\"reactions\",\"mediaUrl\",\"mediaType\",\"isDeleted\",\"createdAt\",\"updatedAt\",\"quotedMsgId\",\"ticketId\",\"contactId\",\"companyId\",\"queueId\",\"isEdited\",\"isForwarded\";",
+    "parameters": [
+      "3A7695F249D145C58C4E",
+      "120363418217113608@g.us",
+      "276870788546619@lid",
+      "{\"key\":{\"remoteJid\":\"120363418217113608@g.us\",\"fromMe\":false,\"id\":\"3A7695F249D145C58C4E\",\"participant\":\"276870788546619@lid\",\"participantAlt\":\"555499707670@s.whatsapp.net\",\"addressingMode\":\"lid\"},\"messageTimestamp\":1763471508,\"pushName\":\".\",\"broadcast\":false,\"message\":{\"protocolMessage\":{\"key\":{\"remoteJid\":\"120363418217113608@g.us\",\"fromMe\":true,\"id\":\"3AA2A799256EC6C125C9\"},\"type\":\"REVOKE\"}}}",
+      0,
+      false,
+      false,
+      "protocolMessage",
+      false,
+      3659,
+      2604,
+      1,
+      false,
+      false,
+      "2025-11-18 10:11:49.178 -03:00",
+      "2025-11-18 10:11:49.178 -03:00"
+    ]
+  },
+  "original": {
+    "length": 444,
+    "name": "error",
+    "severity": "ERROR",
+    "code": "23502",
+    "detail": "Failing row contains (3A7695F249D145C58C4E, null, 0, f, protocolMessage, null, 3659, 2025-11-18 10:11:49.178-03, 2025-11-18 10:11:49.178-03, f, f, 2604, null, 1, 120363418217113608@g.us, {\"key\":{\"remoteJid\":\"120363418217113608@g.us\",\"fromMe\":false,\"id..., 276870788546619@lid, null, f, [], f, null).",
+    "schema": "public",
+    "table": "Messages",
+    "column": "body",
+    "file": "execMain.c",
+    "line": "1948",
+    "routine": "ExecConstraints",
+    "sql": "INSERT INTO \"Messages\" (\"id\",\"remoteJid\",\"participant\",\"dataJson\",\"ack\",\"read\",\"fromMe\",\"mediaType\",\"isDeleted\",\"ticketId\",\"contactId\",\"companyId\",\"isEdited\",\"isForwarded\",\"createdAt\",\"updatedAt\") VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16) ON CONFLICT (\"id\") DO UPDATE SET \"id\"=EXCLUDED.\"id\",\"ticketId\"=EXCLUDED.\"ticketId\",\"contactId\"=EXCLUDED.\"contactId\",\"fromMe\"=EXCLUDED.\"fromMe\",\"mediaType\"=EXCLUDED.\"mediaType\",\"read\"=EXCLUDED.\"read\",\"ack\"=EXCLUDED.\"ack\",\"remoteJid\"=EXCLUDED.\"remoteJid\",\"participant\"=EXCLUDED.\"participant\",\"dataJson\"=EXCLUDED.\"dataJson\",\"isEdited\"=EXCLUDED.\"isEdited\",\"companyId\"=EXCLUDED.\"companyId\",\"updatedAt\"=EXCLUDED.\"updatedAt\" RETURNING \"id\",\"remoteJid\",\"participant\",\"dataJson\",\"ack\",\"read\",\"fromMe\",\"body\",\"reactions\",\"mediaUrl\",\"mediaType\",\"isDeleted\",\"createdAt\",\"updatedAt\",\"quotedMsgId\",\"ticketId\",\"contactId\",\"companyId\",\"queueId\",\"isEdited\",\"isForwarded\";",
+    "parameters": [
+      "3A7695F249D145C58C4E",
+      "120363418217113608@g.us",
+      "276870788546619@lid",
+      "{\"key\":{\"remoteJid\":\"120363418217113608@g.us\",\"fromMe\":false,\"id\":\"3A7695F249D145C58C4E\",\"participant\":\"276870788546619@lid\",\"participantAlt\":\"555499707670@s.whatsapp.net\",\"addressingMode\":\"lid\"},\"messageTimestamp\":1763471508,\"pushName\":\".\",\"broadcast\":false,\"message\":{\"protocolMessage\":{\"key\":{\"remoteJid\":\"120363418217113608@g.us\",\"fromMe\":true,\"id\":\"3AA2A799256EC6C125C9\"},\"type\":\"REVOKE\"}}}",
+      0,
+      false,
+      false,
+      "protocolMessage",
+      false,
+      3659,
+      2604,
+      1,
+      false,
+      false,
+      "2025-11-18 10:11:49.178 -03:00",
+      "2025-11-18 10:11:49.178 -03:00"
+    ]
+  },
+  "sql": "INSERT INTO \"Messages\" (\"id\",\"remoteJid\",\"participant\",\"dataJson\",\"ack\",\"read\",\"fromMe\",\"mediaType\",\"isDeleted\",\"ticketId\",\"contactId\",\"companyId\",\"isEdited\",\"isForwarded\",\"createdAt\",\"updatedAt\") VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16) ON CONFLICT (\"id\") DO UPDATE SET \"id\"=EXCLUDED.\"id\",\"ticketId\"=EXCLUDED.\"ticketId\",\"contactId\"=EXCLUDED.\"contactId\",\"fromMe\"=EXCLUDED.\"fromMe\",\"mediaType\"=EXCLUDED.\"mediaType\",\"read\"=EXCLUDED.\"read\",\"ack\"=EXCLUDED.\"ack\",\"remoteJid\"=EXCLUDED.\"remoteJid\",\"participant\"=EXCLUDED.\"participant\",\"dataJson\"=EXCLUDED.\"dataJson\",\"isEdited\"=EXCLUDED.\"isEdited\",\"companyId\"=EXCLUDED.\"companyId\",\"updatedAt\"=EXCLUDED.\"updatedAt\" RETURNING \"id\",\"remoteJid\",\"participant\",\"dataJson\",\"ack\",\"read\",\"fromMe\",\"body\",\"reactions\",\"mediaUrl\",\"mediaType\",\"isDeleted\",\"createdAt\",\"updatedAt\",\"quotedMsgId\",\"ticketId\",\"contactId\",\"companyId\",\"queueId\",\"isEdited\",\"isForwarded\";",
+  "parameters": [
+    "3A7695F249D145C58C4E",
+    "120363418217113608@g.us",
+    "276870788546619@lid",
+    "{\"key\":{\"remoteJid\":\"120363418217113608@g.us\",\"fromMe\":false,\"id\":\"3A7695F249D145C58C4E\",\"participant\":\"276870788546619@lid\",\"participantAlt\":\"555499707670@s.whatsapp.net\",\"addressingMode\":\"lid\"},\"messageTimestamp\":1763471508,\"pushName\":\".\",\"broadcast\":false,\"message\":{\"protocolMessage\":{\"key\":{\"remoteJid\":\"120363418217113608@g.us\",\"fromMe\":true,\"id\":\"3AA2A799256EC6C125C9\"},\"type\":\"REVOKE\"}}}",
+    0,
+    false,
+    false,
+    "protocolMessage",
+    false,
+    3659,
+    2604,
+    1,
+    false,
+    false,
+    "2025-11-18 10:11:49.178 -03:00",
+    "2025-11-18 10:11:49.178 -03:00"
+  ]
+}
+[2025-11-18T13:11:49.258Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363418217113608@g.us
+[2025-11-18T13:11:49.259Z] [LOG] JID final para envio: 555499707670@s.whatsapp.net
+[2025-11-18T13:11:49.259Z] [LOG] RemoteJid nao contem @lid: 120363418217113608@g.us
+[2025-11-18T13:11:49.259Z] [LOG] DEBUG - jid: 555499707670@s.whatsapp.net
+[2025-11-18T13:11:49.260Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:11:49.260Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:11:49.260Z] [LOG] senderId::::: 276870788546619@lid
+[2025-11-18T13:11:49.261Z] [LOG] msgContact::: {
+  "id": "276870788546619@lid",
+  "name": ".",
+  "lid": null
+}
+[2025-11-18T13:11:49.268Z] [LOG] msgContact2::: {
+  "id": "276870788546619@lid",
+  "name": ".",
+  "lid": null
+}
+[2025-11-18T13:11:49.270Z] [LOG] groupContact::: {
+  "id": 2603,
+  "name": "I - Artplast 46821/46837",
+  "number": "120363418217113608",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/537453960_1287780875585422_3102369944390375522_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEN9T2tKbqhUO51Clh9o2-fdcpPuik25U7C2V8SrjdHGA&oe=69299BED&_nc_sid=5e03e0&_nc_cat=101",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-10-03T14:27:00.328Z",
+  "updatedAt": "2025-11-18T13:08:13.793Z"
+}
+[2025-11-18T13:11:49.422Z] [LOG] contactData::::: {
+  "name": ".",
+  "number": "276870788546619",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "."
+}
+[2025-11-18T13:11:49.422Z] [LOG] Procurando ou criando contato: 276870788546619 (LID: N/A) na empresa 1
+[2025-11-18T13:11:49.425Z] [LOG] Contato encontrado pelo number: 276870788546619
+[2025-11-18T13:11:49.426Z] [LOG] null
+[2025-11-18T13:11:49.447Z] [LOG] 🔍 Buscando ticket para contato 276870788546619 na conexão 1: #3659 (pending)
+[2025-11-18T13:11:49.448Z] [LOG] 🔍 Ticket encontrado: #3659 - Status: pending, UserId: null
+[2025-11-18T13:11:49.449Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:11:49.498Z] [LOG] {
+  "name": "SequelizeDatabaseError",
+  "parent": {
+    "length": 444,
+    "name": "error",
+    "severity": "ERROR",
+    "code": "23502",
+    "detail": "Failing row contains (3AC4681FB9E41E79852E, null, 0, f, protocolMessage, null, 3659, 2025-11-18 10:11:49.489-03, 2025-11-18 10:11:49.489-03, f, f, 2604, null, 1, 120363418217113608@g.us, {\"key\":{\"remoteJid\":\"120363418217113608@g.us\",\"fromMe\":false,\"id..., 276870788546619@lid, null, f, [], f, null).",
+    "schema": "public",
+    "table": "Messages",
+    "column": "body",
+    "file": "execMain.c",
+    "line": "1948",
+    "routine": "ExecConstraints",
+    "sql": "INSERT INTO \"Messages\" (\"id\",\"remoteJid\",\"participant\",\"dataJson\",\"ack\",\"read\",\"fromMe\",\"mediaType\",\"isDeleted\",\"ticketId\",\"contactId\",\"companyId\",\"isEdited\",\"isForwarded\",\"createdAt\",\"updatedAt\") VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16) ON CONFLICT (\"id\") DO UPDATE SET \"id\"=EXCLUDED.\"id\",\"ticketId\"=EXCLUDED.\"ticketId\",\"contactId\"=EXCLUDED.\"contactId\",\"fromMe\"=EXCLUDED.\"fromMe\",\"mediaType\"=EXCLUDED.\"mediaType\",\"read\"=EXCLUDED.\"read\",\"ack\"=EXCLUDED.\"ack\",\"remoteJid\"=EXCLUDED.\"remoteJid\",\"participant\"=EXCLUDED.\"participant\",\"dataJson\"=EXCLUDED.\"dataJson\",\"isEdited\"=EXCLUDED.\"isEdited\",\"companyId\"=EXCLUDED.\"companyId\",\"updatedAt\"=EXCLUDED.\"updatedAt\" RETURNING \"id\",\"remoteJid\",\"participant\",\"dataJson\",\"ack\",\"read\",\"fromMe\",\"body\",\"reactions\",\"mediaUrl\",\"mediaType\",\"isDeleted\",\"createdAt\",\"updatedAt\",\"quotedMsgId\",\"ticketId\",\"contactId\",\"companyId\",\"queueId\",\"isEdited\",\"isForwarded\";",
+    "parameters": [
+      "3AC4681FB9E41E79852E",
+      "120363418217113608@g.us",
+      "276870788546619@lid",
+      "{\"key\":{\"remoteJid\":\"120363418217113608@g.us\",\"fromMe\":false,\"id\":\"3AC4681FB9E41E79852E\",\"participant\":\"276870788546619@lid\",\"participantAlt\":\"555499707670@s.whatsapp.net\",\"addressingMode\":\"lid\"},\"messageTimestamp\":1763471508,\"pushName\":\".\",\"broadcast\":false,\"message\":{\"protocolMessage\":{\"key\":{\"remoteJid\":\"120363418217113608@g.us\",\"fromMe\":true,\"id\":\"3AD85A643C7FE74C29CD\"},\"type\":\"REVOKE\"}}}",
+      0,
+      false,
+      false,
+      "protocolMessage",
+      false,
+      3659,
+      2604,
+      1,
+      false,
+      false,
+      "2025-11-18 10:11:49.489 -03:00",
+      "2025-11-18 10:11:49.489 -03:00"
+    ]
+  },
+  "original": {
+    "length": 444,
+    "name": "error",
+    "severity": "ERROR",
+    "code": "23502",
+    "detail": "Failing row contains (3AC4681FB9E41E79852E, null, 0, f, protocolMessage, null, 3659, 2025-11-18 10:11:49.489-03, 2025-11-18 10:11:49.489-03, f, f, 2604, null, 1, 120363418217113608@g.us, {\"key\":{\"remoteJid\":\"120363418217113608@g.us\",\"fromMe\":false,\"id..., 276870788546619@lid, null, f, [], f, null).",
+    "schema": "public",
+    "table": "Messages",
+    "column": "body",
+    "file": "execMain.c",
+    "line": "1948",
+    "routine": "ExecConstraints",
+    "sql": "INSERT INTO \"Messages\" (\"id\",\"remoteJid\",\"participant\",\"dataJson\",\"ack\",\"read\",\"fromMe\",\"mediaType\",\"isDeleted\",\"ticketId\",\"contactId\",\"companyId\",\"isEdited\",\"isForwarded\",\"createdAt\",\"updatedAt\") VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16) ON CONFLICT (\"id\") DO UPDATE SET \"id\"=EXCLUDED.\"id\",\"ticketId\"=EXCLUDED.\"ticketId\",\"contactId\"=EXCLUDED.\"contactId\",\"fromMe\"=EXCLUDED.\"fromMe\",\"mediaType\"=EXCLUDED.\"mediaType\",\"read\"=EXCLUDED.\"read\",\"ack\"=EXCLUDED.\"ack\",\"remoteJid\"=EXCLUDED.\"remoteJid\",\"participant\"=EXCLUDED.\"participant\",\"dataJson\"=EXCLUDED.\"dataJson\",\"isEdited\"=EXCLUDED.\"isEdited\",\"companyId\"=EXCLUDED.\"companyId\",\"updatedAt\"=EXCLUDED.\"updatedAt\" RETURNING \"id\",\"remoteJid\",\"participant\",\"dataJson\",\"ack\",\"read\",\"fromMe\",\"body\",\"reactions\",\"mediaUrl\",\"mediaType\",\"isDeleted\",\"createdAt\",\"updatedAt\",\"quotedMsgId\",\"ticketId\",\"contactId\",\"companyId\",\"queueId\",\"isEdited\",\"isForwarded\";",
+    "parameters": [
+      "3AC4681FB9E41E79852E",
+      "120363418217113608@g.us",
+      "276870788546619@lid",
+      "{\"key\":{\"remoteJid\":\"120363418217113608@g.us\",\"fromMe\":false,\"id\":\"3AC4681FB9E41E79852E\",\"participant\":\"276870788546619@lid\",\"participantAlt\":\"555499707670@s.whatsapp.net\",\"addressingMode\":\"lid\"},\"messageTimestamp\":1763471508,\"pushName\":\".\",\"broadcast\":false,\"message\":{\"protocolMessage\":{\"key\":{\"remoteJid\":\"120363418217113608@g.us\",\"fromMe\":true,\"id\":\"3AD85A643C7FE74C29CD\"},\"type\":\"REVOKE\"}}}",
+      0,
+      false,
+      false,
+      "protocolMessage",
+      false,
+      3659,
+      2604,
+      1,
+      false,
+      false,
+      "2025-11-18 10:11:49.489 -03:00",
+      "2025-11-18 10:11:49.489 -03:00"
+    ]
+  },
+  "sql": "INSERT INTO \"Messages\" (\"id\",\"remoteJid\",\"participant\",\"dataJson\",\"ack\",\"read\",\"fromMe\",\"mediaType\",\"isDeleted\",\"ticketId\",\"contactId\",\"companyId\",\"isEdited\",\"isForwarded\",\"createdAt\",\"updatedAt\") VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16) ON CONFLICT (\"id\") DO UPDATE SET \"id\"=EXCLUDED.\"id\",\"ticketId\"=EXCLUDED.\"ticketId\",\"contactId\"=EXCLUDED.\"contactId\",\"fromMe\"=EXCLUDED.\"fromMe\",\"mediaType\"=EXCLUDED.\"mediaType\",\"read\"=EXCLUDED.\"read\",\"ack\"=EXCLUDED.\"ack\",\"remoteJid\"=EXCLUDED.\"remoteJid\",\"participant\"=EXCLUDED.\"participant\",\"dataJson\"=EXCLUDED.\"dataJson\",\"isEdited\"=EXCLUDED.\"isEdited\",\"companyId\"=EXCLUDED.\"companyId\",\"updatedAt\"=EXCLUDED.\"updatedAt\" RETURNING \"id\",\"remoteJid\",\"participant\",\"dataJson\",\"ack\",\"read\",\"fromMe\",\"body\",\"reactions\",\"mediaUrl\",\"mediaType\",\"isDeleted\",\"createdAt\",\"updatedAt\",\"quotedMsgId\",\"ticketId\",\"contactId\",\"companyId\",\"queueId\",\"isEdited\",\"isForwarded\";",
+  "parameters": [
+    "3AC4681FB9E41E79852E",
+    "120363418217113608@g.us",
+    "276870788546619@lid",
+    "{\"key\":{\"remoteJid\":\"120363418217113608@g.us\",\"fromMe\":false,\"id\":\"3AC4681FB9E41E79852E\",\"participant\":\"276870788546619@lid\",\"participantAlt\":\"555499707670@s.whatsapp.net\",\"addressingMode\":\"lid\"},\"messageTimestamp\":1763471508,\"pushName\":\".\",\"broadcast\":false,\"message\":{\"protocolMessage\":{\"key\":{\"remoteJid\":\"120363418217113608@g.us\",\"fromMe\":true,\"id\":\"3AD85A643C7FE74C29CD\"},\"type\":\"REVOKE\"}}}",
+    0,
+    false,
+    false,
+    "protocolMessage",
+    false,
+    3659,
+    2604,
+    1,
+    false,
+    false,
+    "2025-11-18 10:11:49.489 -03:00",
+    "2025-11-18 10:11:49.489 -03:00"
+  ]
+}
+[2025-11-18T13:12:00.593Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:12:23.189Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:12:43.652Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:13:05.161Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:13:31.223Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:14:37.979Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363295668092190@g.us",
+      "fromMe": false,
+      "id": "AC7C178781056ABAD033D37A61EB2CEE",
+      "participant": "75080474333269@lid",
+      "participantAlt": "555197731018@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471677,
+    "pushName": "Jessica Alves",
+    "broadcast": false,
+    "message": {
+      "conversation": "Deu certo",
+      "senderKeyDistributionMessage": {
+        "groupId": "120363295668092190@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjO0bDzBBAVGiCWk4jm7O7ktsW4quEA/DKjwI0zUL14pjzQmLj3YUwPriIhBXV5Mw4o39flQsjIEFKpiTk34RGQIQj/Rr1fEi2UQ9AH"
+      },
+      "messageContextInfo": {
+        "messageSecret": "vRcA8KBnhzPOjZdu1zaW/dx2KsglQXcP/eajTPHifgk="
+      }
+    }
+  }
+]
+[2025-11-18T13:14:38.018Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363295668092190@g.us
+[2025-11-18T13:14:38.018Z] [LOG] JID final para envio: 555197731018@s.whatsapp.net
+[2025-11-18T13:14:38.018Z] [LOG] RemoteJid nao contem @lid: 120363295668092190@g.us
+[2025-11-18T13:14:38.019Z] [LOG] DEBUG - jid: 555197731018@s.whatsapp.net
+[2025-11-18T13:14:38.019Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:14:38.019Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:14:38.020Z] [LOG] senderId::::: 75080474333269@lid
+[2025-11-18T13:14:38.020Z] [LOG] msgContact::: {
+  "id": "75080474333269@lid",
+  "name": "Jessica Alves",
+  "lid": null
+}
+[2025-11-18T13:14:38.336Z] [LOG] contactData::::: {
+  "name": "Suporte Logicbox Supermercado Borba 45700🟡",
+  "number": "120363295668092190",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/363283701_437996492413249_165592205320950051_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGLAQqB9AMNL8EJmNcLCaXe-aeBpBmWYc3TG-ogn5-rVg&oe=692985DD&_nc_sid=5e03e0&_nc_cat=110",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Suporte Logicbox Supermercado Borba 45700🟡"
+}
+[2025-11-18T13:14:38.337Z] [LOG] Procurando ou criando contato: 120363295668092190 (LID: N/A) na empresa 1
+[2025-11-18T13:14:38.339Z] [LOG] Contato encontrado pelo number: 120363295668092190
+[2025-11-18T13:14:38.340Z] [LOG] null
+[2025-11-18T13:14:38.353Z] [LOG] msgContact2::: {
+  "id": "75080474333269@lid",
+  "name": "Jessica Alves",
+  "lid": null
+}
+[2025-11-18T13:14:38.355Z] [LOG] groupContact::: {
+  "id": 874,
+  "name": "I - Supermercado Borba 45700🟡",
+  "number": "120363295668092190",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/363283701_437996492413249_165592205320950051_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGLAQqB9AMNL8EJmNcLCaXe-aeBpBmWYc3TG-ogn5-rVg&oe=692985DD&_nc_sid=5e03e0&_nc_cat=110",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2024-10-11T10:52:58.605Z",
+  "updatedAt": "2025-11-18T13:14:38.340Z"
+}
+[2025-11-18T13:14:38.503Z] [LOG] contactData::::: {
+  "name": "Jessica Alves",
+  "number": "75080474333269",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Jessica Alves"
+}
+[2025-11-18T13:14:38.503Z] [LOG] Procurando ou criando contato: 75080474333269 (LID: N/A) na empresa 1
+[2025-11-18T13:14:38.505Z] [LOG] Contato encontrado pelo number: 75080474333269
+[2025-11-18T13:14:38.505Z] [LOG] null
+[2025-11-18T13:14:38.536Z] [LOG] 🔍 Buscando ticket para contato 75080474333269 na conexão 1: Não encontrado
+[2025-11-18T13:14:38.557Z] [LOG] ✅ Novo ticket criado: #3661 para contato 75080474333269 na conexão 1
+[2025-11-18T13:14:41.237Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363295668092190@g.us",
+      "fromMe": false,
+      "id": "AC21300B3D451B1B120BC9685005A0A5",
+      "participant": "75080474333269@lid",
+      "participantAlt": "555197731018@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471680,
+    "pushName": "Jessica Alves",
+    "broadcast": false,
+    "message": {
+      "conversation": "Obrigada 🙏🏼",
+      "messageContextInfo": {
+        "messageSecret": "YL5y8duQJDhKfXd771Jx6w81GzSlSlmIpCCuzc/1odk="
+      }
+    }
+  }
+]
+[2025-11-18T13:14:41.312Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363295668092190@g.us
+[2025-11-18T13:14:41.312Z] [LOG] JID final para envio: 555197731018@s.whatsapp.net
+[2025-11-18T13:14:41.313Z] [LOG] RemoteJid nao contem @lid: 120363295668092190@g.us
+[2025-11-18T13:14:41.313Z] [LOG] DEBUG - jid: 555197731018@s.whatsapp.net
+[2025-11-18T13:14:41.313Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:14:41.314Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:14:41.315Z] [LOG] senderId::::: 75080474333269@lid
+[2025-11-18T13:14:41.316Z] [LOG] msgContact::: {
+  "id": "75080474333269@lid",
+  "name": "Jessica Alves",
+  "lid": null
+}
+[2025-11-18T13:14:41.322Z] [LOG] msgContact2::: {
+  "id": "75080474333269@lid",
+  "name": "Jessica Alves",
+  "lid": null
+}
+[2025-11-18T13:14:41.323Z] [LOG] groupContact::: {
+  "id": 874,
+  "name": "I - Supermercado Borba 45700🟡",
+  "number": "120363295668092190",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/363283701_437996492413249_165592205320950051_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGLAQqB9AMNL8EJmNcLCaXe-aeBpBmWYc3TG-ogn5-rVg&oe=692985DD&_nc_sid=5e03e0&_nc_cat=110",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2024-10-11T10:52:58.605Z",
+  "updatedAt": "2025-11-18T13:14:38.340Z"
+}
+[2025-11-18T13:14:41.481Z] [LOG] contactData::::: {
+  "name": "Jessica Alves",
+  "number": "75080474333269",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Jessica Alves"
+}
+[2025-11-18T13:14:41.482Z] [LOG] Procurando ou criando contato: 75080474333269 (LID: N/A) na empresa 1
+[2025-11-18T13:14:41.485Z] [LOG] Contato encontrado pelo number: 75080474333269
+[2025-11-18T13:14:41.485Z] [LOG] null
+[2025-11-18T13:14:41.505Z] [LOG] 🔍 Buscando ticket para contato 75080474333269 na conexão 1: #3661 (pending)
+[2025-11-18T13:14:41.506Z] [LOG] 🔍 Ticket encontrado: #3661 - Status: pending, UserId: null
+[2025-11-18T13:14:41.507Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:14:43.430Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:14:46.856Z] [LOG] messages.upsert::::: []
+[2025-11-18T13:17:23.776Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363403195119068@g.us",
+      "fromMe": false,
+      "id": "AC7DDA699F48B59A03EBDDE9971D478F",
+      "participant": "172945481662601@lid",
+      "participantAlt": "555184062475@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471843,
+    "pushName": "Ponto Verde Paisagismo",
+    "broadcast": false,
+    "message": {
+      "conversation": "Boa Tarde!",
+      "senderKeyDistributionMessage": {
+        "groupId": "120363403195119068@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjE3MdLEKkBGiCtTL1sdQsmdoj0wH7gV92T+wdJEBze/SFsvDUcn0ib/SIhBcrmFrcGxPvU3oHF7VgvAakybHoU2q9oSV/O/bjkPnkC"
+      },
+      "messageContextInfo": {
+        "messageSecret": "D+2yz+GJGNLcJde3qeA9hskZ1Rp1VAd5nl7L3ltE8M8="
+      }
+    }
+  }
+]
+[2025-11-18T13:17:23.823Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363403195119068@g.us
+[2025-11-18T13:17:23.824Z] [LOG] JID final para envio: 555184062475@s.whatsapp.net
+[2025-11-18T13:17:23.824Z] [LOG] RemoteJid nao contem @lid: 120363403195119068@g.us
+[2025-11-18T13:17:23.825Z] [LOG] DEBUG - jid: 555184062475@s.whatsapp.net
+[2025-11-18T13:17:23.825Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:17:23.826Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:17:23.826Z] [LOG] senderId::::: 172945481662601@lid
+[2025-11-18T13:17:23.827Z] [LOG] msgContact::: {
+  "id": "172945481662601@lid",
+  "name": "Ponto Verde Paisagismo",
+  "lid": null
+}
+[2025-11-18T13:17:24.239Z] [LOG] contactData::::: {
+  "name": "I - Ponto Verde Paisagismo Ltda 46667",
+  "number": "120363403195119068",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "I - Ponto Verde Paisagismo Ltda 46667"
+}
+[2025-11-18T13:17:24.240Z] [LOG] Procurando ou criando contato: 120363403195119068 (LID: N/A) na empresa 1
+[2025-11-18T13:17:24.242Z] [LOG] Contato encontrado pelo number: 120363403195119068
+[2025-11-18T13:17:24.243Z] [LOG] null
+[2025-11-18T13:17:24.253Z] [LOG] msgContact2::: {
+  "id": "172945481662601@lid",
+  "name": "Ponto Verde Paisagismo",
+  "lid": null
+}
+[2025-11-18T13:17:24.255Z] [LOG] groupContact::: {
+  "id": 2728,
+  "name": "I - Ponto Verde Paisagismo Ltda 46667",
+  "number": "120363403195119068",
+  "email": "",
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-10-29T20:19:44.398Z",
+  "updatedAt": "2025-10-29T20:19:44.398Z"
+}
+[2025-11-18T13:17:24.398Z] [LOG] contactData::::: {
+  "name": "Ponto Verde Paisagismo",
+  "number": "172945481662601",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Ponto Verde Paisagismo"
+}
+[2025-11-18T13:17:24.399Z] [LOG] Procurando ou criando contato: 172945481662601 (LID: N/A) na empresa 1
+[2025-11-18T13:17:24.400Z] [LOG] Contato encontrado pelo number: 172945481662601
+[2025-11-18T13:17:24.401Z] [LOG] null
+[2025-11-18T13:17:24.417Z] [LOG] 🔍 Buscando ticket para contato 172945481662601 na conexão 1: Não encontrado
+[2025-11-18T13:17:24.430Z] [LOG] ✅ Novo ticket criado: #3662 para contato 172945481662601 na conexão 1
+[2025-11-18T13:18:06.576Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363403195119068@g.us",
+      "fromMe": false,
+      "id": "ACCC7F35E44239FA3968D0013CE1838D",
+      "participant": "172945481662601@lid",
+      "participantAlt": "555184062475@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763471886,
+    "pushName": "Ponto Verde Paisagismo",
+    "broadcast": false,
+    "message": {
+      "conversation": "Favor nos informar em nr eu consigo falar com o Vitor por favor",
+      "messageContextInfo": {
+        "messageSecret": "tQYHnBzAeqQkuxuhzjl+SXRDTeg/bQnBa/VKOxuywEg="
+      }
+    }
+  }
+]
+[2025-11-18T13:18:06.634Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363403195119068@g.us
+[2025-11-18T13:18:06.635Z] [LOG] JID final para envio: 555184062475@s.whatsapp.net
+[2025-11-18T13:18:06.635Z] [LOG] RemoteJid nao contem @lid: 120363403195119068@g.us
+[2025-11-18T13:18:06.635Z] [LOG] DEBUG - jid: 555184062475@s.whatsapp.net
+[2025-11-18T13:18:06.636Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:18:06.636Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:18:06.637Z] [LOG] senderId::::: 172945481662601@lid
+[2025-11-18T13:18:06.637Z] [LOG] msgContact::: {
+  "id": "172945481662601@lid",
+  "name": "Ponto Verde Paisagismo",
+  "lid": null
+}
+[2025-11-18T13:18:07.055Z] [LOG] contactData::::: {
+  "name": "I - Ponto Verde Paisagismo Ltda 46667",
+  "number": "120363403195119068",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "I - Ponto Verde Paisagismo Ltda 46667"
+}
+[2025-11-18T13:18:07.056Z] [LOG] Procurando ou criando contato: 120363403195119068 (LID: N/A) na empresa 1
+[2025-11-18T13:18:07.058Z] [LOG] Contato encontrado pelo number: 120363403195119068
+[2025-11-18T13:18:07.058Z] [LOG] null
+[2025-11-18T13:18:07.066Z] [LOG] msgContact2::: {
+  "id": "172945481662601@lid",
+  "name": "Ponto Verde Paisagismo",
+  "lid": null
+}
+[2025-11-18T13:18:07.067Z] [LOG] groupContact::: {
+  "id": 2728,
+  "name": "I - Ponto Verde Paisagismo Ltda 46667",
+  "number": "120363403195119068",
+  "email": "",
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-10-29T20:19:44.398Z",
+  "updatedAt": "2025-10-29T20:19:44.398Z"
+}
+[2025-11-18T13:18:07.212Z] [LOG] contactData::::: {
+  "name": "Ponto Verde Paisagismo",
+  "number": "172945481662601",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Ponto Verde Paisagismo"
+}
+[2025-11-18T13:18:07.213Z] [LOG] Procurando ou criando contato: 172945481662601 (LID: N/A) na empresa 1
+[2025-11-18T13:18:07.214Z] [LOG] Contato encontrado pelo number: 172945481662601
+[2025-11-18T13:18:07.215Z] [LOG] null
+[2025-11-18T13:18:07.232Z] [LOG] 🔍 Buscando ticket para contato 172945481662601 na conexão 1: #3662 (pending)
+[2025-11-18T13:18:07.232Z] [LOG] 🔍 Ticket encontrado: #3662 - Status: pending, UserId: null
+[2025-11-18T13:18:07.233Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:21:20.067Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363404293679539@g.us",
+      "fromMe": false,
+      "id": "3EB0C83CF993B6D918E1B1",
+      "participant": "56534939775231@lid",
+      "participantAlt": "555130763311@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763472079,
+    "pushName": "Logicbox Automação",
+    "broadcast": false,
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363404293679539@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiSveeJBhATGiCo3Dg397JhTd86hxEQEgnzJ7zTP/nbc4B/jYzWEVFs2CIhBdfxxkffCyZDijj9v7iIjzcMQCD89adwMqbeQKGMdG1I"
+      },
+      "imageMessage": {
+        "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m233/AQPYz5NA63EXQhgUE00ZslAPDAHXTDg3zzNOM6vAqanhUNObxnpBM7EqyATGp5Jg24g13EXK3VlZgyCbjBvLRPKFiytaEREMI4L97O_UUg?ccb=9-4&oh=01_Q5Aa3AF_LAVi7uWtlPMKd7WmBUv1IDMEYfqwECYs50p0watJ9g&oe=6943CC13&_nc_sid=e6ed6c&mms3=true",
+        "mimetype": "image/jpeg",
+        "caption": "*Marcelo:*\r\nverificar a conexão da impressora desconectar e conectar novamente depois desligar e ligar de novo ela no botão",
+        "fileSha256": "Z3nfgN7lDcDri8HDui2QsILU1zlpo92M5P6jwfX3+L4=",
+        "fileLength": "122365",
+        "height": 690,
+        "width": 926,
+        "mediaKey": "JrML9CN4EirDuzXtRGbppjSqrcW0o3YKexXl2/beHFc=",
+        "fileEncSha256": "XXlzTQH2bgizVo0D3MRzP5njM4tG1M87Pl1Wu3puo+I=",
+        "directPath": "/o1/v/t24/f2/m233/AQPYz5NA63EXQhgUE00ZslAPDAHXTDg3zzNOM6vAqanhUNObxnpBM7EqyATGp5Jg24g13EXK3VlZgyCbjBvLRPKFiytaEREMI4L97O_UUg?ccb=9-4&oh=01_Q5Aa3AF_LAVi7uWtlPMKd7WmBUv1IDMEYfqwECYs50p0watJ9g&oe=6943CC13&_nc_sid=e6ed6c",
+        "mediaKeyTimestamp": "1763472079",
+        "jpegThumbnail": "/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAYACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGBwT/xAAqEAABAgQEBQQDAAAAAAAAAAABAgMABAURBhITIQcUMUFRFSJhsVJywv/EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//EABgRAQEBAQEAAAAAAAAAAAAAAAEAEhEh/9oADAMBAAIRAxEAPwBbhPDUlWKU7MzGqXUP5AEryi1gfB8xRs4DozjZKkPhY7B3b6jm4b29GmAVqSOYJ9v6piob5xT4JyiXJ2Ob3W7bWhHpFeNnWMsOSlClpNctqZ3VKC8y7jYDpt8xKRofFAhUrTyPzX9CM8gyrWiGtUOVcl5dFOcSpZWS49c3sB2PxDQV3EZSAGaSkDtrW/qCCNMljtlVfRWq80yiaFPSGSVJLb43vbrcnxCZzCtRatqmXRfpmeAvBBEydrt5f//Z"
+      }
+    },
+    "verifiedBizName": "Logicbox Automação"
+  }
+]
+[2025-11-18T13:21:20.118Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363404293679539@g.us
+[2025-11-18T13:21:20.119Z] [LOG] JID final para envio: 555130763311@s.whatsapp.net
+[2025-11-18T13:21:20.119Z] [LOG] RemoteJid nao contem @lid: 120363404293679539@g.us
+[2025-11-18T13:21:20.120Z] [LOG] DEBUG - jid: 555130763311@s.whatsapp.net
+[2025-11-18T13:21:20.121Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:21:20.121Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:21:20.122Z] [LOG] senderId::::: 56534939775231@lid
+[2025-11-18T13:21:20.123Z] [LOG] msgContact::: {
+  "id": "56534939775231@lid",
+  "name": "Logicbox Automação",
+  "lid": null
+}
+[2025-11-18T13:21:20.495Z] [LOG] contactData::::: {
+  "name": "I - Pet Mais 44019/ 46904 ",
+  "number": "120363404293679539",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491878407_1100778022216974_2707122293379504840_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEWRMNHx5XFUdX2Vfq4hRQ5yWSdbC7gUHIVAAw6pJdKGw&oe=69297694&_nc_sid=5e03e0&_nc_cat=104",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "I - Pet Mais 44019/ 46904 "
+}
+[2025-11-18T13:21:20.496Z] [LOG] Procurando ou criando contato: 120363404293679539 (LID: N/A) na empresa 1
+[2025-11-18T13:21:20.498Z] [LOG] Contato encontrado pelo number: 120363404293679539
+[2025-11-18T13:21:20.498Z] [LOG] null
+[2025-11-18T13:21:20.510Z] [LOG] msgContact2::: {
+  "id": "56534939775231@lid",
+  "name": "Logicbox Automação",
+  "lid": null
+}
+[2025-11-18T13:21:20.511Z] [LOG] groupContact::: {
+  "id": 2365,
+  "name": "I - Pet Mais 44019/ 46904 ",
+  "number": "120363404293679539",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491878407_1100778022216974_2707122293379504840_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEWRMNHx5XFUdX2Vfq4hRQ5yWSdbC7gUHIVAAw6pJdKGw&oe=69297694&_nc_sid=5e03e0&_nc_cat=104",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-09-26T12:27:43.224Z",
+  "updatedAt": "2025-11-18T12:06:16.462Z"
+}
+[2025-11-18T13:21:20.662Z] [LOG] contactData::::: {
+  "name": "Logicbox Automação",
+  "number": "56534939775231",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/473393714_931638749102817_6659221487139314508_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGqDVFaVPEhlwk75OB6bGZ1ag-5ItJA9mXDBTzlQ0AnVg&oe=692983CF&_nc_sid=5e03e0&_nc_cat=111",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Logicbox Automação"
+}
+[2025-11-18T13:21:20.664Z] [LOG] Procurando ou criando contato: 56534939775231 (LID: N/A) na empresa 1
+[2025-11-18T13:21:20.666Z] [LOG] Contato encontrado pelo number: 56534939775231
+[2025-11-18T13:21:20.667Z] [LOG] null
+[2025-11-18T13:21:20.700Z] [LOG] 🔍 Buscando ticket para contato 56534939775231 na conexão 1: Não encontrado
+[2025-11-18T13:21:20.727Z] [LOG] ✅ Novo ticket criado: #3663 para contato 56534939775231 na conexão 1
+[2025-11-18T13:21:30.071Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363404293679539@g.us",
+      "fromMe": false,
+      "id": "3A04CD73D398952DC057",
+      "participant": "161593899917551@lid",
+      "participantAlt": "555192987716@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763472089,
+    "pushName": "Fernanda",
+    "broadcast": false,
+    "message": {
+      "conversation": "Ok",
+      "senderKeyDistributionMessage": {
+        "groupId": "120363404293679539@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiHsbqNBhAAGiCq9HecIohBKVCj3B1u2iYUJgIOntEMZDmD4zSwBVkaOSIhBYSSc8zvDwYPRf+2kncvSLn9oMm+5QJA/Fy7J44IwyYT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "JQcU73SrgowcHvreyGyISyEHbFt7c+JTZ/xVjqsJiYI="
+      }
+    }
+  }
+]
+[2025-11-18T13:21:30.107Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363404293679539@g.us
+[2025-11-18T13:21:30.108Z] [LOG] JID final para envio: 555192987716@s.whatsapp.net
+[2025-11-18T13:21:30.108Z] [LOG] RemoteJid nao contem @lid: 120363404293679539@g.us
+[2025-11-18T13:21:30.109Z] [LOG] DEBUG - jid: 555192987716@s.whatsapp.net
+[2025-11-18T13:21:30.109Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:21:30.109Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:21:30.110Z] [LOG] senderId::::: 161593899917551@lid
+[2025-11-18T13:21:30.110Z] [LOG] msgContact::: {
+  "id": "161593899917551@lid",
+  "name": "Fernanda",
+  "lid": null
+}
+[2025-11-18T13:21:30.116Z] [LOG] msgContact2::: {
+  "id": "161593899917551@lid",
+  "name": "Fernanda",
+  "lid": null
+}
+[2025-11-18T13:21:30.117Z] [LOG] groupContact::: {
+  "id": 2365,
+  "name": "I - Pet Mais 44019/ 46904 ",
+  "number": "120363404293679539",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491878407_1100778022216974_2707122293379504840_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEWRMNHx5XFUdX2Vfq4hRQ5yWSdbC7gUHIVAAw6pJdKGw&oe=69297694&_nc_sid=5e03e0&_nc_cat=104",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-09-26T12:27:43.224Z",
+  "updatedAt": "2025-11-18T12:06:16.462Z"
+}
+[2025-11-18T13:21:30.270Z] [LOG] contactData::::: {
+  "name": "Fernanda",
+  "number": "161593899917551",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Fernanda"
+}
+[2025-11-18T13:21:30.270Z] [LOG] Procurando ou criando contato: 161593899917551 (LID: N/A) na empresa 1
+[2025-11-18T13:21:30.272Z] [LOG] Contato encontrado pelo number: 161593899917551
+[2025-11-18T13:21:30.273Z] [LOG] null
+[2025-11-18T13:21:30.288Z] [LOG] 🔍 Buscando ticket para contato 161593899917551 na conexão 1: #3663 (pending)
+[2025-11-18T13:21:30.289Z] [LOG] 🔍 Ticket encontrado: #3663 - Status: pending, UserId: null
+[2025-11-18T13:21:30.289Z] [LOG] 📝 Atualizando ticket status: pending

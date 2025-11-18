@@ -61,7 +61,7 @@ const FindOrCreateTicketService = async (
     }
 
   // Só buscar tickets antigos se não foi forçada a criação de novo ticket
-  if (!ticket && !existingTicketOtherConnection && groupContact) {
+  if (!ticket && groupContact) {
     ticket = await Ticket.findOne({
       where: {
         contactId: groupContact.id,
@@ -92,7 +92,7 @@ const FindOrCreateTicketService = async (
     const value = msgIsGroupBlock ? parseInt(msgIsGroupBlock.value, 10) : 7200;
   }
 
-  if (!ticket && !existingTicketOtherConnection && !groupContact) {
+  if (!ticket && !groupContact) {
     ticket = await Ticket.findOne({
       where: {
         updatedAt: {

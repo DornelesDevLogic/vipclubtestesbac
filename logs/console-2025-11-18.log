@@ -12534,3 +12534,1116 @@ http://nota.logidoc.pro/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aWNrZXRU
 [2025-11-18T13:36:35.098Z] [LOG] - ticket.userId: null
 [2025-11-18T13:36:35.098Z] [LOG] - whatsapp.queues.length: 1
 [2025-11-18T13:36:35.099Z] [LOG] - ticket.useIntegration: false
+[2025-11-18T13:38:54.391Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363197233144780@g.us",
+      "fromMe": false,
+      "id": "3EB0E3D173084DA5475EC8",
+      "participant": "56534939775231@lid",
+      "participantAlt": "555130763311@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763473133,
+    "pushName": "Logicbox Automação",
+    "broadcast": false,
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363197233144780@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwja4ZupAxARGiBE53mWv8lrtiJCudEMpB4bZc2ELl391I7B2cMI5nLCICIhBVLfyKeRBX6ZkAVujyVhnOsLaIYrvKigdrJzkYLlzRt0"
+      },
+      "extendedTextMessage": {
+        "text": "*Fabricio Silva:*\nDeu certo a balança?",
+        "contextInfo": {
+          "forwardingScore": 0,
+          "isForwarded": false
+        }
+      }
+    },
+    "verifiedBizName": "Logicbox Automação"
+  }
+]
+[2025-11-18T13:38:54.442Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363197233144780@g.us
+[2025-11-18T13:38:54.443Z] [LOG] JID final para envio: 555130763311@s.whatsapp.net
+[2025-11-18T13:38:54.443Z] [LOG] RemoteJid nao contem @lid: 120363197233144780@g.us
+[2025-11-18T13:38:54.443Z] [LOG] DEBUG - jid: 555130763311@s.whatsapp.net
+[2025-11-18T13:38:54.444Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:38:54.444Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:38:54.444Z] [LOG] senderId::::: 56534939775231@lid
+[2025-11-18T13:38:54.444Z] [LOG] msgContact::: {
+  "id": "56534939775231@lid",
+  "name": "Logicbox Automação",
+  "lid": null
+}
+[2025-11-18T13:38:55.177Z] [LOG] contactData::::: {
+  "name": "I- Supermercado Bom Gosto - 43931",
+  "number": "120363197233144780",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/404974176_1028032578421726_227885482870833507_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHXm7cgXXCPs9ui2fVfw0UQzeuFuTEsWpZ8WDwhib7fpw&oe=6929827D&_nc_sid=5e03e0&_nc_cat=104",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "I- Supermercado Bom Gosto - 43931"
+}
+[2025-11-18T13:38:55.177Z] [LOG] Procurando ou criando contato: 120363197233144780 (LID: N/A) na empresa 1
+[2025-11-18T13:38:55.180Z] [LOG] Contato encontrado pelo number: 120363197233144780
+[2025-11-18T13:38:55.180Z] [LOG] null
+[2025-11-18T13:38:55.190Z] [LOG] msgContact2::: {
+  "id": "56534939775231@lid",
+  "name": "Logicbox Automação",
+  "lid": null
+}
+[2025-11-18T13:38:55.191Z] [LOG] groupContact::: {
+  "id": 30,
+  "name": "I- Supermercado Bom Gosto - 43931",
+  "number": "120363197233144780",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/404974176_1028032578421726_227885482870833507_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHXm7cgXXCPs9ui2fVfw0UQzeuFuTEsWpZ8WDwhib7fpw&oe=6929827D&_nc_sid=5e03e0&_nc_cat=104",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2024-04-18T11:20:01.034Z",
+  "updatedAt": "2025-11-18T12:06:17.215Z"
+}
+[2025-11-18T13:38:55.468Z] [LOG] contactData::::: {
+  "name": "Logicbox Automação",
+  "number": "56534939775231",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/473393714_931638749102817_6659221487139314508_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGqDVFaVPEhlwk75OB6bGZ1ag-5ItJA9mXDBTzlQ0AnVg&oe=692983CF&_nc_sid=5e03e0&_nc_cat=111",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Logicbox Automação"
+}
+[2025-11-18T13:38:55.468Z] [LOG] Procurando ou criando contato: 56534939775231 (LID: N/A) na empresa 1
+[2025-11-18T13:38:55.470Z] [LOG] Contato encontrado pelo number: 56534939775231
+[2025-11-18T13:38:55.470Z] [LOG] null
+[2025-11-18T13:38:55.489Z] [LOG] 🔍 Buscando ticket para contato 56534939775231 na conexão 1: #3654 (pending)
+[2025-11-18T13:38:55.489Z] [LOG] 🔍 Ticket encontrado: #3654 - Status: pending, UserId: null
+[2025-11-18T13:38:55.490Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:39:30.433Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363197233144780@g.us",
+      "fromMe": false,
+      "id": "ACE00398D3112558486B9FE65A672461",
+      "participant": "134582817005739@lid",
+      "participantAlt": "555496807032@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763473170,
+    "pushName": "Rafael Costa",
+    "broadcast": false,
+    "message": {
+      "conversation": "Está mandando algumas notas em contingência",
+      "messageContextInfo": {
+        "messageSecret": "vjD0SUGOcuGJenkT/SmSLyr8WyGdQjc++gQ4V40wVLc="
+      }
+    }
+  }
+]
+[2025-11-18T13:39:30.503Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363197233144780@g.us
+[2025-11-18T13:39:30.503Z] [LOG] JID final para envio: 555496807032@s.whatsapp.net
+[2025-11-18T13:39:30.504Z] [LOG] RemoteJid nao contem @lid: 120363197233144780@g.us
+[2025-11-18T13:39:30.504Z] [LOG] DEBUG - jid: 555496807032@s.whatsapp.net
+[2025-11-18T13:39:30.505Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:39:30.505Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:39:30.506Z] [LOG] senderId::::: 134582817005739@lid
+[2025-11-18T13:39:30.507Z] [LOG] msgContact::: {
+  "id": "134582817005739@lid",
+  "name": "Rafael Costa",
+  "lid": null
+}
+[2025-11-18T13:39:31.224Z] [LOG] contactData::::: {
+  "name": "I- Supermercado Bom Gosto - 43931",
+  "number": "120363197233144780",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/404974176_1028032578421726_227885482870833507_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHXm7cgXXCPs9ui2fVfw0UQzeuFuTEsWpZ8WDwhib7fpw&oe=6929827D&_nc_sid=5e03e0&_nc_cat=104",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "I- Supermercado Bom Gosto - 43931"
+}
+[2025-11-18T13:39:31.225Z] [LOG] Procurando ou criando contato: 120363197233144780 (LID: N/A) na empresa 1
+[2025-11-18T13:39:31.227Z] [LOG] Contato encontrado pelo number: 120363197233144780
+[2025-11-18T13:39:31.227Z] [LOG] null
+[2025-11-18T13:39:31.237Z] [LOG] msgContact2::: {
+  "id": "134582817005739@lid",
+  "name": "Rafael Costa",
+  "lid": null
+}
+[2025-11-18T13:39:31.239Z] [LOG] groupContact::: {
+  "id": 30,
+  "name": "I- Supermercado Bom Gosto - 43931",
+  "number": "120363197233144780",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/404974176_1028032578421726_227885482870833507_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHXm7cgXXCPs9ui2fVfw0UQzeuFuTEsWpZ8WDwhib7fpw&oe=6929827D&_nc_sid=5e03e0&_nc_cat=104",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2024-04-18T11:20:01.034Z",
+  "updatedAt": "2025-11-18T12:06:17.215Z"
+}
+[2025-11-18T13:39:31.607Z] [LOG] contactData::::: {
+  "name": "Rafael Costa",
+  "number": "134582817005739",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/534426277_747831948307080_228782564219825670_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEGfpAijFsiWVqFyxycF8WtcJBgQZuf3F22JZaCtj28dw&oe=69299373&_nc_sid=5e03e0&_nc_cat=105",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Rafael Costa"
+}
+[2025-11-18T13:39:31.608Z] [LOG] Procurando ou criando contato: 134582817005739 (LID: N/A) na empresa 1
+[2025-11-18T13:39:31.609Z] [LOG] Contato encontrado pelo number: 134582817005739
+[2025-11-18T13:39:31.610Z] [LOG] 1
+[2025-11-18T13:39:31.625Z] [LOG] 🔍 Buscando ticket para contato 134582817005739 na conexão 1: #3654 (pending)
+[2025-11-18T13:39:31.626Z] [LOG] 🔍 Ticket encontrado: #3654 - Status: pending, UserId: null
+[2025-11-18T13:39:31.626Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:39:31.895Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363197233144780@g.us",
+      "fromMe": false,
+      "id": "ACF0DFDF876272D6D5B2B7ACCBFE239A",
+      "participant": "134582817005739@lid",
+      "participantAlt": "555496807032@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763473171,
+    "pushName": "Rafael Costa",
+    "broadcast": false,
+    "message": {
+      "conversation": "Vai demorar",
+      "messageContextInfo": {
+        "messageSecret": "59t8y689ZDaZD3ev3YYpgYSg+HM6GV74VuQA2zzzsjY="
+      }
+    }
+  }
+]
+[2025-11-18T13:39:31.913Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363197233144780@g.us
+[2025-11-18T13:39:31.913Z] [LOG] JID final para envio: 555496807032@s.whatsapp.net
+[2025-11-18T13:39:31.914Z] [LOG] RemoteJid nao contem @lid: 120363197233144780@g.us
+[2025-11-18T13:39:31.914Z] [LOG] DEBUG - jid: 555496807032@s.whatsapp.net
+[2025-11-18T13:39:31.914Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:39:31.915Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:39:31.915Z] [LOG] senderId::::: 134582817005739@lid
+[2025-11-18T13:39:31.915Z] [LOG] msgContact::: {
+  "id": "134582817005739@lid",
+  "name": "Rafael Costa",
+  "lid": null
+}
+[2025-11-18T13:39:31.922Z] [LOG] msgContact2::: {
+  "id": "134582817005739@lid",
+  "name": "Rafael Costa",
+  "lid": null
+}
+[2025-11-18T13:39:31.923Z] [LOG] groupContact::: {
+  "id": 30,
+  "name": "I- Supermercado Bom Gosto - 43931",
+  "number": "120363197233144780",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/404974176_1028032578421726_227885482870833507_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHXm7cgXXCPs9ui2fVfw0UQzeuFuTEsWpZ8WDwhib7fpw&oe=6929827D&_nc_sid=5e03e0&_nc_cat=104",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2024-04-18T11:20:01.034Z",
+  "updatedAt": "2025-11-18T12:06:17.215Z"
+}
+[2025-11-18T13:39:32.289Z] [LOG] contactData::::: {
+  "name": "Rafael Costa",
+  "number": "134582817005739",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/534426277_747831948307080_228782564219825670_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEGfpAijFsiWVqFyxycF8WtcJBgQZuf3F22JZaCtj28dw&oe=69299373&_nc_sid=5e03e0&_nc_cat=105",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Rafael Costa"
+}
+[2025-11-18T13:39:32.290Z] [LOG] Procurando ou criando contato: 134582817005739 (LID: N/A) na empresa 1
+[2025-11-18T13:39:32.292Z] [LOG] Contato encontrado pelo number: 134582817005739
+[2025-11-18T13:39:32.292Z] [LOG] 1
+[2025-11-18T13:39:32.309Z] [LOG] 🔍 Buscando ticket para contato 134582817005739 na conexão 1: #3654 (pending)
+[2025-11-18T13:39:32.310Z] [LOG] 🔍 Ticket encontrado: #3654 - Status: pending, UserId: null
+[2025-11-18T13:39:32.310Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:39:43.609Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363023934129824@g.us",
+      "fromMe": false,
+      "id": "3EB0C3681F2B69DA093625",
+      "participant": "72366222745776@lid",
+      "participantAlt": "555180543734@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763473183,
+    "pushName": "acertenotafiscal",
+    "broadcast": false,
+    "message": {
+      "conversation": "mandei mensagem no privado",
+      "senderKeyDistributionMessage": {
+        "groupId": "120363023934129824@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiE/OMHEAEaIADpo/QzYJh74DOBiRh4iXI5gyXt/FazpSbg3G5oxARTIiEF0zArt2uhpBRDod/o2NgbL/LaalLkQ9bezzq1o/grUlk="
+      },
+      "messageContextInfo": {
+        "messageSecret": "jSH1ZBtCH229NcbOXwZ9axeHFDYcpoQchvZFPn/TRH4=",
+        "limitSharingV2": {
+          "trigger": "UNKNOWN",
+          "initiatedByMe": false
+        }
+      }
+    }
+  }
+]
+[2025-11-18T13:39:43.685Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363023934129824@g.us
+[2025-11-18T13:39:43.685Z] [LOG] JID final para envio: 555180543734@s.whatsapp.net
+[2025-11-18T13:39:43.686Z] [LOG] RemoteJid nao contem @lid: 120363023934129824@g.us
+[2025-11-18T13:39:43.686Z] [LOG] DEBUG - jid: 555180543734@s.whatsapp.net
+[2025-11-18T13:39:43.687Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:39:43.687Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:39:43.688Z] [LOG] senderId::::: 72366222745776@lid
+[2025-11-18T13:39:43.688Z] [LOG] msgContact::: {
+  "id": "72366222745776@lid",
+  "name": "acertenotafiscal",
+  "lid": null
+}
+[2025-11-18T13:39:44.442Z] [LOG] contactData::::: {
+  "name": "I- Acerte Atacado - 42512/40742/42991/42436/44291",
+  "number": "120363023934129824",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/319926733_1432356474200352_7273742030558767394_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGRtALvFvgeZYYPDpJcU0ow6DiAU1R7UK4GcQNb4BwIZg&oe=692971CA&_nc_sid=5e03e0&_nc_cat=102",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "I- Acerte Atacado - 42512/40742/42991/42436/44291"
+}
+[2025-11-18T13:39:44.443Z] [LOG] Procurando ou criando contato: 120363023934129824 (LID: N/A) na empresa 1
+[2025-11-18T13:39:44.445Z] [LOG] Contato encontrado pelo number: 120363023934129824
+[2025-11-18T13:39:44.445Z] [LOG] null
+[2025-11-18T13:39:44.455Z] [LOG] msgContact2::: {
+  "id": "72366222745776@lid",
+  "name": "acertenotafiscal",
+  "lid": null
+}
+[2025-11-18T13:39:44.457Z] [LOG] groupContact::: {
+  "id": 61,
+  "name": "I- Acerte Atacado - 42512/40742/42991/42436/44291",
+  "number": "120363023934129824",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/319926733_1432356474200352_7273742030558767394_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGRtALvFvgeZYYPDpJcU0ow6DiAU1R7UK4GcQNb4BwIZg&oe=692971CA&_nc_sid=5e03e0&_nc_cat=102",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2024-04-18T18:28:36.803Z",
+  "updatedAt": "2025-11-18T13:39:44.445Z"
+}
+[2025-11-18T13:39:44.834Z] [LOG] contactData::::: {
+  "name": "acertenotafiscal",
+  "number": "72366222745776",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/361633173_151704484619201_7946870956114046771_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGt7V8gb3jXFF8SxJ_RAOcBfwIVPQLzxdiNl1V-4sPGwA&oe=69298C54&_nc_sid=5e03e0&_nc_cat=103",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "acertenotafiscal"
+}
+[2025-11-18T13:39:44.834Z] [LOG] Procurando ou criando contato: 72366222745776 (LID: N/A) na empresa 1
+[2025-11-18T13:39:44.836Z] [LOG] Contato encontrado pelo number: 72366222745776
+[2025-11-18T13:39:44.836Z] [LOG] null
+[2025-11-18T13:39:44.852Z] [LOG] 🔍 Buscando ticket para contato 72366222745776 na conexão 1: Não encontrado
+[2025-11-18T13:39:44.867Z] [LOG] ✅ Novo ticket criado: #3668 para contato 72366222745776 na conexão 1
+[2025-11-18T13:40:55.534Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363392301535349@g.us",
+      "fromMe": false,
+      "id": "AC43723DF0FC27972C25FD12EF5275FA",
+      "participant": "119391601598674@lid",
+      "participantAlt": "555189222562@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763473255,
+    "pushName": "ketlin tiburski 😎",
+    "broadcast": false,
+    "message": {
+      "conversation": "Oii bom dia",
+      "senderKeyDistributionMessage": {
+        "groupId": "120363392301535349@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwi7utLSBhAaGiBOnIg38GjfcgyfJubrKRmZxRUFXCqKGB7fskTUXICKRCIhBWf5ClRzwZULmPdOhv7pzyhhWZsN77dt/x6D/F9UV4YT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "UYBu809YjBvK6VXR3wO6J7pNz3D1b+M7joOV5p25nzg="
+      }
+    }
+  }
+]
+[2025-11-18T13:40:55.600Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363392301535349@g.us
+[2025-11-18T13:40:55.601Z] [LOG] JID final para envio: 555189222562@s.whatsapp.net
+[2025-11-18T13:40:55.601Z] [LOG] RemoteJid nao contem @lid: 120363392301535349@g.us
+[2025-11-18T13:40:55.602Z] [LOG] DEBUG - jid: 555189222562@s.whatsapp.net
+[2025-11-18T13:40:55.602Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:40:55.603Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:40:55.604Z] [LOG] senderId::::: 119391601598674@lid
+[2025-11-18T13:40:55.604Z] [LOG] msgContact::: {
+  "id": "119391601598674@lid",
+  "name": "ketlin tiburski 😎",
+  "lid": null
+}
+[2025-11-18T13:40:56.291Z] [LOG] contactData::::: {
+  "name": "I - Mercado Du Alemão 46385",
+  "number": "120363392301535349",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/473393443_601439909310082_4898703109757050259_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AFrfcVynHMIVpveQR6IHY4Ycued9jp3BHnzs_68G7AUAg&oe=69299AA2&_nc_sid=5e03e0&_nc_cat=111",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "I - Mercado Du Alemão 46385"
+}
+[2025-11-18T13:40:56.291Z] [LOG] Procurando ou criando contato: 120363392301535349 (LID: N/A) na empresa 1
+[2025-11-18T13:40:56.294Z] [LOG] Contato encontrado pelo number: 120363392301535349
+[2025-11-18T13:40:56.294Z] [LOG] null
+[2025-11-18T13:40:56.307Z] [LOG] msgContact2::: {
+  "id": "119391601598674@lid",
+  "name": "ketlin tiburski 😎",
+  "lid": null
+}
+[2025-11-18T13:40:56.308Z] [LOG] groupContact::: {
+  "id": 1058,
+  "name": "I - Mercado Du Alemão 46385",
+  "number": "120363392301535349",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/473393443_601439909310082_4898703109757050259_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AFrfcVynHMIVpveQR6IHY4Ycued9jp3BHnzs_68G7AUAg&oe=69299AA2&_nc_sid=5e03e0&_nc_cat=111",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-04-12T13:00:17.673Z",
+  "updatedAt": "2025-11-18T13:40:56.294Z"
+}
+[2025-11-18T13:40:56.724Z] [LOG] contactData::::: {
+  "name": "ketlin tiburski 😎",
+  "number": "119391601598674",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "ketlin tiburski 😎"
+}
+[2025-11-18T13:40:56.725Z] [LOG] Procurando ou criando contato: 119391601598674 (LID: N/A) na empresa 1
+[2025-11-18T13:40:56.727Z] [LOG] Contato encontrado pelo number: 119391601598674
+[2025-11-18T13:40:56.728Z] [LOG] null
+[2025-11-18T13:40:56.744Z] [LOG] 🔍 Buscando ticket para contato 119391601598674 na conexão 1: Não encontrado
+[2025-11-18T13:40:56.757Z] [LOG] ✅ Novo ticket criado: #3669 para contato 119391601598674 na conexão 1
+[2025-11-18T13:41:22.614Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "555192718953-1551144060@g.us",
+      "fromMe": false,
+      "id": "3EB084166B59CB935F141C",
+      "participant": "201936578056413@lid",
+      "participantAlt": "555189096215@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763473282,
+    "pushName": "Souza Logicbox",
+    "broadcast": false,
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "555192718953-1551144060@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiD1qCWBRABGiBZ/FOhlC9VDfvsjLEA2ywThZuLrMRRQMXnhsNp9cl78iIhBRyXvUa3HzfcQyWvr1nB98ahQ68ajr/w9wNCirYjZk9l"
+      },
+      "imageMessage": {
+        "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m238/AQNyVytHS1J26BfbX1O2Z3zHWbVH0PZqBNEWwbqg4diYl34sJHlh5CPyw7Yv1fklNXRdbRUC6MnGdaWtbG1C0UFO6QMeNbgQK-cpw-4QxQ?ccb=9-4&oh=01_Q5Aa3AG4ZntYTdpLqTs2CX79GFDhp3sE8ZHks5cRDWRH8rbbLw&oe=6943D6BB&_nc_sid=e6ed6c&mms3=true",
+        "mimetype": "image/jpeg",
+        "fileSha256": "0RGxEl1iqdYYE8WhNKCMXqlE23WCK1ulnR9nGKK9h7E=",
+        "fileLength": "17961",
+        "height": 141,
+        "width": 337,
+        "mediaKey": "VnU2umjenZoHeeRAXUzeFOxTAChP/Ltb5yCjaHb8KRU=",
+        "fileEncSha256": "EscrA7Z/Wr/cyZ9fKDSye9gXZCwyDv1bBi3lYp6A8As=",
+        "directPath": "/o1/v/t24/f2/m238/AQNyVytHS1J26BfbX1O2Z3zHWbVH0PZqBNEWwbqg4diYl34sJHlh5CPyw7Yv1fklNXRdbRUC6MnGdaWtbG1C0UFO6QMeNbgQK-cpw-4QxQ?ccb=9-4&oh=01_Q5Aa3AG4ZntYTdpLqTs2CX79GFDhp3sE8ZHks5cRDWRH8rbbLw&oe=6943D6BB&_nc_sid=e6ed6c",
+        "mediaKeyTimestamp": "1763473275",
+        "jpegThumbnail": "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",
+        "contextInfo": {
+          "stanzaId": "3EB066F88E72A6FF7BD3A4",
+          "participant": "190013698515036@lid",
+          "quotedMessage": {
+            "conversation": "putz",
+            "messageContextInfo": {
+              "messageSecret": "OcFxwmVazwFwJwmdkt/eQzWYV3kEooYPKMwOkLZ+27k="
+            }
+          },
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        },
+        "viewOnce": false
+      },
+      "messageContextInfo": {
+        "messageSecret": "FGDl23tApGQQEdpXH8k/u09NAfGjCyjgx69cQX/mIec="
+      }
+    },
+    "verifiedBizName": "Souza Logicbox"
+  }
+]
+[2025-11-18T13:41:22.662Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "555192718953-1551144060@g.us",
+      "fromMe": false,
+      "id": "3EB084166B59CB935F141C",
+      "participant": "201936578056413@lid",
+      "participantAlt": "555189096215@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763473282,
+    "pushName": "Souza Logicbox",
+    "broadcast": false,
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "555192718953-1551144060@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiD1qCWBRABGiBZ/FOhlC9VDfvsjLEA2ywThZuLrMRRQMXnhsNp9cl78iIhBRyXvUa3HzfcQyWvr1nB98ahQ68ajr/w9wNCirYjZk9l"
+      },
+      "imageMessage": {
+        "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m238/AQNyVytHS1J26BfbX1O2Z3zHWbVH0PZqBNEWwbqg4diYl34sJHlh5CPyw7Yv1fklNXRdbRUC6MnGdaWtbG1C0UFO6QMeNbgQK-cpw-4QxQ?ccb=9-4&oh=01_Q5Aa3AG4ZntYTdpLqTs2CX79GFDhp3sE8ZHks5cRDWRH8rbbLw&oe=6943D6BB&_nc_sid=e6ed6c&mms3=true",
+        "mimetype": "image/jpeg",
+        "fileSha256": "0RGxEl1iqdYYE8WhNKCMXqlE23WCK1ulnR9nGKK9h7E=",
+        "fileLength": "17961",
+        "height": 141,
+        "width": 337,
+        "mediaKey": "VnU2umjenZoHeeRAXUzeFOxTAChP/Ltb5yCjaHb8KRU=",
+        "fileEncSha256": "EscrA7Z/Wr/cyZ9fKDSye9gXZCwyDv1bBi3lYp6A8As=",
+        "directPath": "/o1/v/t24/f2/m238/AQNyVytHS1J26BfbX1O2Z3zHWbVH0PZqBNEWwbqg4diYl34sJHlh5CPyw7Yv1fklNXRdbRUC6MnGdaWtbG1C0UFO6QMeNbgQK-cpw-4QxQ?ccb=9-4&oh=01_Q5Aa3AG4ZntYTdpLqTs2CX79GFDhp3sE8ZHks5cRDWRH8rbbLw&oe=6943D6BB&_nc_sid=e6ed6c",
+        "mediaKeyTimestamp": "1763473275",
+        "jpegThumbnail": "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",
+        "contextInfo": {
+          "stanzaId": "3EB066F88E72A6FF7BD3A4",
+          "participant": "190013698515036@lid",
+          "quotedMessage": {
+            "conversation": "putz",
+            "messageContextInfo": {
+              "messageSecret": "OcFxwmVazwFwJwmdkt/eQzWYV3kEooYPKMwOkLZ+27k="
+            }
+          },
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        },
+        "viewOnce": false
+      },
+      "messageContextInfo": {
+        "messageSecret": "FGDl23tApGQQEdpXH8k/u09NAfGjCyjgx69cQX/mIec="
+      }
+    },
+    "verifiedBizName": "Souza Logicbox"
+  }
+]
+[2025-11-18T13:41:22.749Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 555192718953-1551144060@g.us
+[2025-11-18T13:41:22.749Z] [LOG] JID final para envio: 555189096215@s.whatsapp.net
+[2025-11-18T13:41:22.750Z] [LOG] RemoteJid nao contem @lid: 555192718953-1551144060@g.us
+[2025-11-18T13:41:22.750Z] [LOG] DEBUG - jid: 555189096215@s.whatsapp.net
+[2025-11-18T13:41:22.750Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:41:22.751Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:41:22.752Z] [LOG] senderId::::: 201936578056413@lid
+[2025-11-18T13:41:22.753Z] [LOG] msgContact::: {
+  "id": "201936578056413@lid",
+  "name": "Souza Logicbox",
+  "lid": null
+}
+[2025-11-18T13:41:22.768Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 555192718953-1551144060@g.us
+[2025-11-18T13:41:22.769Z] [LOG] JID final para envio: 555189096215@s.whatsapp.net
+[2025-11-18T13:41:22.769Z] [LOG] RemoteJid nao contem @lid: 555192718953-1551144060@g.us
+[2025-11-18T13:41:22.770Z] [LOG] DEBUG - jid: 555189096215@s.whatsapp.net
+[2025-11-18T13:41:22.770Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:41:22.770Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:41:22.771Z] [LOG] senderId::::: 201936578056413@lid
+[2025-11-18T13:41:22.771Z] [LOG] msgContact::: {
+  "id": "201936578056413@lid",
+  "name": "Souza Logicbox",
+  "lid": null
+}
+[2025-11-18T13:41:23.728Z] [LOG] contactData::::: {
+  "name": "Programação Logicbox",
+  "number": "555192718953-1551144060",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/57499596_572383493281937_8317056559267971072_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AFZ7eXIvXdWdrfW9vxsrN2aTRVbfcmGwIFTu8521xmaow&oe=69297521&_nc_sid=5e03e0&_nc_cat=102",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Programação Logicbox"
+}
+[2025-11-18T13:41:23.729Z] [LOG] Procurando ou criando contato: 555192718953-1551144060 (LID: N/A) na empresa 1
+[2025-11-18T13:41:23.732Z] [LOG] Contato encontrado pelo number: 555192718953-1551144060
+[2025-11-18T13:41:23.732Z] [LOG] null
+[2025-11-18T13:41:23.746Z] [LOG] msgContact2::: {
+  "id": "201936578056413@lid",
+  "name": "Souza Logicbox",
+  "lid": null
+}
+[2025-11-18T13:41:23.747Z] [LOG] groupContact::: {
+  "id": 2380,
+  "name": "Programação Logicbox",
+  "number": "555192718953-1551144060",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/57499596_572383493281937_8317056559267971072_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AFZ7eXIvXdWdrfW9vxsrN2aTRVbfcmGwIFTu8521xmaow&oe=69297521&_nc_sid=5e03e0&_nc_cat=102",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-10-01T18:36:08.331Z",
+  "updatedAt": "2025-11-18T12:22:52.453Z"
+}
+[2025-11-18T13:41:23.751Z] [LOG] msgContact2::: {
+  "id": "201936578056413@lid",
+  "name": "Souza Logicbox",
+  "lid": null
+}
+[2025-11-18T13:41:23.753Z] [LOG] groupContact::: {
+  "id": 2380,
+  "name": "Programação Logicbox",
+  "number": "555192718953-1551144060",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/57499596_572383493281937_8317056559267971072_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AFZ7eXIvXdWdrfW9vxsrN2aTRVbfcmGwIFTu8521xmaow&oe=69297521&_nc_sid=5e03e0&_nc_cat=102",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-10-01T18:36:08.331Z",
+  "updatedAt": "2025-11-18T12:22:52.453Z"
+}
+[2025-11-18T13:41:24.029Z] [LOG] contactData::::: {
+  "name": "Souza Logicbox",
+  "number": "201936578056413",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Souza Logicbox"
+}
+[2025-11-18T13:41:24.030Z] [LOG] Procurando ou criando contato: 201936578056413 (LID: N/A) na empresa 1
+[2025-11-18T13:41:24.031Z] [LOG] Contato encontrado pelo number: 201936578056413
+[2025-11-18T13:41:24.032Z] [LOG] null
+[2025-11-18T13:41:24.042Z] [LOG] contactData::::: {
+  "name": "Souza Logicbox",
+  "number": "201936578056413",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 13,
+  "pushName": "Souza Logicbox"
+}
+[2025-11-18T13:41:24.043Z] [LOG] Procurando ou criando contato: 201936578056413 (LID: N/A) na empresa 1
+[2025-11-18T13:41:24.047Z] [LOG] Contato encontrado pelo number: 201936578056413
+[2025-11-18T13:41:24.048Z] [LOG] null
+[2025-11-18T13:41:24.059Z] [LOG] 🔍 Buscando ticket para contato 201936578056413 na conexão 1: #3655 (pending)
+[2025-11-18T13:41:24.060Z] [LOG] 🔍 Ticket encontrado: #3655 - Status: pending, UserId: null
+[2025-11-18T13:41:24.061Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:41:24.086Z] [LOG] 🔍 Buscando ticket para contato 201936578056413 na conexão 13: #3358 (pending)
+[2025-11-18T13:41:24.087Z] [LOG] 🔍 Ticket encontrado: #3358 - Status: pending, UserId: null
+[2025-11-18T13:41:24.088Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:41:26.905Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363392301535349@g.us",
+      "fromMe": false,
+      "id": "AC7CD4C96514DB8F142B8C889CE5031F",
+      "participant": "119391601598674@lid",
+      "participantAlt": "555189222562@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763473286,
+    "pushName": "ketlin tiburski 😎",
+    "broadcast": false,
+    "message": {
+      "conversation": "Como eu faço pra controlar o estoque ?",
+      "messageContextInfo": {
+        "messageSecret": "s2ByOW7+a11gcjHjMU19jqorBy/asq9qfqoPPPzI3l4="
+      }
+    }
+  }
+]
+[2025-11-18T13:41:26.951Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363392301535349@g.us
+[2025-11-18T13:41:26.952Z] [LOG] JID final para envio: 555189222562@s.whatsapp.net
+[2025-11-18T13:41:26.953Z] [LOG] RemoteJid nao contem @lid: 120363392301535349@g.us
+[2025-11-18T13:41:26.953Z] [LOG] DEBUG - jid: 555189222562@s.whatsapp.net
+[2025-11-18T13:41:26.953Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:41:26.954Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:41:26.955Z] [LOG] senderId::::: 119391601598674@lid
+[2025-11-18T13:41:26.955Z] [LOG] msgContact::: {
+  "id": "119391601598674@lid",
+  "name": "ketlin tiburski 😎",
+  "lid": null
+}
+[2025-11-18T13:41:27.652Z] [LOG] contactData::::: {
+  "name": "I - Mercado Du Alemão 46385",
+  "number": "120363392301535349",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/473393443_601439909310082_4898703109757050259_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AFrfcVynHMIVpveQR6IHY4Ycued9jp3BHnzs_68G7AUAg&oe=69299AA2&_nc_sid=5e03e0&_nc_cat=111",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "I - Mercado Du Alemão 46385"
+}
+[2025-11-18T13:41:27.653Z] [LOG] Procurando ou criando contato: 120363392301535349 (LID: N/A) na empresa 1
+[2025-11-18T13:41:27.655Z] [LOG] Contato encontrado pelo number: 120363392301535349
+[2025-11-18T13:41:27.656Z] [LOG] null
+[2025-11-18T13:41:27.663Z] [LOG] msgContact2::: {
+  "id": "119391601598674@lid",
+  "name": "ketlin tiburski 😎",
+  "lid": null
+}
+[2025-11-18T13:41:27.665Z] [LOG] groupContact::: {
+  "id": 1058,
+  "name": "I - Mercado Du Alemão 46385",
+  "number": "120363392301535349",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/473393443_601439909310082_4898703109757050259_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AFrfcVynHMIVpveQR6IHY4Ycued9jp3BHnzs_68G7AUAg&oe=69299AA2&_nc_sid=5e03e0&_nc_cat=111",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-04-12T13:00:17.673Z",
+  "updatedAt": "2025-11-18T13:40:56.294Z"
+}
+[2025-11-18T13:41:28.062Z] [LOG] contactData::::: {
+  "name": "ketlin tiburski 😎",
+  "number": "119391601598674",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "ketlin tiburski 😎"
+}
+[2025-11-18T13:41:28.063Z] [LOG] Procurando ou criando contato: 119391601598674 (LID: N/A) na empresa 1
+[2025-11-18T13:41:28.065Z] [LOG] Contato encontrado pelo number: 119391601598674
+[2025-11-18T13:41:28.065Z] [LOG] null
+[2025-11-18T13:41:28.081Z] [LOG] 🔍 Buscando ticket para contato 119391601598674 na conexão 1: #3669 (pending)
+[2025-11-18T13:41:28.082Z] [LOG] 🔍 Ticket encontrado: #3669 - Status: pending, UserId: null
+[2025-11-18T13:41:28.082Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:41:54.059Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363392301535349@g.us",
+      "fromMe": false,
+      "id": "AC965828130B34DB077470C360AFA4C4",
+      "participant": "119391601598674@lid",
+      "participantAlt": "555189222562@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763473313,
+    "pushName": "ketlin tiburski 😎",
+    "broadcast": false,
+    "message": {
+      "conversation": "Como eu consigo ver todos os produtos?",
+      "messageContextInfo": {
+        "messageSecret": "fapNNx+HWITL0ddEAA38GP9Q2pN+xR8cMauBCGW4V2E="
+      }
+    }
+  }
+]
+[2025-11-18T13:41:54.140Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363392301535349@g.us
+[2025-11-18T13:41:54.141Z] [LOG] JID final para envio: 555189222562@s.whatsapp.net
+[2025-11-18T13:41:54.141Z] [LOG] RemoteJid nao contem @lid: 120363392301535349@g.us
+[2025-11-18T13:41:54.141Z] [LOG] DEBUG - jid: 555189222562@s.whatsapp.net
+[2025-11-18T13:41:54.142Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:41:54.142Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:41:54.143Z] [LOG] senderId::::: 119391601598674@lid
+[2025-11-18T13:41:54.144Z] [LOG] msgContact::: {
+  "id": "119391601598674@lid",
+  "name": "ketlin tiburski 😎",
+  "lid": null
+}
+[2025-11-18T13:41:54.152Z] [LOG] msgContact2::: {
+  "id": "119391601598674@lid",
+  "name": "ketlin tiburski 😎",
+  "lid": null
+}
+[2025-11-18T13:41:54.153Z] [LOG] groupContact::: {
+  "id": 1058,
+  "name": "I - Mercado Du Alemão 46385",
+  "number": "120363392301535349",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/473393443_601439909310082_4898703109757050259_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AFrfcVynHMIVpveQR6IHY4Ycued9jp3BHnzs_68G7AUAg&oe=69299AA2&_nc_sid=5e03e0&_nc_cat=111",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-04-12T13:00:17.673Z",
+  "updatedAt": "2025-11-18T13:40:56.294Z"
+}
+[2025-11-18T13:41:54.579Z] [LOG] contactData::::: {
+  "name": "ketlin tiburski 😎",
+  "number": "119391601598674",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "ketlin tiburski 😎"
+}
+[2025-11-18T13:41:54.580Z] [LOG] Procurando ou criando contato: 119391601598674 (LID: N/A) na empresa 1
+[2025-11-18T13:41:54.582Z] [LOG] Contato encontrado pelo number: 119391601598674
+[2025-11-18T13:41:54.583Z] [LOG] null
+[2025-11-18T13:41:54.596Z] [LOG] 🔍 Buscando ticket para contato 119391601598674 na conexão 1: #3669 (pending)
+[2025-11-18T13:41:54.597Z] [LOG] 🔍 Ticket encontrado: #3669 - Status: pending, UserId: null
+[2025-11-18T13:41:54.597Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:42:23.731Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363197233144780@g.us",
+      "fromMe": false,
+      "id": "3EB099838780CD3AB92024",
+      "participant": "56534939775231@lid",
+      "participantAlt": "555130763311@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763473343,
+    "pushName": "Logicbox Automação",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "*Fabricio Silva:*\nCerto, vou configurar",
+        "contextInfo": {
+          "forwardingScore": 0,
+          "isForwarded": false
+        }
+      }
+    }
+  }
+]
+[2025-11-18T13:42:23.833Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363197233144780@g.us
+[2025-11-18T13:42:23.833Z] [LOG] JID final para envio: 555130763311@s.whatsapp.net
+[2025-11-18T13:42:23.834Z] [LOG] RemoteJid nao contem @lid: 120363197233144780@g.us
+[2025-11-18T13:42:23.834Z] [LOG] DEBUG - jid: 555130763311@s.whatsapp.net
+[2025-11-18T13:42:23.835Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:42:23.836Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:42:23.836Z] [LOG] senderId::::: 56534939775231@lid
+[2025-11-18T13:42:23.837Z] [LOG] msgContact::: {
+  "id": "56534939775231@lid",
+  "name": "Logicbox Automação",
+  "lid": null
+}
+[2025-11-18T13:42:24.783Z] [LOG] contactData::::: {
+  "name": "I- Supermercado Bom Gosto - 43931",
+  "number": "120363197233144780",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/404974176_1028032578421726_227885482870833507_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHXm7cgXXCPs9ui2fVfw0UQzeuFuTEsWpZ8WDwhib7fpw&oe=6929827D&_nc_sid=5e03e0&_nc_cat=104",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "I- Supermercado Bom Gosto - 43931"
+}
+[2025-11-18T13:42:24.784Z] [LOG] Procurando ou criando contato: 120363197233144780 (LID: N/A) na empresa 1
+[2025-11-18T13:42:24.786Z] [LOG] Contato encontrado pelo number: 120363197233144780
+[2025-11-18T13:42:24.787Z] [LOG] null
+[2025-11-18T13:42:24.795Z] [LOG] msgContact2::: {
+  "id": "56534939775231@lid",
+  "name": "Logicbox Automação",
+  "lid": null
+}
+[2025-11-18T13:42:24.796Z] [LOG] groupContact::: {
+  "id": 30,
+  "name": "I- Supermercado Bom Gosto - 43931",
+  "number": "120363197233144780",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/404974176_1028032578421726_227885482870833507_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHXm7cgXXCPs9ui2fVfw0UQzeuFuTEsWpZ8WDwhib7fpw&oe=6929827D&_nc_sid=5e03e0&_nc_cat=104",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2024-04-18T11:20:01.034Z",
+  "updatedAt": "2025-11-18T12:06:17.215Z"
+}
+[2025-11-18T13:42:25.056Z] [LOG] contactData::::: {
+  "name": "Logicbox Automação",
+  "number": "56534939775231",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/473393714_931638749102817_6659221487139314508_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGqDVFaVPEhlwk75OB6bGZ1ag-5ItJA9mXDBTzlQ0AnVg&oe=692983CF&_nc_sid=5e03e0&_nc_cat=111",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Logicbox Automação"
+}
+[2025-11-18T13:42:25.057Z] [LOG] Procurando ou criando contato: 56534939775231 (LID: N/A) na empresa 1
+[2025-11-18T13:42:25.058Z] [LOG] Contato encontrado pelo number: 56534939775231
+[2025-11-18T13:42:25.059Z] [LOG] null
+[2025-11-18T13:42:25.073Z] [LOG] 🔍 Buscando ticket para contato 56534939775231 na conexão 1: #3654 (pending)
+[2025-11-18T13:42:25.074Z] [LOG] 🔍 Ticket encontrado: #3654 - Status: pending, UserId: null
+[2025-11-18T13:42:25.074Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:43:32.857Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363197233144780@g.us",
+      "fromMe": false,
+      "id": "3EB02DD3D7C25162CC61C0",
+      "participant": "56534939775231@lid",
+      "participantAlt": "555130763311@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763473412,
+    "pushName": "Logicbox Automação",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "*Fabricio Silva:*\nPode passar um produto no leitor?",
+        "contextInfo": {
+          "forwardingScore": 0,
+          "isForwarded": false
+        }
+      }
+    }
+  }
+]
+[2025-11-18T13:43:32.948Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363197233144780@g.us
+[2025-11-18T13:43:32.949Z] [LOG] JID final para envio: 555130763311@s.whatsapp.net
+[2025-11-18T13:43:32.949Z] [LOG] RemoteJid nao contem @lid: 120363197233144780@g.us
+[2025-11-18T13:43:32.950Z] [LOG] DEBUG - jid: 555130763311@s.whatsapp.net
+[2025-11-18T13:43:32.950Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:43:32.951Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:43:32.952Z] [LOG] senderId::::: 56534939775231@lid
+[2025-11-18T13:43:32.953Z] [LOG] msgContact::: {
+  "id": "56534939775231@lid",
+  "name": "Logicbox Automação",
+  "lid": null
+}
+[2025-11-18T13:43:33.513Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363404293679539@g.us",
+      "fromMe": false,
+      "id": "3AF9B53609DFFE3D41F7",
+      "participant": "161593899917551@lid",
+      "participantAlt": "555192987716@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763473413,
+    "pushName": "Fernanda",
+    "broadcast": false,
+    "message": {
+      "conversation": "Não",
+      "messageContextInfo": {
+        "messageSecret": "/QdSmMRK7dKdKuw5rvEd7SibMcwr4S4Paks2AGAkRxk="
+      }
+    }
+  }
+]
+[2025-11-18T13:43:33.678Z] [LOG] contactData::::: {
+  "name": "I- Supermercado Bom Gosto - 43931",
+  "number": "120363197233144780",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/404974176_1028032578421726_227885482870833507_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHXm7cgXXCPs9ui2fVfw0UQzeuFuTEsWpZ8WDwhib7fpw&oe=6929827D&_nc_sid=5e03e0&_nc_cat=104",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "I- Supermercado Bom Gosto - 43931"
+}
+[2025-11-18T13:43:33.679Z] [LOG] Procurando ou criando contato: 120363197233144780 (LID: N/A) na empresa 1
+[2025-11-18T13:43:33.681Z] [LOG] Contato encontrado pelo number: 120363197233144780
+[2025-11-18T13:43:33.681Z] [LOG] null
+[2025-11-18T13:43:33.694Z] [LOG] msgContact2::: {
+  "id": "56534939775231@lid",
+  "name": "Logicbox Automação",
+  "lid": null
+}
+[2025-11-18T13:43:33.695Z] [LOG] groupContact::: {
+  "id": 30,
+  "name": "I- Supermercado Bom Gosto - 43931",
+  "number": "120363197233144780",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/404974176_1028032578421726_227885482870833507_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AHXm7cgXXCPs9ui2fVfw0UQzeuFuTEsWpZ8WDwhib7fpw&oe=6929827D&_nc_sid=5e03e0&_nc_cat=104",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2024-04-18T11:20:01.034Z",
+  "updatedAt": "2025-11-18T12:06:17.215Z"
+}
+[2025-11-18T13:43:33.964Z] [LOG] contactData::::: {
+  "name": "Logicbox Automação",
+  "number": "56534939775231",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/473393714_931638749102817_6659221487139314508_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AGqDVFaVPEhlwk75OB6bGZ1ag-5ItJA9mXDBTzlQ0AnVg&oe=692983CF&_nc_sid=5e03e0&_nc_cat=111",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Logicbox Automação"
+}
+[2025-11-18T13:43:33.966Z] [LOG] Procurando ou criando contato: 56534939775231 (LID: N/A) na empresa 1
+[2025-11-18T13:43:33.968Z] [LOG] Contato encontrado pelo number: 56534939775231
+[2025-11-18T13:43:33.968Z] [LOG] null
+[2025-11-18T13:43:33.987Z] [LOG] 🔍 Buscando ticket para contato 56534939775231 na conexão 1: #3654 (pending)
+[2025-11-18T13:43:33.987Z] [LOG] 🔍 Ticket encontrado: #3654 - Status: pending, UserId: null
+[2025-11-18T13:43:33.988Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:43:34.143Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363404293679539@g.us
+[2025-11-18T13:43:34.143Z] [LOG] JID final para envio: 555192987716@s.whatsapp.net
+[2025-11-18T13:43:34.144Z] [LOG] RemoteJid nao contem @lid: 120363404293679539@g.us
+[2025-11-18T13:43:34.144Z] [LOG] DEBUG - jid: 555192987716@s.whatsapp.net
+[2025-11-18T13:43:34.145Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:43:34.145Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:43:34.146Z] [LOG] senderId::::: 161593899917551@lid
+[2025-11-18T13:43:34.146Z] [LOG] msgContact::: {
+  "id": "161593899917551@lid",
+  "name": "Fernanda",
+  "lid": null
+}
+[2025-11-18T13:43:34.907Z] [LOG] contactData::::: {
+  "name": "I - Pet Mais 44019/ 46904 ",
+  "number": "120363404293679539",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491878407_1100778022216974_2707122293379504840_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEWRMNHx5XFUdX2Vfq4hRQ5yWSdbC7gUHIVAAw6pJdKGw&oe=69297694&_nc_sid=5e03e0&_nc_cat=104",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "I - Pet Mais 44019/ 46904 "
+}
+[2025-11-18T13:43:34.907Z] [LOG] Procurando ou criando contato: 120363404293679539 (LID: N/A) na empresa 1
+[2025-11-18T13:43:34.909Z] [LOG] Contato encontrado pelo number: 120363404293679539
+[2025-11-18T13:43:34.910Z] [LOG] null
+[2025-11-18T13:43:34.918Z] [LOG] msgContact2::: {
+  "id": "161593899917551@lid",
+  "name": "Fernanda",
+  "lid": null
+}
+[2025-11-18T13:43:34.919Z] [LOG] groupContact::: {
+  "id": 2365,
+  "name": "I - Pet Mais 44019/ 46904 ",
+  "number": "120363404293679539",
+  "email": "",
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/491878407_1100778022216974_2707122293379504840_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEWRMNHx5XFUdX2Vfq4hRQ5yWSdbC7gUHIVAAw6pJdKGw&oe=69297694&_nc_sid=5e03e0&_nc_cat=104",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-09-26T12:27:43.224Z",
+  "updatedAt": "2025-11-18T12:06:16.462Z"
+}
+[2025-11-18T13:43:35.285Z] [LOG] contactData::::: {
+  "name": "Fernanda",
+  "number": "161593899917551",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Fernanda"
+}
+[2025-11-18T13:43:35.286Z] [LOG] Procurando ou criando contato: 161593899917551 (LID: N/A) na empresa 1
+[2025-11-18T13:43:35.287Z] [LOG] Contato encontrado pelo number: 161593899917551
+[2025-11-18T13:43:35.288Z] [LOG] null
+[2025-11-18T13:43:35.306Z] [LOG] 🔍 Buscando ticket para contato 161593899917551 na conexão 1: #3663 (pending)
+[2025-11-18T13:43:35.306Z] [LOG] 🔍 Ticket encontrado: #3663 - Status: pending, UserId: null
+[2025-11-18T13:43:35.307Z] [LOG] 📝 Atualizando ticket status: pending
+[2025-11-18T13:43:39.540Z] [LOG] messages.upsert::::: [
+  {
+    "key": {
+      "remoteJid": "120363422362887268@g.us",
+      "fromMe": false,
+      "id": "A5CA8CE9928365E07F1D04F393C80A0E",
+      "participant": "20019010338846@lid",
+      "participantAlt": "555182000365@s.whatsapp.net",
+      "addressingMode": "lid"
+    },
+    "messageTimestamp": 1763473419,
+    "pushName": "Cristiane Flores",
+    "broadcast": false,
+    "message": {
+      "conversation": "Obrigada",
+      "messageContextInfo": {
+        "messageSecret": "M06HA7ZvbgPkJt7hIBcQQWXxGR0a/LBFKpZMaWEp1zY="
+      }
+    }
+  }
+]
+[2025-11-18T13:43:39.580Z] [LOG] JID não encontrado na LIDMappingStore para o PN: 120363422362887268@g.us
+[2025-11-18T13:43:39.581Z] [LOG] JID final para envio: 555182000365@s.whatsapp.net
+[2025-11-18T13:43:39.581Z] [LOG] RemoteJid nao contem @lid: 120363422362887268@g.us
+[2025-11-18T13:43:39.582Z] [LOG] DEBUG - jid: 555182000365@s.whatsapp.net
+[2025-11-18T13:43:39.582Z] [LOG] DEBUG - lid: 
+[2025-11-18T13:43:39.583Z] [LOG] DEBUG - isGroup: true
+[2025-11-18T13:43:39.583Z] [LOG] senderId::::: 20019010338846@lid
+[2025-11-18T13:43:39.584Z] [LOG] msgContact::: {
+  "id": "20019010338846@lid",
+  "name": "Cristiane Flores",
+  "lid": null
+}
+[2025-11-18T13:43:40.343Z] [LOG] contactData::::: {
+  "name": "I - Central Tech Celulares 46872",
+  "number": "120363422362887268",
+  "lid": null,
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": true,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "I - Central Tech Celulares 46872"
+}
+[2025-11-18T13:43:40.343Z] [LOG] Procurando ou criando contato: 120363422362887268 (LID: N/A) na empresa 1
+[2025-11-18T13:43:40.345Z] [LOG] Contato encontrado pelo number: 120363422362887268
+[2025-11-18T13:43:40.346Z] [LOG] null
+[2025-11-18T13:43:40.358Z] [LOG] msgContact2::: {
+  "id": "20019010338846@lid",
+  "name": "Cristiane Flores",
+  "lid": null
+}
+[2025-11-18T13:43:40.359Z] [LOG] groupContact::: {
+  "id": 2858,
+  "name": "I - Central Tech Celulares 46872",
+  "number": "120363422362887268",
+  "email": "",
+  "profilePicUrl": "http://10.1.4.194:3000/nopicture.png",
+  "isGroup": true,
+  "active": true,
+  "companyId": 1,
+  "disableBot": false,
+  "whatsappId": null,
+  "lid": null,
+  "createdAt": "2025-11-11T21:43:24.705Z",
+  "updatedAt": "2025-11-18T13:29:05.465Z"
+}
+[2025-11-18T13:43:40.837Z] [LOG] contactData::::: {
+  "name": "Cristiane Flores",
+  "number": "20019010338846",
+  "lid": null,
+  "profilePicUrl": "https://pps.whatsapp.net/v/t61.24694-24/559884365_789473490358701_1500435569236097504_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa3AEPagqnFZ8Dq861bkUkt4-GU-Ikk4aC9t7sfOFbm3xZNQ&oe=6929702A&_nc_sid=5e03e0&_nc_cat=102",
+  "isGroup": false,
+  "companyId": 1,
+  "whatsappId": 1,
+  "pushName": "Cristiane Flores"
+}
+[2025-11-18T13:43:40.838Z] [LOG] Procurando ou criando contato: 20019010338846 (LID: N/A) na empresa 1
+[2025-11-18T13:43:40.840Z] [LOG] Contato encontrado pelo number: 20019010338846
+[2025-11-18T13:43:40.840Z] [LOG] null
+[2025-11-18T13:43:40.858Z] [LOG] 🔍 Buscando ticket para contato 20019010338846 na conexão 1: #3665 (pending)
+[2025-11-18T13:43:40.859Z] [LOG] 🔍 Ticket encontrado: #3665 - Status: pending, UserId: null
+[2025-11-18T13:43:40.860Z] [LOG] 📝 Atualizando ticket status: pending

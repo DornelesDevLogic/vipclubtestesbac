@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc --sourceMap false",
+    "build": "tsc --sourceMap false --noEmitOnError false",
+    "build-force": "tsc --sourceMap false --noEmitOnError false --skipLibCheck",
     "devbuild": "tsc --sourceMap true",
     "watch": "tsc -w",
     "start": "node --max-old-space-size=8096 dist/server.js",

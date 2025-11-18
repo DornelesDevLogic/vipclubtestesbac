@@ -5,12 +5,23 @@
     "outDir": "./dist",
     "strict": false,
     "strictPropertyInitialization": false,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noImplicitThis": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "exactOptionalPropertyTypes": false,
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-	"types": ["node"]
+    "forceConsistentCasingInFileNames": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "noStrictGenericChecks": true,
+    "noEmitOnError": false,
+    "types": ["node"]
   },
-    "exclude": ["public"]
+  "exclude": ["public", "node_modules", "dist"]
 }

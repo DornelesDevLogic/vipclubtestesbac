@@ -6,7 +6,7 @@ interface Data {
   priority: string;
   title: string;
   text: string;
-  status: string;
+  status: boolean;
   companyId: number;
 }
 

@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import moment from 'moment-timezone';
 
 class DailyLogger {
   private logsDir: string;
@@ -26,7 +27,7 @@ class DailyLogger {
   }
 
   private writeToFile(level: string, ...args: any[]): void {
-    const timestamp = new Date().toISOString();
+    const timestamp = moment().tz('America/Sao_Paulo').format('YYYY-MM-DDTHH:mm:ss.SSS[Z]');
     const message = args.map(arg => 
       typeof arg === 'object' ? JSON.stringify(arg, null, 2) : String(arg)
     ).join(' ');

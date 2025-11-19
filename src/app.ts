@@ -55,7 +55,7 @@ app.use(helmet({
 
 const apiLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: 100,
+  max: 1000, // Aumentado de 100 para 1000
   standardHeaders: true,
   legacyHeaders: false,
   message: 'Muitas requisições deste IP, tente novamente após 15 minutos',
@@ -69,9 +69,10 @@ app.use('/auth', apiLimiter);
 app.use(
   cors({
     credentials: true,
-    origin: process.env.FRONTEND_URL,
+    origin: [process.env.FRONTEND_URL, 'https://whats.logidoc.pro'],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization']
+    allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization'],
+    optionsSuccessStatus: 200
   })
 );
 

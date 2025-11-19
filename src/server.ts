@@ -2,6 +2,7 @@ import gracefulShutdown from "http-graceful-shutdown";
 import app from "./app";
 import { initIO } from "./libs/socket";
 import { logger } from "./utils/logger";
+import { dailyLogger } from "./utils/dailyLogger"; // Inicializa logs
 import { StartAllWhatsAppsSessions } from "./services/WbotServices/StartAllWhatsAppsSessions";
 import Company from "./models/Company";
 import { startQueueProcess } from "./queues";

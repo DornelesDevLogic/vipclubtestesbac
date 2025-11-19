@@ -464,6 +464,7 @@ export const getBodyMessage = (msg: proto.IWebMessageInfo): string | null => {
       audioMessage: "Áudio",
       listMessage: getBodyButton(msg) || msg.message?.listResponseMessage?.title,
       listResponseMessage: msg.message?.listResponseMessage?.singleSelectReply?.selectedRowId,
+      ephemeralMessage: msg.message?.ephemeralMessage?.message?.extendedTextMessage?.text || msg.message?.ephemeralMessage?.message?.conversation || "Mensagem temporária",
     };
 
     const objKey = Object.keys(types).find(key => key === type);
@@ -1112,7 +1113,7 @@ export const verifyMessage = async (
     id: isEdited ? msg?.message?.editedMessage?.message?.protocolMessage?.key?.id : msg.key.id,
     ticketId: ticket.id,
     contactId: msg.key.fromMe ? undefined : contact.id,
-    body,
+    body: body || "Mensagem sem conteúdo", // Garantir que body nunca seja null
     fromMe: msg.key.fromMe,
     mediaType: getTypeMessage(msg),
     read: msg.key.fromMe,

@@ -38,23 +38,23 @@ const FindOrCreateTicketService = async (
   console.log(`🔍 Buscando ticket para contato ${contact.number} na conexão ${whatsappId}: ${ticket ? `#${ticket.id} (${ticket.status})` : 'Não encontrado'}`);
 
     if (ticket) {
-      console.log(`🔍 Ticket encontrado: #${ticket.id} - Status: ${ticket.status}, UserId: ${ticket.userId}`);
+      console.log(`🔍 Ticket encontrado: #${ticket.id} - Status: ${ticket.status}, UserId: ${ticket.userId}, QueueId: ${ticket.queueId}`);
       
       if (openTicketSchedule) {
         await ticket.update({ status: "open", unreadMessages });
       } else {
         // Manter status atual se ticket estiver aberto/aceito
         if (ticket.status === "open" && ticket.userId) {
-          // Ticket aceito por atendente - manter status e atendente
-          console.log(`✅ Mantendo ticket aberto com atendente ${ticket.userId}`);
+          // Ticket aceito por atendente - manter status, atendente e fila
+          console.log(`✅ Mantendo ticket aberto com atendente ${ticket.userId} e fila ${ticket.queueId}`);
           await ticket.update({ unreadMessages, whatsappId });
         } else if (ticket.status === "closed") {
-          // Ticket fechado - limpar fila e atendente
-          console.log(`🔄 Reabrindo ticket fechado`);
-          await ticket.update({ queueId: null, userId: null, unreadMessages, whatsappId });
+          // Ticket fechado - limpar apenas atendente, manter fila para histórico
+          console.log(`🔄 Reabrindo ticket fechado - mantendo fila ${ticket.queueId}`);
+          await ticket.update({ userId: null, status: "pending", unreadMessages, whatsappId });
         } else {
           // Outros status (pending) - atualizar normalmente
-          console.log(`📝 Atualizando ticket status: ${ticket.status}`);
+          console.log(`📝 Atualizando ticket status: ${ticket.status}, fila: ${ticket.queueId}`);
           await ticket.update({ unreadMessages, whatsappId });
         }
       }

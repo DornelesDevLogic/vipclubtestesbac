@@ -9,7 +9,12 @@ class DailyLogger {
   private originalConsoleWarn: typeof console.warn;
 
   constructor() {
-    this.logsDir = path.resolve(__dirname, '..', '..', 'logs');
+    // Forçar caminho baseado no arquivo server.js
+    const projectRoot = path.resolve(__dirname, '..', '..');
+    this.logsDir = path.join(projectRoot, 'logs');
+    console.log(`📁 Diretório de logs: ${this.logsDir}`);
+    console.log(`📁 process.cwd(): ${process.cwd()}`);
+    console.log(`📁 __dirname: ${__dirname}`);
     this.ensureLogsDirectory();
     this.setupConsoleInterceptor();
     this.startCleanupRoutine();

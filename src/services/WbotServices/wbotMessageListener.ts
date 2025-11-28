@@ -1270,20 +1270,20 @@ const verifyQueue = async (
       });
     }
 
-    // CORREÇÃO: Manter status atual se ticket já tem atendente
-    const ticketStatus = ticket.userId ? ticket.status : "pending";
-    const updateData = { queueId: firstQueue.id, chatbot };
-    
-    // Só alterar status se ticket não tem atendente
-    if (!ticket.userId) {
-      updateData.status = ticketStatus;
+    // CORREÇÃO: Não alterar fila se ticket já tem atendente ou fila definida
+    if (!ticket.userId && !ticket.queueId) {
+      const updateData = { queueId: firstQueue.id, chatbot, status: "pending" };
+      
+      await UpdateTicketService({
+        ticketData: updateData,
+        ticketId: ticket.id,
+        companyId: ticket.companyId,
+      });
+      
+      console.log(`🎯 Fila ${firstQueue.name} atribuída ao ticket #${ticket.id}`);
+    } else {
+      console.log(`⚠️ Ticket #${ticket.id} já tem atendente (${ticket.userId}) ou fila (${ticket.queueId}) - mantendo configuração atual`);
     }
-    
-    await UpdateTicketService({
-      ticketData: updateData,
-      ticketId: ticket.id,
-      companyId: ticket.companyId,
-    });
 
     return;
   }
@@ -1358,20 +1358,20 @@ const verifyQueue = async (
         chatbot = firstQueue.options.length > 0;
       }
 
-      // CORREÇÃO: Manter status atual se ticket já tem atendente
-      const ticketStatus = ticket.userId ? ticket.status : "pending";
-      const updateData = { queueId: firstQueue.id, chatbot };
-      
-      // Só alterar status se ticket não tem atendente
-      if (!ticket.userId) {
-        updateData.status = ticketStatus;
+      // CORREÇÃO: Não alterar fila se ticket já tem atendente ou fila definida
+      if (!ticket.userId && !ticket.queueId) {
+        const updateData = { queueId: firstQueue.id, chatbot, status: "pending" };
+        
+        await UpdateTicketService({
+          ticketData: updateData,
+          ticketId: ticket.id,
+          companyId: ticket.companyId,
+        });
+        
+        console.log(`🎯 Fila ${firstQueue.name} selecionada automaticamente para ticket #${ticket.id}`);
+      } else {
+        console.log(`⚠️ Ticket #${ticket.id} já tem atendente (${ticket.userId}) ou fila (${ticket.queueId}) - mantendo configuração atual`);
       }
-      
-      await UpdateTicketService({
-        ticketData: updateData,
-        ticketId: ticket.id,
-        companyId: ticket.companyId,
-      });
 
       // Envia mensagem informando a seleção automática
       const autoSelectMessage = {
@@ -1390,19 +1390,20 @@ const verifyQueue = async (
       chatbot = choosenQueue.options.length > 0;
     }
 
-    // CORREÇÃO: Não alterar status se ticket já tem atendente
-    const updateData = { queueId: choosenQueue.id, chatbot };
-    
-    // Só alterar status se ticket não tem atendente
-    if (!ticket.userId) {
-      updateData.status = "pending";
+    // CORREÇÃO: Não alterar fila se ticket já tem atendente ou fila definida
+    if (!ticket.userId && !ticket.queueId) {
+      const updateData = { queueId: choosenQueue.id, chatbot, status: "pending" };
+      
+      await UpdateTicketService({
+        ticketData: updateData,
+        ticketId: ticket.id,
+        companyId: ticket.companyId,
+      });
+      
+      console.log(`🎯 Fila ${choosenQueue.name} escolhida para ticket #${ticket.id}`);
+    } else {
+      console.log(`⚠️ Ticket #${ticket.id} já tem atendente (${ticket.userId}) ou fila (${ticket.queueId}) - mantendo configuração atual`);
     }
-    
-    await UpdateTicketService({
-      ticketData: updateData,
-      ticketId: ticket.id,
-      companyId: ticket.companyId,
-    });
 
     if (choosenQueue.options.length === 0) {
       const queue = await Queue.findByPk(choosenQueue.id);
@@ -2383,17 +2384,17 @@ const handleMessage = async (
     console.log(`- whatsapp.queues.length: ${whatsapp.queues.length}`);
     console.log(`- ticket.useIntegration: ${ticket.useIntegration}`);
     
-    // CORREÇÃO: Não processar verifyQueue se mensagem é enviada por mim (fromMe: true)
-    // Isso evita que tickets aceitos voltem para pending quando o atendente envia mensagem
+    // CORREÇÃO: Só processar verifyQueue se ticket não tem fila E não tem atendente
+    // Evita trocar fila de tickets já atribuídos
     if (
-      !ticket.queue &&
+      !ticket.queueId &&
       !ticket.isGroup &&
       !msg.key.fromMe &&
       !ticket.userId &&
       whatsapp.queues.length >= 1 &&
       !ticket.useIntegration
     ) {
-      console.log(`⚠️ CHAMANDO verifyQueue - Ticket sem atendente`);
+      console.log(`⚠️ CHAMANDO verifyQueue - Ticket sem fila e sem atendente`);
       await verifyQueue(wbot, msg, ticket, contact);
 
       if (ticketTraking.chatbotAt === null) {
@@ -2401,8 +2402,8 @@ const handleMessage = async (
           chatbotAt: moment().toDate(),
         })
       }
-    } else if (msg.key.fromMe && ticket.userId) {
-      console.log(`✅ IGNORANDO verifyQueue - Mensagem enviada pelo atendente ${ticket.userId}`);
+    } else {
+      console.log(`✅ IGNORANDO verifyQueue - Ticket já tem fila (${ticket.queueId}) ou atendente (${ticket.userId}) ou é mensagem do atendente`);
     }
 
     const dontReadTheFirstQuestion = ticket.queue === null;

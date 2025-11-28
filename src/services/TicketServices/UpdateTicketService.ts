@@ -19,6 +19,7 @@ import Whatsapp from "../../models/Whatsapp";
 import { Op } from "sequelize";
 import AppError from "../../errors/AppError";
 import { buildContactAddress } from "../../utils/global";
+import { queueDebugger, validateTicketState } from "../../utils/queueDebugger";
 
 
 interface TicketData {
@@ -247,7 +248,27 @@ const UpdateTicketService = async ({
             }      
     }
 
-    // CORREÇÃO: Preservar status e userId se ticket já tem atendente e não está sendo explicitamente alterado
+    // CORREÇÃO: Validar mudanças antes de aplicar
+    const reason = `UpdateTicketService - Status: ${status}, UserId: ${userId}, QueueId: ${queueId}`;
+    
+    // Validar se mudança de fila é apropriada
+    if (queueId !== undefined && !queueDebugger.validateQueueChange(ticket, queueId, userId, reason)) {
+      console.log(`🚫 Mudança de fila bloqueada para ticket #${ticket.id}`);
+      // Não alterar queueId se validação falhou
+      queueId = ticket.queueId;
+    }
+    
+    // Log da mudança para debug
+    queueDebugger.logQueueChange(
+      ticket.id,
+      ticket.contact.number,
+      ticket.queueId,
+      queueId,
+      ticket.userId,
+      userId,
+      reason
+    );
+    
     const updateData = {
       queueId,
       whatsappId,
@@ -256,7 +277,7 @@ const UpdateTicketService = async ({
       lastMessage: lastMessage !== null ? lastMessage : ticket.lastMessage
     };
     
-    // Só atualizar status se foi explicitamente fornecido ou se ticket não tem atendente
+    // Só atualizar status se foi explicitamente fornecido
     if (status !== undefined) {
       updateData.status = status;
     }
@@ -267,6 +288,9 @@ const UpdateTicketService = async ({
     }
     
     await ticket.update(updateData);
+    
+    // Validar estado após atualização
+    await validateTicketState(ticket.id);
 
     await ticket.reload();
 

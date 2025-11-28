@@ -10,6 +10,7 @@ import { TransferTicketQueue } from "./wbotTransferTicketQueue";
 import cron from "node-cron";
 
 //Teste git 28102025
+console.log('🚀 Iniciando servidor...');
 const server = app.listen(process.env.PORT, async () => {
   const companies = await Company.findAll();
   const allPromises: any[] = [];

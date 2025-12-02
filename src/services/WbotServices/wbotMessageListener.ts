@@ -2006,6 +2006,14 @@ const handleMessage = async (
   let mediaSent: Message | undefined;
 
   if (!isValidMsg(msg)) return;
+  
+  // Ignorar mensagens de avaliação automática
+  const bodyMessage = getBodyMessage(msg);
+  if (bodyMessage && bodyMessage.startsWith("Por gentileza, avalie seu atendimento pelo link abaixo:")) {
+    console.log(`🚫 Ignorando mensagem de avaliação automática`);
+    return;
+  }
+  
   try {
     let msgContact: IMe;
     let groupContact: Contact | undefined;

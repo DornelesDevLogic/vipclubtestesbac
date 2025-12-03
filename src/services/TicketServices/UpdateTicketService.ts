@@ -251,11 +251,15 @@ const UpdateTicketService = async ({
     // CORREÇÃO: Validar mudanças antes de aplicar
     const reason = `UpdateTicketService - Status: ${status}, UserId: ${userId}, QueueId: ${queueId}`;
     
-    // Validar se mudança de fila é apropriada
-    if (queueId !== undefined && !queueDebugger.validateQueueChange(ticket, queueId, userId, reason)) {
+    // Validar se mudança de fila é apropriada (exceto transferências manuais)
+    const isManualTransfer = queueId !== undefined && status === "pending" && userId === null;
+    
+    if (queueId !== undefined && !isManualTransfer && !queueDebugger.validateQueueChange(ticket, queueId, userId, reason)) {
       console.log(`🚫 Mudança de fila bloqueada para ticket #${ticket.id}`);
       // Não alterar queueId se validação falhou
       queueId = ticket.queueId;
+    } else if (isManualTransfer) {
+      console.log(`✅ Transferência manual permitida - Ticket #${ticket.id} para fila ${queueId}`);
     }
     
     // Log da mudança para debug

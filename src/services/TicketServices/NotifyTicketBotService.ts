@@ -2,6 +2,7 @@ import axios from "axios";
 import * as Sentry from "@sentry/node";
 import Ticket from "../../models/Ticket";
 import TicketTraking from "../../models/TicketTraking";
+import QueueIntegrations from "../../models/QueueIntegrations";
 
 interface NotifyTicketBotParams {
   ticket: Ticket;
@@ -22,14 +23,21 @@ const NotifyTicketBotService = async ({
   skipRating = false
 }: NotifyTicketBotParams): Promise<void> => {
   try {
-    // URL do webhook do TicketBot (configurar via variável de ambiente)
-    const ticketBotWebhookUrl = process.env.TICKETBOT_WEBHOOK_URL;
+    // Buscar URL do webhook na tabela QueueIntegrations
+    const queueIntegration = await QueueIntegrations.findOne({
+      where: {
+        companyId: ticket.companyId,
+        type: 'webhook' // ou o tipo que identifica o TicketBot
+      }
+    });
     
-    if (!ticketBotWebhookUrl) {
-      console.log("⚠️ TICKETBOT_WEBHOOK_URL não configurada - Notificação não enviada");
+    if (!queueIntegration?.urlN8N) {
+      console.log("⚠️ URL do TicketBot não configurada na integração - Notificação não enviada");
       return;
     }
 
+    const ticketBotWebhookUrl = queueIntegration.urlN8N;
+    
     // Construir payload conforme especificação do TicketBot
     const payload: TicketBotPayload = {
       ticketTrakingId: ticketTraking.id,
@@ -47,6 +55,7 @@ const NotifyTicketBotService = async ({
     }
 
     console.log(`📤 Enviando notificação para TicketBot - Ticket #${ticket.id}:`, payload);
+    console.log(`🔗 URL: ${ticketBotWebhookUrl}`);
 
     // Enviar notificação para o TicketBot
     const response = await axios.post(ticketBotWebhookUrl, payload, {

@@ -213,6 +213,24 @@ export const update = async (
   return res.status(200).json(ticket);
 };
 
+export const update2 = async (
+  req: Request,
+  res: Response
+): Promise<Response> => {
+  const { ticketId } = req.params;
+  const ticketData: TicketData = req.body;
+  const { companyId } = req.user;
+
+  const { ticket } = await UpdateTicketService({
+    ticketData,
+    ticketId,
+    companyId,
+    skipRating: true  // Flag para não enviar avaliação
+  });
+
+  return res.status(200).json(ticket);
+};
+
 export const remove = async (
   req: Request,
   res: Response

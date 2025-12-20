@@ -2007,28 +2007,10 @@ const handleMessage = async (
 
   if (!isValidMsg(msg)) return;
   
-  // Ignorar mensagens de avaliação automática e manter ticket fechado
+  // Ignorar mensagens de avaliação automática
   const bodyMessage = getBodyMessage(msg);
   if (bodyMessage && bodyMessage.startsWith("Por gentileza, avalie seu atendimento pelo link abaixo:")) {
-    console.log(`🚫 Mensagem de avaliação - mantendo ticket fechado`);
-    
-    // Buscar ticket e garantir que permaneça fechado
-    const msgContact = await getContactMessage(msg, wbot);
-    const contact = await verifyContact(msgContact, wbot, companyId);
-    const ticket = await Ticket.findOne({
-      where: {
-        contactId: contact.id,
-        whatsappId: wbot.id,
-        companyId
-      },
-      order: [["id", "DESC"]]
-    });
-    
-    if (ticket && ticket.status !== "closed") {
-      await ticket.update({ status: "closed" });
-      console.log(`✅ Ticket #${ticket.id} mantido como fechado`);
-    }
-    
+    console.log(`🚫 Ignorando mensagem de avaliação automática`);
     return;
   }
   

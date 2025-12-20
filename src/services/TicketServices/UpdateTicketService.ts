@@ -19,7 +19,7 @@ import Whatsapp from "../../models/Whatsapp";
 import { Op } from "sequelize";
 import AppError from "../../errors/AppError";
 import { buildContactAddress } from "../../utils/global";
-import { queueDebugger, validateTicketState } from "../../utils/queueDebugger";
+import NotifyTicketBotService from "./NotifyTicketBotService";
 
 
 interface TicketData {
@@ -39,6 +39,7 @@ interface Request {
   ticketData: TicketData;
   ticketId: string | number;
   companyId: number;
+  skipRating?: boolean;
 }
 
 interface Response {
@@ -50,7 +51,8 @@ interface Response {
 const UpdateTicketService = async ({
   ticketData,
   ticketId,
-  companyId
+  companyId,
+  skipRating = false
 }: Request): Promise<Response> => {
 
   try {
@@ -118,51 +120,24 @@ const UpdateTicketService = async ({
         key: "userRating"
       });
 
-  // Envia a mensagem de avaliação apenas se o ticket não estiver em status 'pendente'
+  // VipClub não envia mais avaliação - apenas o TicketBot fará isso
+  if (skipRating) {
+    console.log(`🚫 Avaliação será pulada pelo TicketBot - Ticket #${ticket.id}`);
+  } else {
+    console.log(`📝 Avaliação será enviada pelo TicketBot - Ticket #${ticket.id}`);
+  }
+  
+  // Envia apenas a mensagem de finalização se estiver configurada
+  ticketTraking.finishedAt = moment().toDate();
+  
   if (
-    ticket.status !== "pending" &&  // Adiciona a verificação para evitar avaliação em status pendente
     !ticket.contact.isGroup &&
     !ticket.contact.disableBot &&
-    settingEvaluation?.value === "enabled"
+    !isNil(complationMessage) &&
+    complationMessage !== ""
   ) {
-    if (ticketTraking.ratingAt == null && ticketTraking.userId !== null) {
-      const bodyRatingMessage = `${
-        ratingMessage ? ratingMessage + "\n\n" : ""
-      }Digite de 1 a 5 para qualificar nosso atendimento:\n\n*1* - 😞 _Péssimo_\n*2* - 😕 _Ruim_\n*3* - 😐 _Neutro_\n*4* - 🙂 _Bom_\n*5* - 😊 _Ótimo_`;
-
-      await SendWhatsAppMessage({ body: bodyRatingMessage, ticket });
-
-      await ticketTraking.update({
-        ratingAt: moment().toDate()
-      });
-
-      // Remove o ticket da lista de abertos
-      io.to(`company-${ticket.companyId}-open`)
-        .to(`queue-${ticket.queueId}-open`)
-        .to(ticketId.toString())
-        .emit(`company-${ticket.companyId}-ticket`, {
-          action: "delete",
-          ticketId: ticket.id
-        });
-
-      return { ticket, oldStatus, oldUserId };
-    }
-
-    ticketTraking.ratingAt = moment().toDate();
-    ticketTraking.rated = false;
-  } else {
-    // Envia apenas a mensagem de finalização se estiver configurada
-    ticketTraking.finishedAt = moment().toDate();
-
-    if (
-      !ticket.contact.isGroup &&
-      !ticket.contact.disableBot &&
-      !isNil(complationMessage) &&
-      complationMessage !== ""
-    ) {
-      const body = `\u200e${complationMessage}`;
-      await SendWhatsAppMessage({ body, ticket });
-    }
+    const body = `\u200e${complationMessage}`;
+    await SendWhatsAppMessage({ body, ticket });
   }
 
   await ticket.update({
@@ -176,6 +151,14 @@ const UpdateTicketService = async ({
   ticketTraking.finishedAt = moment().toDate();
   ticketTraking.whatsappId = ticket.whatsappId;
   ticketTraking.userId = ticket.userId;
+
+  // Notificar TicketBot SEMPRE que o ticket for fechado
+  // O TicketBot decidirá se envia ou não a avaliação baseado no skipRating
+  await NotifyTicketBotService({
+    ticket,
+    ticketTraking,
+    skipRating
+  });
 
 }
 
@@ -248,31 +231,7 @@ const UpdateTicketService = async ({
             }      
     }
 
-    // CORREÇÃO: Validar mudanças antes de aplicar
-    const reason = `UpdateTicketService - Status: ${status}, UserId: ${userId}, QueueId: ${queueId}`;
-    
-    // Validar se mudança de fila é apropriada (exceto transferências manuais)
-    const isManualTransfer = queueId !== undefined && status === "pending" && userId === null;
-    
-    if (queueId !== undefined && !isManualTransfer && !queueDebugger.validateQueueChange(ticket, queueId, userId, reason)) {
-      console.log(`🚫 Mudança de fila bloqueada para ticket #${ticket.id}`);
-      // Não alterar queueId se validação falhou
-      queueId = ticket.queueId;
-    } else if (isManualTransfer) {
-      console.log(`✅ Transferência manual permitida - Ticket #${ticket.id} para fila ${queueId}`);
-    }
-    
-    // Log da mudança para debug
-    queueDebugger.logQueueChange(
-      ticket.id,
-      ticket.contact.number,
-      ticket.queueId,
-      queueId,
-      ticket.userId,
-      userId,
-      reason
-    );
-    
+    // CORREÇÃO: Preservar status e userId se ticket já tem atendente e não está sendo explicitamente alterado
     const updateData = {
       queueId,
       whatsappId,
@@ -281,7 +240,7 @@ const UpdateTicketService = async ({
       lastMessage: lastMessage !== null ? lastMessage : ticket.lastMessage
     };
     
-    // Só atualizar status se foi explicitamente fornecido
+    // Só atualizar status se foi explicitamente fornecido ou se ticket não tem atendente
     if (status !== undefined) {
       updateData.status = status;
     }
@@ -292,9 +251,6 @@ const UpdateTicketService = async ({
     }
     
     await ticket.update(updateData);
-    
-    // Validar estado após atualização
-    await validateTicketState(ticket.id);
 
     await ticket.reload();
 

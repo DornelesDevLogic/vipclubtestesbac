@@ -231,23 +231,29 @@ const UpdateTicketService = async ({
             }      
     }
 
-    // CORREÇÃO: Preservar status e userId se ticket já tem atendente e não está sendo explicitamente alterado
+    // CORREÇÃO: Preservar atendente e fila existentes - só alterar se explicitamente solicitado
     const updateData = {
-      queueId,
       whatsappId,
       chatbot,
       queueOptionId,
       lastMessage: lastMessage !== null ? lastMessage : ticket.lastMessage
     };
     
-    // Só atualizar status se foi explicitamente fornecido ou se ticket não tem atendente
+    // Só atualizar status se foi explicitamente fornecido
     if (status !== undefined) {
       updateData.status = status;
     }
     
-    // Só atualizar userId se foi explicitamente fornecido
-    if (userId !== undefined) {
+    // Só atualizar queueId se foi explicitamente fornecido E é diferente do atual
+    if (queueId !== undefined && queueId !== ticket.queueId) {
+      updateData.queueId = queueId;
+      console.log(`🔄 Alterando fila de ${ticket.queueId} para ${queueId}`);
+    }
+    
+    // Só atualizar userId se foi explicitamente fornecido E é diferente do atual
+    if (userId !== undefined && userId !== ticket.userId) {
       updateData.userId = userId;
+      console.log(`🔄 Alterando atendente de ${ticket.userId} para ${userId}`);
     }
     
     await ticket.update(updateData);

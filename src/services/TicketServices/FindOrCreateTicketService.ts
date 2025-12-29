@@ -49,9 +49,15 @@ const FindOrCreateTicketService = async (
           console.log(`✅ Mantendo ticket aberto com atendente ${ticket.userId} e fila ${ticket.queueId}`);
           await ticket.update({ unreadMessages, whatsappId });
         } else if (ticket.status === "closed") {
-          // Ticket fechado - limpar fila e atendente
-          console.log(`🔄 Reabrindo ticket fechado`);
-          await ticket.update({ queueId: null, userId: null, unreadMessages, whatsappId });
+          // Ticket fechado - SEMPRE reabrir como 'pending' para ir para fila de aguardando
+          console.log(`🔄 Reabrindo ticket fechado - Indo para PENDING (aguardando)`);
+          await ticket.update({ 
+            status: "pending", 
+            userId: null,  // Limpar atendente para ir para fila
+            unreadMessages, 
+            whatsappId 
+            // Manter queueId para preservar a fila original
+          });
         } else {
           // Outros status (pending) - atualizar normalmente
           console.log(`📝 Atualizando ticket status: ${ticket.status}, fila: ${ticket.queueId}`);

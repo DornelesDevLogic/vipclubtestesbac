@@ -261,8 +261,8 @@ const UpdateTicketService = async ({
       console.log(`🔄 Alterando fila de ${ticket.queueId} para ${queueId}`);
     }
     
-    // Só atualizar userId se foi explicitamente fornecido E é diferente do atual
-    if (userId !== undefined && userId !== ticket.userId) {
+    // CORREÇÃO: Sempre respeitar userId quando fornecido, mesmo que seja null
+    if (userId !== undefined) {
       updateData.userId = userId;
       console.log(`🔄 Alterando atendente de ${ticket.userId} para ${userId}`);
     }

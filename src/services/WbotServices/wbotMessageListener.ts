@@ -33,7 +33,6 @@ import {
 import moment from "moment";
 import OpenAI from "openai";
 import { Op } from "sequelize";
-import { Op } from "sequelize";
 import { debounce } from "../../helpers/Debounce";
 import formatBody from "../../helpers/Mustache";
 import ffmpeg from "fluent-ffmpeg";
@@ -1273,8 +1272,9 @@ const verifyQueue = async (
     }
 
     // CORREÇÃO: Não alterar fila se ticket já tem atendente ou fila definida
+    // E garantir que não seja atribuído automaticamente a um atendente
     if (!ticket.userId && !ticket.queueId) {
-      const updateData = { queueId: firstQueue.id, chatbot, status: "pending" };
+      const updateData = { queueId: firstQueue.id, chatbot, status: "pending", userId: null };
       
       await UpdateTicketService({
         ticketData: updateData,
@@ -1282,7 +1282,7 @@ const verifyQueue = async (
         companyId: ticket.companyId,
       });
       
-      console.log(`🎯 Fila ${firstQueue.name} atribuída ao ticket #${ticket.id}`);
+      console.log(`🎯 Fila ${firstQueue.name} atribuída ao ticket #${ticket.id} - SEM atendente`);
     } else {
       console.log(`⚠️ Ticket #${ticket.id} já tem atendente (${ticket.userId}) ou fila (${ticket.queueId}) - mantendo configuração atual`);
     }
@@ -1361,8 +1361,9 @@ const verifyQueue = async (
       }
 
       // CORREÇÃO: Não alterar fila se ticket já tem atendente ou fila definida
+      // E garantir que não seja atribuído automaticamente a um atendente
       if (!ticket.userId && !ticket.queueId) {
-        const updateData = { queueId: firstQueue.id, chatbot, status: "pending" };
+        const updateData = { queueId: firstQueue.id, chatbot, status: "pending", userId: null };
         
         await UpdateTicketService({
           ticketData: updateData,
@@ -1370,7 +1371,7 @@ const verifyQueue = async (
           companyId: ticket.companyId,
         });
         
-        console.log(`🎯 Fila ${firstQueue.name} selecionada automaticamente para ticket #${ticket.id}`);
+        console.log(`🎯 Fila ${firstQueue.name} selecionada automaticamente para ticket #${ticket.id} - SEM atendente`);
       } else {
         console.log(`⚠️ Ticket #${ticket.id} já tem atendente (${ticket.userId}) ou fila (${ticket.queueId}) - mantendo configuração atual`);
       }
@@ -1393,8 +1394,9 @@ const verifyQueue = async (
     }
 
     // CORREÇÃO: Não alterar fila se ticket já tem atendente ou fila definida
+    // E garantir que não seja atribuído automaticamente a um atendente
     if (!ticket.userId && !ticket.queueId) {
-      const updateData = { queueId: choosenQueue.id, chatbot, status: "pending" };
+      const updateData = { queueId: choosenQueue.id, chatbot, status: "pending", userId: null };
       
       await UpdateTicketService({
         ticketData: updateData,
@@ -1402,7 +1404,7 @@ const verifyQueue = async (
         companyId: ticket.companyId,
       });
       
-      console.log(`🎯 Fila ${choosenQueue.name} escolhida para ticket #${ticket.id}`);
+      console.log(`🎯 Fila ${choosenQueue.name} escolhida para ticket #${ticket.id} - SEM atendente`);
     } else {
       console.log(`⚠️ Ticket #${ticket.id} já tem atendente (${ticket.userId}) ou fila (${ticket.queueId}) - mantendo configuração atual`);
     }

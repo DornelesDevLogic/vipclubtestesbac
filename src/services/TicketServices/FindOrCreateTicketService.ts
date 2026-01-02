@@ -13,13 +13,19 @@ interface TicketData {
   unreadMessages?: number;
 }
 
+interface MessageInfo {
+  body?: string;
+  fromMe?: boolean;
+}
+
 const FindOrCreateTicketService = async (
   contact: Contact,
   whatsappId: number,
   unreadMessages: number,
   companyId: number,
   groupContact?: Contact,
-  openTicketSchedule?: boolean
+  openTicketSchedule?: boolean,
+  messageInfo?: MessageInfo
 ): Promise<Ticket> => {
   let ticket;
   // Buscar ticket existente APENAS na conexão atual
@@ -49,6 +55,24 @@ const FindOrCreateTicketService = async (
           console.log(`✅ Mantendo ticket aberto com atendente ${ticket.userId} e fila ${ticket.queueId}`);
           await ticket.update({ unreadMessages, whatsappId });
         } else if (ticket.status === "closed") {
+          // CORREÇÃO DEFINITIVA: Verificar se é resposta após avaliação
+          if (ticket.lastMessage && ticket.lastMessage.includes("Por gentileza, avalie seu atendimento pelo link abaixo:")) {
+            console.log(`🔒 Ticket fechado com avaliação - NÃO reabrir`);
+            return ticket; // Mantém fechado
+          }
+          
+          // CORREÇÃO: Não reabrir ticket se a mensagem for de avaliação automática
+          if (messageInfo?.body && messageInfo.body.startsWith("Por gentileza, avalie seu atendimento pelo link abaixo:")) {
+            console.log(`🚫 Ignorando reabertura - Mensagem de avaliação automática`);
+            // Atualizar apenas a lastMessage sem reabrir o ticket
+            await ticket.update({ 
+              lastMessage: messageInfo.body,
+              unreadMessages, 
+              whatsappId 
+            });
+            return ticket; // Retorna o ticket fechado sem reabrir
+          }
+          
           // Ticket fechado - SEMPRE reabrir como 'pending' para ir para fila de aguardando
           console.log(`🔄 Reabrindo ticket fechado - Indo para PENDING (aguardando)`);
           await ticket.update({ 

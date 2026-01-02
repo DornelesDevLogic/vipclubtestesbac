@@ -20,6 +20,7 @@ import { Op } from "sequelize";
 import AppError from "../../errors/AppError";
 import { buildContactAddress } from "../../utils/global";
 import NotifyTicketBotService from "./NotifyTicketBotService";
+import CleanupEvaluationTicketsService from "./CleanupEvaluationTicketsService";
 
 
 interface TicketData {
@@ -159,6 +160,16 @@ const UpdateTicketService = async ({
     ticketTraking,
     skipRating
   });
+
+  // CORREÇÃO: Executar limpeza de tickets com avaliação 2 segundos após fechar
+  setTimeout(async () => {
+    try {
+      await CleanupEvaluationTicketsService();
+      console.log(`🧹 Limpeza automática executada 2s após fechamento do ticket #${ticket.id}`);
+    } catch (error) {
+      console.error(`Erro na limpeza automática: ${error}`);
+    }
+  }, 2000);
 
 }
 

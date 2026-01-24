@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+import { Op } from "sequelize";
 import AppError from "../errors/AppError";
 
 import formatBody from "../helpers/Mustache";
@@ -148,6 +149,29 @@ export const send = async (req: Request, res: Response): Promise<Response> => {
     };
 
     const contact = await CreateOrUpdateContactService(contactData);
+
+    // CORREÇÃO: Verificar se é mensagem de avaliação após ter o contato
+    if (messageData.body && messageData.body.startsWith("Por gentileza, avalie seu atendimento pelo link abaixo:")) {
+      // Verificar se já existe uma mensagem de avaliação recente para este contato
+      const recentEvaluationCheck = await Message.findOne({
+        where: {
+          body: {
+            [Op.like]: "Por gentileza, avalie seu atendimento pelo link abaixo:%"
+          },
+          contactId: contact.id,
+          createdAt: {
+            [Op.gte]: new Date(Date.now() - 5 * 60 * 1000) // Últimos 5 minutos
+          }
+        }
+      });
+      
+      if (recentEvaluationCheck) {
+        console.log(`🚫 Ignorando reenvio de mensagem de avaliação - Já enviada recentemente`);
+        return res.send({ mensagem: "Mensagem de avaliação já enviada recentemente" });
+      }
+      
+      console.log(`✅ Permitindo primeiro envio de mensagem de avaliação`);
+    }
 
     const ticket = await FindOrCreateTicketService(contact, whatsapp.id!, 0, companyId);
 

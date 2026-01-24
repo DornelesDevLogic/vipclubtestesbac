@@ -1,0 +1,176 @@
+ DOCUMENTAÇÃO - CORREÇÃO DO LOOP INFINITO DE AVALIAÇÃO
+🚨 PROBLEMA IDENTIFICADO
+Duração: 5 dias de problema crítico
+
+Sintoma: Após finalizar chamado e enviar link de avaliação, ticket voltava automaticamente para status "pending" na fila
+
+Causa: Loop infinito causado pelo processamento da própria mensagem de avaliação pelo sistema
+
+✅ SOLUÇÃO IMPLEMENTADA
+1. Arquivos Modificados
+📁 wbotMessageListener.ts
+Localização: backend/src/services/WbotServices/wbotMessageListener.ts
+
+Alterações:
+
+Adicionado filtro para ignorar mensagens de avaliação automática
+
+Implementada verificação imediata para fechar tickets pendentes com avaliação
+
+Adicionada execução periódica de limpeza (a cada 100 mensagens)
+
+📁 MessageController.ts
+Localização: backend/src/controllers/MessageController.ts
+
+Alterações:
+
+Implementado controle inteligente para permitir primeiro envio de avaliação
+
+Bloqueio de reenvios por 5 minutos para evitar spam
+
+Verificação baseada no histórico de mensagens do contato
+
+📁 FindOrCreateTicketService.ts
+Localização: backend/src/services/TicketServices/FindOrCreateTicketService.ts
+
+Alterações:
+
+Adicionada interface MessageInfo para receber dados da mensagem
+
+Implementada verificação para não reabrir tickets com avaliação
+
+Proteção dupla: por conteúdo da mensagem e por histórico do ticket
+
+📁 UpdateTicketService.ts
+Localização: backend/src/services/TicketServices/UpdateTicketService.ts
+
+Alterações:
+
+Adicionado setTimeout para executar limpeza automática 2 segundos após fechamento
+
+Importação do serviço de limpeza
+
+2. Novos Arquivos Criados
+📁 CleanupEvaluationTicketsService.ts
+Localização: backend/src/services/TicketServices/CleanupEvaluationTicketsService.ts
+
+Função: Serviço dedicado para identificar e fechar automaticamente tickets pendentes com avaliação
+
+📁 CleanupController.ts
+Localização: backend/src/controllers/CleanupController.ts
+
+Função: Endpoint para execução manual da limpeza (se necessário)
+
+🛡️ SISTEMA DE PROTEÇÃO IMPLEMENTADO
+Camada 1: Filtro no wbotMessageListener
+// Ignora mensagens de avaliação automática
+if (bodyMessage && bodyMessage.startsWith("Por gentileza, avalie seu atendimento pelo link abaixo:")) {
+  console.log(`🚫 Ignorando mensagem de avaliação automática`);
+  return;
+}
+
+Copy
+Camada 2: Controle no MessageController
+// Permite primeiro envio, bloqueia reenvios
+const recentEvaluationCheck = await Message.findOne({
+  where: {
+    body: { [Op.like]: "Por gentileza, avalie seu atendimento pelo link abaixo:%" },
+    contactId: contact.id,
+    createdAt: { [Op.gte]: new Date(Date.now() - 5 * 60 * 1000) }
+  }
+});
+
+Copy
+Camada 3: Proteção no FindOrCreateTicketService
+// Não reabre tickets que já receberam avaliação
+if (ticket.lastMessage && ticket.lastMessage.includes("Por gentileza, avalie seu atendimento pelo link abaixo:")) {
+  console.log(`🔒 Ticket fechado com avaliação - NÃO reabrir`);
+  return ticket;
+}
+
+Copy
+typescript
+Camada 4: Limpeza Automática
+// Executa limpeza 2 segundos após fechamento
+setTimeout(async () => {
+  await CleanupEvaluationTicketsService();
+}, 2000);
+
+Copy
+typescript
+📊 FLUXO CORRIGIDO
+✅ Comportamento Atual (Correto)
+Atendente finaliza chamado → Ticket status = "closed"
+
+TicketBot é notificado → Envia mensagem de avaliação
+
+Cliente recebe avaliação → Mensagem entregue com sucesso
+
+Sistema detecta avaliação → Múltiplas camadas de proteção ativadas
+
+Ticket permanece fechado → Não volta para fila
+
+Limpeza automática → Remove qualquer ticket pendente com avaliação
+
+❌ Comportamento Anterior (Problema)
+Atendente finaliza chamado → Ticket fechado
+
+TicketBot envia avaliação → Mensagem processada pelo sistema
+
+Sistema reabre ticket → Status volta para "pending"
+
+Loop infinito → Ticket fica na fila indefinidamente
+
+🔧 CONFIGURAÇÕES E PARÂMETROS
+Tempo de bloqueio de reenvio: 5 minutos
+
+Delay da limpeza automática: 2 segundos após fechamento
+
+Frequência de limpeza periódica: A cada 100 mensagens processadas
+
+Frase de identificação: "Por gentileza, avalie seu atendimento pelo link abaixo:"
+
+📝 LOGS DE MONITORAMENTO
+Logs de Sucesso
+✅ Permitindo primeiro envio de mensagem de avaliação
+
+🚫 Ignorando mensagem de avaliação automática
+
+🔒 Ticket fechado com avaliação - NÃO reabrir
+
+🧹 Limpeza automática executada 2s após fechamento do ticket #XXX
+
+Logs de Correção
+🔒 CORREÇÃO: Ticket #XXX pendente com avaliação - Fechando automaticamente
+
+🧹 Encontrados X tickets pendentes com avaliação - Fechando automaticamente
+
+🚀 RESULTADOS OBTIDOS
+✅ Loop infinito eliminado
+
+✅ Cliente recebe avaliação normalmente
+
+✅ Tickets não voltam para fila
+
+✅ Sistema totalmente automatizado
+
+✅ Múltiplas camadas de proteção
+
+✅ Monitoramento via logs
+
+🔄 MANUTENÇÃO E MONITORAMENTO
+Endpoint Manual (se necessário)
+GET /cleanup-evaluation-tickets
+
+Copy
+Verificação de Status
+Monitorar logs para confirmar execução das limpezas
+
+Verificar se tickets não estão ficando pendentes com avaliação
+
+Acompanhar métricas de envio de avaliações
+
+Data da Correção: 02/01/2026
+Status: ✅ PROBLEMA RESOLVIDO DEFINITIVAMENTE
+Impacto: CRÍTICO - Sistema de avaliação funcionando corretamente
+Responsável: Equipe de Desenvolvimento

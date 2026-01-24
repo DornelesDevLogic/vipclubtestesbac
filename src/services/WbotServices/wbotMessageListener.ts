@@ -68,6 +68,7 @@ import { getMessageOptions } from "./SendWhatsAppMedia";
 
 import { addMsgAckJob } from "./BullAckService";
 import { CreateOrUpdateBaileysChatService } from "../BaileysChatServices/CreateOrUpdateBaileysChatService";
+import CleanupEvaluationTicketsService from "../TicketServices/CleanupEvaluationTicketsService";
 
 import ffmpegPath from 'ffmpeg-static';
 ffmpeg.setFfmpegPath(ffmpegPath);
@@ -1271,8 +1272,9 @@ const verifyQueue = async (
     }
 
     // CORREÇÃO: Não alterar fila se ticket já tem atendente ou fila definida
+    // E garantir que não seja atribuído automaticamente a um atendente
     if (!ticket.userId && !ticket.queueId) {
-      const updateData = { queueId: firstQueue.id, chatbot, status: "pending" };
+      const updateData = { queueId: firstQueue.id, chatbot, status: "pending", userId: null };
       
       await UpdateTicketService({
         ticketData: updateData,
@@ -1280,7 +1282,7 @@ const verifyQueue = async (
         companyId: ticket.companyId,
       });
       
-      console.log(`🎯 Fila ${firstQueue.name} atribuída ao ticket #${ticket.id}`);
+      console.log(`🎯 Fila ${firstQueue.name} atribuída ao ticket #${ticket.id} - SEM atendente`);
     } else {
       console.log(`⚠️ Ticket #${ticket.id} já tem atendente (${ticket.userId}) ou fila (${ticket.queueId}) - mantendo configuração atual`);
     }
@@ -1359,8 +1361,9 @@ const verifyQueue = async (
       }
 
       // CORREÇÃO: Não alterar fila se ticket já tem atendente ou fila definida
+      // E garantir que não seja atribuído automaticamente a um atendente
       if (!ticket.userId && !ticket.queueId) {
-        const updateData = { queueId: firstQueue.id, chatbot, status: "pending" };
+        const updateData = { queueId: firstQueue.id, chatbot, status: "pending", userId: null };
         
         await UpdateTicketService({
           ticketData: updateData,
@@ -1368,7 +1371,7 @@ const verifyQueue = async (
           companyId: ticket.companyId,
         });
         
-        console.log(`🎯 Fila ${firstQueue.name} selecionada automaticamente para ticket #${ticket.id}`);
+        console.log(`🎯 Fila ${firstQueue.name} selecionada automaticamente para ticket #${ticket.id} - SEM atendente`);
       } else {
         console.log(`⚠️ Ticket #${ticket.id} já tem atendente (${ticket.userId}) ou fila (${ticket.queueId}) - mantendo configuração atual`);
       }
@@ -1391,8 +1394,9 @@ const verifyQueue = async (
     }
 
     // CORREÇÃO: Não alterar fila se ticket já tem atendente ou fila definida
+    // E garantir que não seja atribuído automaticamente a um atendente
     if (!ticket.userId && !ticket.queueId) {
-      const updateData = { queueId: choosenQueue.id, chatbot, status: "pending" };
+      const updateData = { queueId: choosenQueue.id, chatbot, status: "pending", userId: null };
       
       await UpdateTicketService({
         ticketData: updateData,
@@ -1400,7 +1404,7 @@ const verifyQueue = async (
         companyId: ticket.companyId,
       });
       
-      console.log(`🎯 Fila ${choosenQueue.name} escolhida para ticket #${ticket.id}`);
+      console.log(`🎯 Fila ${choosenQueue.name} escolhida para ticket #${ticket.id} - SEM atendente`);
     } else {
       console.log(`⚠️ Ticket #${ticket.id} já tem atendente (${ticket.userId}) ou fila (${ticket.queueId}) - mantendo configuração atual`);
     }
@@ -2014,6 +2018,53 @@ const handleMessage = async (
     return;
   }
   
+  // CORREÇÃO ADICIONAL: Ignorar mensagens próprias que são de avaliação
+  if (msg.key.fromMe && bodyMessage && bodyMessage.includes("avalie seu atendimento")) {
+    console.log(`🚫 Ignorando mensagem própria de avaliação`);
+    return;
+  }
+  
+  // CORREÇÃO DEFINITIVA: Se cliente responder após receber avaliação, fechar ticket automaticamente
+  if (!msg.key.fromMe && bodyMessage) {
+    // Verificar se a última mensagem do sistema foi de avaliação
+    const lastSystemMessage = await Message.findOne({
+      where: {
+        fromMe: true,
+        body: {
+          [Op.like]: "Por gentileza, avalie seu atendimento pelo link abaixo:%"
+        }
+      },
+      order: [['createdAt', 'DESC']],
+      limit: 1
+    });
+    
+    if (lastSystemMessage && 
+        new Date().getTime() - new Date(lastSystemMessage.createdAt).getTime() < 10 * 60 * 1000) { // 10 minutos
+      console.log(`🔒 Cliente respondeu após avaliação - Fechando ticket automaticamente`);
+      
+      // Buscar o ticket atual
+      const contact = await verifyContact(await getContactMessage(msg, wbot), wbot, companyId);
+      const currentTicket = await Ticket.findOne({
+        where: {
+          contactId: contact.id,
+          whatsappId: wbot.id,
+          companyId
+        },
+        order: [['id', 'DESC']]
+      });
+      
+      if (currentTicket && currentTicket.status !== 'closed') {
+        await currentTicket.update({ 
+          status: 'closed',
+          userId: null,
+          queueId: null
+        });
+        console.log(`✅ Ticket #${currentTicket.id} fechado automaticamente`);
+      }
+      return;
+    }
+  }
+  
   try {
     let msgContact: IMe;
     let groupContact: Contact | undefined;
@@ -2022,6 +2073,11 @@ const handleMessage = async (
     const messageCount = await Message.count({ where: { companyId } });
     if (messageCount % 1000 === 0) {
       await unifyDuplicateContacts(companyId);
+    }
+    
+    // CORREÇÃO: Executar limpeza de tickets com avaliação periodicamente (a cada 100 mensagens)
+    if (messageCount % 100 === 0) {
+      await CleanupEvaluationTicketsService();
     }
 
     const isGroup = msg.key.remoteJid?.endsWith("@g.us");
@@ -2117,7 +2173,31 @@ const handleMessage = async (
     }
     
 
+<<<<<<< HEAD
     const ticket = await FindOrCreateTicketService(contact, wbot.id!, unreadMessages, companyId, groupContact, false, msg);
+=======
+    const ticket = await FindOrCreateTicketService(
+      contact, 
+      wbot.id!, 
+      unreadMessages, 
+      companyId, 
+      groupContact,
+      false, 
+      { body: bodyMessage, fromMe: msg.key.fromMe }
+    );
+
+    // CORREÇÃO DEFINITIVA: Verificar e fechar tickets pendentes com avaliação
+    if (ticket.status === "pending" && ticket.lastMessage && 
+        ticket.lastMessage.startsWith("Por gentileza, avalie seu atendimento pelo link abaixo:")) {
+      console.log(`🔒 CORREÇÃO: Ticket #${ticket.id} pendente com avaliação - Fechando automaticamente`);
+      await ticket.update({ 
+        status: "closed",
+        userId: null,
+        queueId: null
+      });
+      return; // Para o processamento aqui
+    }
+>>>>>>> 0cd1337963b50b5dd2c71a532cb23c59523cb199
 
 
 

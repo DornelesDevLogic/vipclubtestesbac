@@ -161,7 +161,6 @@ const UpdateTicketService = async ({
     skipRating
   });
 
-<<<<<<< HEAD
   // Verificar se o ticket foi fechado com mensagem de avaliação
   // Se sim, criar uma tarefa para verificar e fechar tickets pendentes com mesma mensagem
   if (!skipRating) {
@@ -204,18 +203,6 @@ const UpdateTicketService = async ({
       }
     }, 2000); // Executar após 2 segundos
   }
-=======
-  // CORREÇÃO: Executar limpeza de tickets com avaliação 2 segundos após fechar
-  setTimeout(async () => {
-    try {
-      await CleanupEvaluationTicketsService();
-      console.log(`🧹 Limpeza automática executada 2s após fechamento do ticket #${ticket.id}`);
-    } catch (error) {
-      console.error(`Erro na limpeza automática: ${error}`);
-    }
-  }, 2000);
-
->>>>>>> 0cd1337963b50b5dd2c71a532cb23c59523cb199
 }
 
     if (queueId !== undefined && queueId !== null) {

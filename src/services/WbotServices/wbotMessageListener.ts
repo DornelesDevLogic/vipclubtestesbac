@@ -2173,31 +2173,7 @@ const handleMessage = async (
     }
     
 
-<<<<<<< HEAD
     const ticket = await FindOrCreateTicketService(contact, wbot.id!, unreadMessages, companyId, groupContact, false, msg);
-=======
-    const ticket = await FindOrCreateTicketService(
-      contact, 
-      wbot.id!, 
-      unreadMessages, 
-      companyId, 
-      groupContact,
-      false, 
-      { body: bodyMessage, fromMe: msg.key.fromMe }
-    );
-
-    // CORREÇÃO DEFINITIVA: Verificar e fechar tickets pendentes com avaliação
-    if (ticket.status === "pending" && ticket.lastMessage && 
-        ticket.lastMessage.startsWith("Por gentileza, avalie seu atendimento pelo link abaixo:")) {
-      console.log(`🔒 CORREÇÃO: Ticket #${ticket.id} pendente com avaliação - Fechando automaticamente`);
-      await ticket.update({ 
-        status: "closed",
-        userId: null,
-        queueId: null
-      });
-      return; // Para o processamento aqui
-    }
->>>>>>> 0cd1337963b50b5dd2c71a532cb23c59523cb199
 
 
 

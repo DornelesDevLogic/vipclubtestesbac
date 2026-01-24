@@ -2009,8 +2009,8 @@ const handleMessage = async (
   
   // Ignorar mensagens de avaliação automática
   const bodyMessage = getBodyMessage(msg);
-  if (bodyMessage && bodyMessage.startsWith("Por gentileza, avalie seu atendimento pelo link abaixo:")) {
-    console.log(`🚫 Ignorando mensagem de avaliação automática`);
+  if (bodyMessage && bodyMessage.includes("Por gentileza, avalie seu atendimento pelo link abaixo:")) {
+    console.log(`🚫 Ignorando mensagem de avaliação automática - Não reabrir ticket fechado`);
     return;
   }
   
@@ -2117,7 +2117,7 @@ const handleMessage = async (
     }
     
 
-    const ticket = await FindOrCreateTicketService(contact, wbot.id!, unreadMessages, companyId, groupContact);
+    const ticket = await FindOrCreateTicketService(contact, wbot.id!, unreadMessages, companyId, groupContact, false, msg);
 
 
 

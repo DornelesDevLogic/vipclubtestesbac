@@ -126,10 +126,10 @@ const UpdateTicketService = async ({
   } else {
     console.log(`📝 Avaliação será enviada pelo TicketBot - Ticket #${ticket.id}`);
   }
-  
+
   // Envia apenas a mensagem de finalização se estiver configurada
   ticketTraking.finishedAt = moment().toDate();
-  
+
   if (
     !ticket.contact.isGroup &&
     !ticket.contact.disableBot &&
@@ -160,6 +160,48 @@ const UpdateTicketService = async ({
     skipRating
   });
 
+  // Verificar se o ticket foi fechado com mensagem de avaliação
+  // Se sim, criar uma tarefa para verificar e fechar tickets pendentes com mesma mensagem
+  if (!skipRating) {
+    setTimeout(async () => {
+      try {
+        const pendingTickets = await Ticket.findAll({
+          where: {
+            status: "pending",
+            companyId: ticket.companyId,
+            whatsappId: ticket.whatsappId
+          }
+        });
+
+        for (const pendingTicket of pendingTickets) {
+          if (pendingTicket.lastMessage && pendingTicket.lastMessage.includes("Por gentileza, avalie seu atendimento pelo link abaixo:")) {
+            console.log(`🔒 Fechando ticket pendente #${pendingTicket.id} - Última mensagem é de avaliação`);
+            await pendingTicket.update({ status: "closed" });
+
+            // Atualizar o socket
+            const io = getIO();
+            io.to(`company-${companyId}-pending`)
+              .to(`queue-${pendingTicket.queueId}-pending`)
+              .emit(`company-${companyId}-ticket`, {
+                action: "delete",
+                ticketId: pendingTicket.id
+              });
+
+            io.to(`company-${companyId}-closed`)
+              .to(`queue-${pendingTicket.queueId}-closed`)
+              .to(pendingTicket.id.toString())
+              .emit(`company-${companyId}-ticket`, {
+                action: "update",
+                ticket: pendingTicket
+              });
+          }
+        }
+      } catch (error) {
+        console.error(`❌ Erro ao verificar tickets pendentes com mensagem de avaliação:`, error);
+        Sentry.captureException(error);
+      }
+    }, 2000); // Executar após 2 segundos
+  }
 }
 
     if (queueId !== undefined && queueId !== null) {

@@ -175,7 +175,7 @@ const UpdateTicketService = async ({
         });
 
         for (const pendingTicket of pendingTickets) {
-          if (pendingTicket.lastMessage && pendingTicket.lastMessage.includes("Por gentileza, avalie seu atendimento pelo link abaixo:")) {
+          if (pendingTicket.lastMessage && pendingTicket.lastMessage.includes("⭐📝")) {
             console.log(`🔒 Fechando ticket pendente #${pendingTicket.id} - Última mensagem é de avaliação`);
             await pendingTicket.update({ status: "closed" });
 

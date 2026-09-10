@@ -57,16 +57,22 @@ const FindOrCreateTicketService = async (
           console.log(`✅ Mantendo ticket aberto com atendente ${ticket.userId} e fila ${ticket.queueId}`);
           await ticket.update({ unreadMessages, whatsappId });
         } else if (ticket.status === "closed") {
-          // Verificar se é mensagem de avaliação automática antes de reabrir
+          // Verificar se é mensagem de avaliação automática (enviada pelo próprio sistema)
+          // antes de reabrir. Isso NUNCA deve se aplicar a uma mensagem genuína do cliente
+          // (fromMe === false) — senão uma resposta de verdade do cliente fica presa no
+          // ticket fechado só porque a última mensagem salva ainda era a de avaliação.
           // (o chamador pode passar tanto uma mensagem "estilo Baileys" quanto o texto puro já extraído)
           const bodyMessage =
             typeof msg === "string" ? msg : msg ? getBodyMessage(msg) : null;
-          if (bodyMessage && bodyMessage.startsWith("⭐📝")) {
+          const isFromMe =
+            typeof msg === "string" ? true : msg ? !!msg.key?.fromMe : false;
+
+          if (isFromMe && bodyMessage && bodyMessage.startsWith("⭐📝")) {
             console.log(`🚫 Não reabrir ticket fechado - Mensagem de avaliação automática detectada (⭐📝)`);
             // Não reabrir ticket para mensagens de avaliação
             await ticket.update({ unreadMessages, whatsappId });
-          } else if (ticket.lastMessage && ticket.lastMessage.startsWith("⭐📝")) {
-            // Se a última mensagem do ticket já for de avaliação, manter fechado
+          } else if (isFromMe && ticket.lastMessage && ticket.lastMessage.startsWith("⭐📝")) {
+            // Reprocessamento da própria mensagem de avaliação (ex: eco do WhatsApp) - manter fechado
             console.log(`🔒 Mantendo ticket fechado - Última mensagem já é de avaliação (⭐📝)`);
             await ticket.update({ unreadMessages, whatsappId });
           } else {

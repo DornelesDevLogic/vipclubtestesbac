@@ -151,12 +151,13 @@ export const send = async (req: Request, res: Response): Promise<Response> => {
     const contact = await CreateOrUpdateContactService(contactData);
 
     // CORREÇÃO: Verificar se é mensagem de avaliação após ter o contato
-    if (messageData.body && messageData.body.startsWith("Por gentileza, avalie seu atendimento pelo link abaixo:")) {
+    // (identificada pelo prefixo ⭐📝, independente de qual das frases o TicketBot escolheu)
+    if (messageData.body && messageData.body.startsWith("⭐📝")) {
       // Verificar se já existe uma mensagem de avaliação recente para este contato
       const recentEvaluationCheck = await Message.findOne({
         where: {
           body: {
-            [Op.like]: "Por gentileza, avalie seu atendimento pelo link abaixo:%"
+            [Op.like]: "⭐📝%"
           },
           contactId: contact.id,
           createdAt: {
@@ -173,7 +174,15 @@ export const send = async (req: Request, res: Response): Promise<Response> => {
       console.log(`✅ Permitindo primeiro envio de mensagem de avaliação`);
     }
 
-    const ticket = await FindOrCreateTicketService(contact, whatsapp.id!, 0, companyId);
+    const ticket = await FindOrCreateTicketService(
+      contact,
+      whatsapp.id!,
+      0,
+      companyId,
+      undefined,
+      undefined,
+      body
+    );
 
     if (medias) {
       await Promise.all(

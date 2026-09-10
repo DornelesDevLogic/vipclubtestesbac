@@ -9,7 +9,7 @@ const CleanupEvaluationTicketsService = async (): Promise<void> => {
       where: {
         status: "pending",
         lastMessage: {
-          [Op.like]: "Por gentileza, avalie seu atendimento pelo link abaixo:%"
+          [Op.like]: "⭐📝%"
         }
       }
     });

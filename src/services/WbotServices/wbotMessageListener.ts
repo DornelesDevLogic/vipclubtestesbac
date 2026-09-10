@@ -2011,16 +2011,11 @@ const handleMessage = async (
 
   if (!isValidMsg(msg)) return;
   
-  // Ignorar mensagens de avaliação automática
+  // Ignorar mensagens de avaliação automática (identificadas pelo prefixo ⭐📝,
+  // independente do texto exato da frase — o TicketBot alterna entre várias)
   const bodyMessage = getBodyMessage(msg);
-  if (bodyMessage && bodyMessage.includes("Por gentileza, avalie seu atendimento pelo link abaixo:")) {
-    console.log(`🚫 Ignorando mensagem de avaliação automática - Não reabrir ticket fechado`);
-    return;
-  }
-  
-  // CORREÇÃO ADICIONAL: Ignorar mensagens próprias que são de avaliação
-  if (msg.key.fromMe && bodyMessage && bodyMessage.includes("avalie seu atendimento")) {
-    console.log(`🚫 Ignorando mensagem própria de avaliação`);
+  if (bodyMessage && bodyMessage.startsWith("⭐📝")) {
+    console.log(`🚫 Ignorando mensagem de avaliação automática (⭐📝) - Não reabrir ticket fechado`);
     return;
   }
   

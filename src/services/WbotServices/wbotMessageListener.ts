@@ -1004,10 +1004,16 @@ const verifyMediaMessage = async (
         .save((folder + '/' + media.filename).replace('.ogg', '.mp3'))
         .on('end', () => {
           logger.info('Conversão concluída!');
+          // Usa o arquivo convertido (mp3 tem suporte de reprodução bem mais
+          // universal que o ogg/opus original vindo do WhatsApp, que alguns
+          // navegadores falham em decodificar).
+          media.filename = media.filename.replace('.ogg', '.mp3');
           resolve();
         })
         .on('error', (err) => {
           logger.error('Erro durante a conversão:', err);
+          // Conversão falhou: media.filename não é alterado, então o
+          // fluxo abaixo (catch externo) mantém o .ogg original.
           reject(err);
         });
       } else {

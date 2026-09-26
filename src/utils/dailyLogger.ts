@@ -33,9 +33,15 @@ class DailyLogger {
 
   private writeToFile(level: string, ...args: any[]): void {
     const timestamp = moment().tz('America/Sao_Paulo').format('YYYY-MM-DDTHH:mm:ss.SSS[Z]');
-    const message = args.map(arg => 
-      typeof arg === 'object' ? JSON.stringify(arg, null, 2) : String(arg)
-    ).join(' ');
+    const message = args.map(arg => {
+      // JSON.stringify(new Error(...)) sempre vira "{}", pois message/stack
+      // não são propriedades enumeráveis — isso escondia a causa real de
+      // todo crash por unhandledRejection/uncaughtException nesse log.
+      if (arg instanceof Error) {
+        return `${arg.message}\n${arg.stack}`;
+      }
+      return typeof arg === 'object' ? JSON.stringify(arg, null, 2) : String(arg);
+    }).join(' ');
     
     const logEntry = `[${timestamp}] [${level}] ${message}\n`;
     
